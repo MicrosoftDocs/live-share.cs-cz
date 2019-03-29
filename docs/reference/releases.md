@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1741c8a3ad46737baeed531c3bd67f393ad47ad2
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: b104605c7e40d05ffe7e3ea5cf84b739ec119d2b
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57254837"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640169"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="visual-studio-live-share-release-notes"></a>Zpráva k vydání verze pro Visual Studio za sdílené složky
 
-<!-- Placeholder in the event anyone has bookmarked the direct link --> Zpráva k vydání verze přesunuli do našich [úložiště GitHub se vzorovými](https://aka.ms/vsls-releases).
+<!-- Placeholder in the event anyone has bookmarked the direct link -->
+Zpráva k vydání verze přesunuli do našich [úložiště GitHub se vzorovými](https://aka.ms/vsls-releases).
 
 ## <a name="see-also"></a>Viz také:
 

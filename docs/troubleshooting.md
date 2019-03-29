@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57254812"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640208"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>Řešení potíží s Visual Studio za sdílené složky
 
-Tento článek se týká řešení problémů s tipy, řešení a odpovědi na běžné problémy a otázky. Můžete také podívejte se na [nejčastější dotazy k](faq.md).
+Tento článek se týká řešení problémů s tipy, řešení a odpovědi na běžné problémy a otázky. Můžete také podívejte se na [nejčastější dotazy k](faq.md). 
 
 ## <a name="installation--tool-requirements"></a>Instalace a požadavky na nástroj
 

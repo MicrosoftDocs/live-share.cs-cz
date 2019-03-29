@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 10/6/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 013eb234e5acca02a39e90f0697a146039bb2a89
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 9ac16b0e598fb07446c2b682397684b7e2e4709a
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57254825"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640130"
 ---
 <!--
 Copyright © Microsoft Corporation
