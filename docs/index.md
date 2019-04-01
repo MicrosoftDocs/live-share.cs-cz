@@ -5,8 +5,6 @@ ms.custom: null
 ms.date: 04/26/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-  - liveshare
 ms.topic: overview
 author: chuxel
 ms.author: clantz
@@ -97,7 +95,7 @@ Když „sdílíte“ jako hostitel, zahájíte tím relaci spolupráce, která 
 
 **Další informace:** [![VS Code](media/vscode-icon-15x15.png)](use/vscode.md#share-a-project) [![VS](media/vs-icon-15x15.png)](use/vs.md#share-a-project)
 
-#### <a name="joining"></a>Připojení
+#### <a name="joining"></a>Spojování
 
 Když vám hostitel pošle pozvánku s odkazem, můžete na odkaz kliknout a připojit se k relaci spolupráce jako host. Získáte tak přístup k veškerému obsahu a schopnostem, které s vámi chce hostitel sdílet. Tento webový odkaz vám umožňuje rychle se připojit k relaci spolupráce (pokud už máte rozšíření nainstalované) nebo rychle připravit informace (pokud rozšíření ještě nainstalované nemáte).
 
@@ -165,7 +163,7 @@ Postupy
 - [Spolupráce ve Visual Studio Code](use/vscode.md)
 - [Spolupráce ve Visual Studiu](use/vs.md)
 
-Referenční informace
+Odkaz
 
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
 - [Funkce zabezpečení Live Share](reference/security.md)
