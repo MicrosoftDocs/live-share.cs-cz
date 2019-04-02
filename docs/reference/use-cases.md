@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640143"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853570"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="common-use-cases"></a>Běžné případy použití
 
-Je hlavním cílem Visual Studio Live Share umožňuje vývojářům snadněji, spolupracovat s kolegy bez vnášení žádné stanovisko o kdy a jak to udělat (třeba který komunikační nástroj použít, "vpravo" softwaru metodologie nebo správce řízení služeb pracovního postupu). Tímto způsobem své nástroje podporují interakce **přirozeně**a stejně jako **často*podle potřeby, ale způsobem, který **pozdravem*jak již raději pracujete.
+Je hlavním cílem Visual Studio Live Share umožňuje vývojářům snadněji, spolupracovat s kolegy bez vnášení žádné stanovisko o kdy a jak to udělat (třeba který komunikační nástroj použít, "vpravo" softwaru metodologie nebo správce řízení služeb pracovního postupu). Tímto způsobem své nástroje podporují interakce **přirozeně**a stejně jako **často** podle potřeby, ale způsobem, který **pozdravem** jak již raději pracujete.
 
 Tento dokument zvýrazní některé používají případy, že se už používá pro Visual Studio Live Share a popisuje, jak dobře aktuálně podporujeme a způsoby, máme v plánu je Optimalizujte další (na základě zpětné vazby!). Pokud používáte Live Share k něčemu, pro které neplatí již níže, nebo si myslíte, že můžeme udělat lépe pro podporu prosím případ použití konkrétní [dejte nám vědět](https://github.com/MicrosoftDocs/live-share/issues/new).
 
@@ -71,21 +71,23 @@ Jedním z nejčastěji používaných scénáře pro Visual Studio Live Share je
 
 Živé sdílení bylo navrženo jako nezávislé na všechny výše uvedené otázky a místo toho se snaží podporují pár programování, který je zcela "příležitostné" a catered vaší situaci. Ale nutné dodat, na rozdíl od dvou vývojáři sdílení jedné klávesnice a obrazovky, Live Share umožňuje určitou formu pár programování, které umožňuje vývojářům pracovat na sdílené cíle bez odebrání jejich jednotlivých autonomie nebo předvoleb prostředí. Může pracovat nezávisle, nebo společně, povolení každý účastník zpřístupnit vlastní si mysleli, že proces pro spolupráci.
 
-Pro další podporu pár programování a povolit každou "guest" k provádění akcí se běžně vyžaduje, máme práci do našeho plánu pokračovat kontextu a možnosti, které jsou sdíleny v rámci relace Live Share: úlohy ([#40](https://github.com/MicrosoftDocs/live-share/issues/40)), výstup sestavení ([#48](https://github.com/MicrosoftDocs/live-share/issues/48)), hostovaného řízené ladění ([#32](https://github.com/MicrosoftDocs/live-share/issues/32)) a provádění dalších akcí. Dejte nám vědět, které tyto zkušenosti jsou pro vás důležité.
-
 Pro tento případ použití ještě dál rozdělit, následující položky představují formy pár programování, že uživatelům Live Share pro jsme zjistili jsme:
 
 ### <a name="mob-programming"></a>Programování MOB
 
 [MOB programování](https://en.wikipedia.org/wiki/Mob_programming) (nebo programování swarm) je v podstatě pár programování, ale s více než dva uživatele. Proto všechny výhody Live Share pár programování se účtovat stejně také. Kromě toho některé týmy provést "swarming" na základě podle potřeby (například tým rallying kolem fire procházení) na rozdíl od na plný úvazek.
 
-Live Share v současné době podporuje až pět hostů v rámci relace, který může nebo nemusí pojmout velikost vašeho týmu. To je však něco jsme naplánovat také zvýšení (pro různé případy použití) a chcete pro zpětnou vazbu ([hlas 👍 tady](https://github.com/MicrosoftDocs/live-share/issues/229))
+Live Share v současné době podporuje až 30 hostů v relaci.
+> [!TIP]
+> Pokud chcete povolit 30 hostů v relaci:
+> - **VS Code:** přidat "liveshare.increasedGuestLimit":"true" Settings.JSON v nástroji
+> - **VS:** Nastavení nástroje > Možnosti > Live Share > Increased hosta omezení na hodnotu "True" 
 
 ### <a name="coding-competitions--hack-a-thons"></a>Kódování soutěže / Hack-A-Thons
 
 Kódování soutěží a hack thons jsou účinně krátkodobé, jedné úlohy varianty mob programování. Členové týmu a jejich aktuální roli, jsou také potenciálně dynamické. Protože tento případ použití je obvykle také časově, možnost spolupráce v reálném čase, aniž by bylo potřeba implementovat zcela nový nástroj a možnost spolupráce, bez je omezen na jedné obrazovce nebo klávesnice, můžete přejít tak protokolu ve vzestupném rychlost.
 
-Od účastníků v tomto prostředí nemusí být vždy plně "důvěryhodné", jsme zjistili požadavky na povolení odebrání (a blokování) hostovaného v relaci v okamžiku, což je něco, co budeme mít v plánu o povolení ([#398](https://github.com/MicrosoftDocs/live-share/issues/398)) a podporuje cílem poskytování "hostitelů" plnou kontrolu nad svým prostředím.
+Od účastníků v tomto prostředí nemusí být vždy plně "důvěryhodné", můžete odebrat (a blokovat) hostovaného v relaci v každém okamžiku. To poskytuje "hostitele" plnou kontrolu nad svým prostředím.
 
 ### <a name="school-group-projects"></a>Projekty skupiny školy
 
@@ -117,14 +119,14 @@ Instruktoři představujete lekci, mohou použít Live Share sdílet projekt se 
 
 Pro usnadnění v učebně nastavení, Live Share umožňuje sdílení v režimu jen pro čtení. Instruktoři můžete povolit sdílet svoje projekty s studenty bez nutnosti starat o zbytečné nebo nechtěné změny prováděné režimu jen pro čtení.
 
-Kromě toho má Live Share experimentální podporu o povolení až 30 hosté připojení do relace spolupráci. Tímto způsobem Instruktoři může mít své celé třídy připojit do relace a zobrazit kód společně.
+Kromě toho Live Share má podporu o povolení až 30 hosté připojení do relace spolupráci. Tímto způsobem Instruktoři může mít své celé třídy připojit do relace a zobrazit kód společně.
 
-Pokud chcete povolit tento experimentální funkce:
+Pokud chcete povolit tuto funkci:
 
-- **VS Code:** Přidejte do settings.json "liveshare.features":"experimental".
-- **VS:** Nastavení nástroje > Možnosti > Live sdílené složky > funkce, které chcete "Experimentální"
+- **VS Code:** Přidejte do settings.json "liveshare.increasedGuestLimit":"true".
+- **VS:** Nastavení nástroje > Možnosti > Live Share > Increased hosta omezení na hodnotu "True"
 
-Pro tento scénář plně optimalizovat Live Share, musíme dále zvýšit aktuální limit hosta ([#229](https://github.com/MicrosoftDocs/live-share/issues/229)) a zjednodušit tak, že jsou spuštěné relací ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
+Pro tento scénář plně optimalizovat Live Share, musíme Zjednodušte způsob, jak inicializována relace ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
 
 ## <a name="code-reviews"></a>Revize kódu
 
@@ -144,9 +146,9 @@ Vývoj skutečných je víc než jen psaní kódu. Protože Live Share také pod
 
 ## <a name="see-also"></a>Viz také:
 
-- [Podpora jazyků a platforem](platform-support.md)
+- [Podpora jazyka a libovolné platformy](platform-support.md)
 - [Požadavky na připojení pro Live Share](connectivity.md)
-- [Funkce zabezpečení Live Share](security.md)
+- [Zabezpečení funkce Live Share](security.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
 

@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: a97ca693a0a60125c5376e444c9fba1ee7442d67
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640156"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853596"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,15 +27,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
 ## <a name="what-is-live-share"></a>Co je Live Share?
-Sdílené složky za provozu umožňuje vývojářům sdílí základ kódu a jeho kontextu proto získat rychlé, obousměrné, spolupráce přímo ze svých stávajících nástrojů (Visual Studio 2017 nebo Visual Studio Code). S Live Share vaše programujete můžete čtení, přejděte, upravovat a ladit projekt, který jste sdíleli s nimi, snadno a bezpečně.
+Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje okamžitě (a bezpečně) sdílet vaše aktuální projekt a pak podle potřeby, sdílet ladicí relace, terminálu instancí, místního hostitele webové aplikace a další! Vývojáři, kteří připojit relací prostředí přijímat všechny jejich kontextu editoru z vašeho prostředí (například jazykových služeb, ladění), což zajistí, že mohou začít produktivně spolupráce okamžitě, aniž by bylo potřeba klonovat jakékoli úložiště nebo instalovat všechny sady SDK.
 
 ## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Jaké jsou požadavky nástroje pro použití Live Share?
 [Základní možnosti](#what-are-the-core-capabilities-of-live-share) Live Share jsou plně podporované v těchto nástrojů:
 
-* [Visual Studio 2017 (verzi 15.6 +)](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2017 (verzi 15.6 +)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-Ve verzi preview Live Share bude iterace rychle reagovat na zpětnou vazbu uživatelů, které můžou vyžadovat, abychom mohli využít výhod funkcí v sadě Visual Studio a Visual Studio Code, které jsou pouze být k dispozici ve vydáních jejich příslušné verze preview/insider. Ukážeme, funkcí, které vyžadují novější verze sady Visual Studio nebo VS Code v dokumentaci. Například místní zpět/znovu podpora vyžaduje Visual Studio 2017 15.7 +.
+Rychle iterovat jsme reagovat na zpětnou vazbu uživatelů. To vyžaduje, abychom mohli využít výhod funkcí v sadě Visual Studio a Visual Studio Code, které jsou pouze být k dispozici ve vydáních jejich příslušné verze preview/insider. Ukážeme, funkcí, které vyžadují novější verze sady Visual Studio nebo VS Code v dokumentaci. Například místní zpět/znovu podpora vyžaduje Visual Studio 2017 15.7 +.
 
 ## <a name="what-are-the-core-capabilities-of-live-share"></a>Jaké jsou základní funkce Live Share?
 Live Share umožňuje sdílet váš kód s členy svého týmu přes zabezpečené připojení. S Live Share budete moci spolupracovat upravit více souborů v pracovním prostoru a další důležité je ladění aplikace s ostatními členy týmu. Při úpravách společně úprav jsou okamžitě vidět členy vašeho týmu. Během ladění společně sdílejí stejné relace ladění vaší aplikace. To znamená, že a ostatními členy týmu můžete řídit spuštění programu pomocí zarážek a kroků, ale nezávisle na sobě můžete kontrolovat proměnné, Watch, místní hodnoty a REPLs (např. příkazové podokno v sadě Visual Studio).
@@ -52,7 +53,7 @@ Ne, sdílený kód nachází pouze v počítači vývojáře, kteří iniciovan�
 Živé sdílené složky nepřenese všechny vstupy klávesnici a myš. Komunikuje jenom data potřebná pro každou aktivitu spolupráce na počítače s ostatními členy týmu. Například při sdílení pracovního prostoru je sdílet vaše struktura složky. Když upravíte soubor spolupracovat, obsah tohoto souboru se sdílí. Při ladění spolupracovat, jsou sdíleny ladění akce (například krokování) a stavu (např. zásobník volání a místní hodnoty).
 
 ## <a name="when-will-live-share-be-released"></a>Kdy Live Share vydáte?
-Sdílené složky za provozu je teď dostupné ve verzi public preview! Chceme vývojářům testování bitů ve verzi preview, aby bylo možné shromažďovat zpětnou vazbu a ujistěte se, že vytváříme dosažení co nejlepších výsledků je to možné, před otevřením službu šířeji úzce spolupracovat.
+Sdílené složky za provozu je teď obecně dostupná! Je možné [začít pracovat s Live Share](https://aka.ms/vsls-start) ještě dnes.
 
 ## <a name="how-much-will-it-cost"></a>Kolik vás to bude stát?
 Jsme usilujeme o podstatné úroveň free služby Visual Studio Live Share vývojáři mohou použít průběžně. Jsme bude se hodnocení Úvod placených úrovní pomocí pokročilých funkcí, jako jsme lépe pochopili požadavky komunity.
@@ -82,20 +83,24 @@ To může být žádoucí, aby mnoho scénářů, vývojáři často chtějí sp
 
 Živé sdílenou složku přejde o krok dál a umožňuje sdílet ladicí relaci.  Díky tomu je zvláště užitečná v uvedení ostatní, aby vám problémy, které mohlo dojít pouze v počítači bez změny jejich pracovního postupu vývoje nebo by bylo potřeba změnit návrh aplikace pomohla najít.
 
-## <a name="which-languages-and-platforms-will-be-supported-in-the-preview"></a>Jaké jazyky a platformy se podporuje ve verzi preview?
-Naším cílem je podporovat různé prostředí, jazyků a platforem, ujistěte se, že jsme povolili spolupráce, bez ohledu na typ aplikace, a proto produkt. Zobrazit [jazyka a libovolné platformy podporují](reference/platform-support.md) , kde najdete podrobnosti o tom, co funguje už dnes. Toto je jenom začátek, a Očekáváme, že ke zlepšení tento obrázek přesun vpřed na základě zpětné vazby.
+## <a name="which-languages-and-platforms-will-be-supported"></a>Jaké jazyky a platformy bude podporována?
+Naším cílem je podporovat různé prostředí, jazyků a platforem, ujistěte se, že jsme povolili spolupráce, bez ohledu na typ aplikace, a proto produkt. Zobrazit [jazyka a libovolné platformy podporují](reference/platform-support.md) , kde najdete podrobnosti o tom, co funguje už dnes.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>Jak celá řada vývojářů může připojit k relaci spolupráci?
-V tuto chvíli podporujeme pěti souběžných hostech. Kromě toho pro vývojáře, který sdílí ("hostování") projekt. Proto může relace spolupráci mít celkem šest vývojářů v něm v daném okamžiku. Ale nutné dodat, toto je oblast hledáme zpětnou vazbu, takže pokud máte případu použití, která vyžaduje vyšší limit, prosím [dejte nám vědět](https://github.com/MicrosoftDocs/live-share/issues/229)!
+V tuto chvíli podporujeme 30 souběžných hostech. Kromě toho pro vývojáře, který sdílí ("hostování") projekt. Ve výchozím nastavení jsme povolili až 5 hostů v relaci. 
+
+Pokud chcete povolit zvýšené hosta limit: 
+- **VS Code:** Přidejte do settings.json "liveshare.increasedGuestLimit":"true".
+- **VS:** Nastavení nástroje > Možnosti > Live Share > Increased hosta omezení na hodnotu "True"
 
 ## <a name="what-is-the-roadmap"></a>Co je plán?
 Můžete zobrazit sadu známé problémy a položky plán [tady](https://aka.ms/vsls-issues). Pokud chcete pouze požadavky na funkce najdete v tématu, ne všechny problémy, přečtěte si téma [tady](https://aka.ms/vsls-feature-requests). Doporučujeme vám nahoru vote existující položky souboru žádostí o nové funkce a protokolování zpráv o chybách, aby bylo možné Pomozte nám tvar směr produktu v budoucnu.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Podpora jazyků a platforem](platform-support.md)
+- [Podpora jazyka a libovolné platformy](platform-support.md)
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
-- [Funkce zabezpečení Live Share](reference/security.md)
+- [Zabezpečení funkce Live Share](reference/security.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
 
