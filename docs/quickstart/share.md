@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b42016c202d6702e6440d690defae80084052065
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640104"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853609"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -25,8 +25,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 -->
 
 # <a name="quickstart-share-your-first-project"></a>Rychlý start: Sdílejte svůj první projekt
-
-> **Poznámka: Visual Studio Live Share je aktuálně ve verzi Preview. Uživatelské prostředí a funkce nejsou konečné.**
 
 Vítá vás Visual Studio Live Share! Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje vám okamžitě a bezpečně sdílet váš aktuální projekt a pak podle potřeby sdílet ladicí relace, terminálové instance, webové aplikace místního hostitele, hlasové hovory a další věci.
 
@@ -46,30 +44,30 @@ Instalaci rozšíření je snadné. Postupujte podle těchto kroků:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Nainstalujte <a href="https://code.visualstudio.com/">Visual Studio Code</a> pro Windows (7, 8.1 nebo 10), macOS <b>(Sierra+)</b>, 64bitový Linux <b>(<a href="../use/vscode.md#installation">podrobnosti</a>)</b>.<br />
-        2. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
-        3. Zvolte Znovu načíst a počkejte, až se stáhnou a nainstalují závislosti (sledujte stavový řádek).<br />
+        1. Nainstalovat <a href="https://code.visualstudio.com/">Visual Studio Code</a> pro Windows (7, 8.1 nebo 10) systému macOS <b>(Sierra +)</b>, 64-bit Linux <b>(<a href="../use/vscode.md#installation">podrobnosti</a>)</b><br />
+        2. Stáhněte a nainstalujte rozšíření Visual Studio Live Share z webu marketplace. <br />
+        3. Znovu načíst a počkejte závislostí ke stažení a instalaci (viz stavový řádek).<br />
         4. <strong>Linux:</strong> Pokud se zobrazí výzva k <a href="../reference/linux.md#install-linux-prerequisites">instalaci knihoven</a>, klikněte na Nainstalovat, zadejte heslo, a až budete hotovi, restartujte VS Code.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png" alt="Download button"></a>
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide.svg" width="128px" alt="Visual Studio logo" /></td>
-    <td style="border:none;">
-        <strong>Visual Studio 2017 15.6 nebo vyšší</strong><br />
-        1. Nainstalujte nejnovější verzi sady <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2017</a> (15.6+) na Windows (7, 8.1 nebo 10).<br/>
-        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
-        3. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
-        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button"></a><br />
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
+    <td  style="border:none;">
+        <strong>Visual Studio 2019 </strong><br />
+        1. Nainstalujte <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Instalace <a href="../reference/platform-support.md">podporované úlohy</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        3. Visual Studio Live Share nainstalovaný ve výchozím nastavení se tyto úlohy. <br />
     </td>
 </tr>
 <tr style="border:none;">
-    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-preview.svg" width="128px" alt="Visual Studio Preview logo" /></td>
+    <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019 </strong><br />
-        1. Nainstalujte nejnovější verzi Preview sady <a href="https://aka.ms/vs-preview">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
-        3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
+        <strong>Visual Studio 2017 15.6 nebo vyšší</strong><br />
+        1. Nainstalujte nejnovější verzi <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 +) na Windows (7, 8.1 nebo 10).<br/>
+        2. Instalace <a href="../reference/platform-support.md">podporované úlohy</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        3. Stáhněte a nainstalujte rozšíření Visual Studio Live Share z webu marketplace. <br />
+        <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
 </tr>
 </table>
@@ -200,6 +198,6 @@ Prohlédněte si tyto další články pro další informace.
 Odkaz
 
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
-- [Funkce zabezpečení Live Share](../reference/security.md)
-- [Podpora jazyků a platforem](../reference/platform-support.md)
+- [Zabezpečení funkce Live Share](../reference/security.md)
+- [Podpora jazyka a libovolné platformy](../reference/platform-support.md)
 - [Podpora rozšíření](../reference/extensions.md)

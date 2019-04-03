@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: f11ae7fe0e85b5b39d9023a04beaafb0487e3f0f
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
+ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640260"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58853635"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -65,7 +65,7 @@ Stažení a instalace rozšíření Visual Studio Live Share pak bude hračka:
 
 Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete souhlas s [licenčními podmínkami](https://aka.ms/vsls-license) a [prohlášením o zásadách ochrany osobních údajů](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Pokud narazíte na problémy, podívejte se na článek o [odstraňování potíží](../troubleshooting.md).
 
-[![Stáhnout](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Dstáhn](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Postup instalace v Linuxu
 
@@ -97,7 +97,7 @@ Můžete si přečíst další informace o Proč je to nezbytné, a kde Live sd�
 
 Pokud chcete spolupracovat, budete potřebovat k přihlášení do Visual Studio Live Share, takže všichni ví, kdo jste. Jedná se čistě v rámci bezpečnostních opatření a nemá **není** přihlašují jakékoli marketing nebo jiných výzkumu. Můžete se přihlásit pomocí osobního účtu Microsoft (třeba @outlook.com), zajišťuje Microsoft pracovní nebo školní účet (AAD) nebo účet GitHub. Přihlášení je snadné.
 
-**Klikněte na tlačítko** na "Sdílení" stavový řádek položky nebo stisknutím klávesy **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "živé sdílené složky: Přihlaste se pomocí prohlížeče"příkaz.
+**Klikněte na tlačítko** na "Live Share" stavový řádek položky nebo stisknutím klávesy **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "živé sdílené složky: Přihlaste se pomocí prohlížeče"příkaz.
 
 ![VS Code přihlašovací tlačítko](../media/vscode-sign-in-button.png)
 
@@ -158,7 +158,7 @@ Vzhledem k tomu, že tento seznam můžete získat dlouho, možná bude jednodu�
 
 Po stažení a instalaci Visual Studio Live Share, postupujte podle následujících kroků spustit relaci spolupráci a pozvat kolegu pro práci s vámi.
 
-1. **Přihlásit se**
+1. **Přihlášení**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -172,7 +172,7 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
 4. **Spustit relaci spolupráce**
 
-    Nyní jednoduše **klikněte na tlačítko** "Sdílení" stavový řádek položky nebo položek **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "sdílené složky za provozu: Spustit relaci spolupráce (sdílet) ".
+    Nyní jednoduše **klikněte na tlačítko** "Live Share" stavový řádek položky nebo položek **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "sdílené složky za provozu: Spustit relaci spolupráce (sdílet) ".
 
     ![Tlačítko sdílet](../media/vscode-share-button.png)
 
@@ -181,7 +181,7 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
     Odkaz na pozvánku bude automaticky zkopíruje do schránky. Při otevření v prohlížeči, tento odkaz umožňuje ostatním uživatelům připojit se k nové relaci spolupráce, který s nimi sdílí obsah těchto složek.
 
-    Zobrazí se také přechodu "Sdílení" stav panelu položku představující stav relace. Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
+    Zobrazí se také přechodu "Live Share" stav panelu položku představující stav relace. Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
 
     Všimněte si, že pokud je potřeba získat odkaz na pozvánku znovu po jste začali, sdílení, můžete k němu přístup znovu kliknutím na ikonu panelu Stav stavu relace a vybrat pozvat ostatní (Kopírovat odkaz).
 
@@ -237,7 +237,7 @@ Po stažení a instalaci Visual Studio Live Share, guests stačí provést něko
 
 Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otevřete odkaz na pozvánku ve webovém prohlížeči. Zde je, co můžete očekávat Pokud budete postupovat podle tohoto toku.
 
-1. **Přihlásit se**
+1. **Přihlášení**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -260,7 +260,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
     A to je vše! Za malou chvíli bude připojen a můžete začít spolupracovat.
 
-    Zobrazí se tlačítko "Sdílení" přechod k předání "Stav relace". Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
+    Zobrazí se tlačítko "Live Share" přechod k předání "Stav relace". Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
 
     Potom automaticky přejdete do souboru hostitele je právě se upravuje po dokončení připojení.
 
@@ -268,7 +268,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
 Můžete také ručně připojit bez použití webového prohlížeče, které mohou být užitečné v situacích, kdy už běží nástroj, který chcete použít, chcete použít jiný nástroj, než lze obvykle provést, nebo pokud máte potíže s získávání pozvat odkazy na pracovní z nějakého důvodu. Postup je jednoduchý:
 
-1. **Přihlásit se**
+1. **Přihlášení**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -286,7 +286,7 @@ Můžete také ručně připojit bez použití webového prohlížeče, které m
 
     A to je vše! Musí být připojené k okamžité relaci spolupráce.
 
-    Zobrazí se tlačítko "Sdílení" přechod k předání "Stav relace". Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
+    Zobrazí se tlačítko "Live Share" přechod k předání "Stav relace". Zobrazit [stav relace](#session-states) následující informace pro jak to vypadá.
 
     Potom automaticky přejdete do souboru hostitele je právě se upravuje po dokončení připojení.
 
@@ -396,11 +396,11 @@ Jsou pak stačí kliknout na "Sledovat" přímo z oznámení až budou připrave
 
 ## <a name="co-debugging"></a>Společné ladění
 
-Visual Studio Live Share na spolupráci funkce ladění je jedinečný a efektivní způsob, jak ladit problém. Kromě povolení prostředí pro spolupráci na řešení problémů, také můžete a ostatní účastníci relace, které umožňuje prozkoumat problémy, které může být konkrétní prostředí tím, že na počítači hostiteli poskytuje sdílené relace ladění.
+Visual Studio Live Share na spolupráci funkce ladění je jedinečný a efektivní způsob, jak ladit problém. Kromě povolení prostředí pro spolupráci na řešení problémů také poskytuje vás a ostatní účastníci relace umožňuje prozkoumat problémy, které mohou být konkrétní prostředí tím, že na počítači hostiteli poskytuje sdílené relace ladění.
 
 > **Tip zabezpečení:** Zadaný všichni účastníci můžou nezávisle na sobě přejděte a úpravy souborů, jako hostitele, můžete chtít omezit, které soubory Hosté mají přístup k ve vašem projektu prostřednictvím. vsls.json souboru. Jste měli také něco vědět, že přístup konzoly/REPL znamená, že účastníci spouštět náležité příkazy na svém počítači, by měla pouze společně ladění s těmi, které důvěřujete. V roli hosta je také důležité si uvědomit, že nebudete moci postupujte podle ladicí program vstoupí do určité soubory s omezeným přístupem soubory výsledkem tohoto nastavení. Zobrazit [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) podrobnosti.
 
-Použití je jednoduché.
+Její použití je jednoduché.
 
 1. Ujistěte se, že hostitel a všechny Hosté mají odpovídající ladění rozšíření nainstalované. (Technicky to není vždy nutné, ale je obecně vhodné.)
 
@@ -534,11 +534,11 @@ Tady jsou stavy, které se obvykle zobrazí:
 
 Jsou aktuálně nějaké nedostatky, které hosté dojde při použití funkce popsané výše, hostitele relace spolupráci zachovat úplné funkce upřednostňovaném nástroji. Si přečtěte následující informace:
 
-- [Podpora jazyků a platforem](../reference/platform-support.md)
+- [Podpora jazyka a libovolné platformy](../reference/platform-support.md)
 - [Podpora rozšíření](../reference/extensions.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
-- [Odstraňování potíží](../troubleshooting.md)
+- [Poradce při potížích](../troubleshooting.md)
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -548,7 +548,7 @@ Prohlédněte si tyto další články pro další informace.
 - [Rychlý start: Připojte se k první relace](../quickstart/share.md)
 - [Postupy: Spolupráce pomocí sady Visual Studio](vs.md)
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
-- [Funkce zabezpečení Live Share](../reference/security.md)
+- [Zabezpečení funkce Live Share](../reference/security.md)
 - [Podrobné informace o instalaci systému Linux](../reference/linux.md)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).
