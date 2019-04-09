@@ -26,16 +26,17 @@
 ## [Společné ladění](use/vs.md#co-debugging)
 ## [Sdílení serveru](use/vs.md#share-a-server)
 ## [Sdílení terminálu](use/vs.md#share-a-terminal)
-# Referenční informace
+# Odkaz
 ## [Zabezpečení](reference/security.md)
-## [Možnosti připojení](reference/connectivity.md)
+## [Připojení](reference/connectivity.md)
 ## [Podpora jazyků](reference/platform-support.md)
 ## [Podpora rozšíření](reference/extensions.md)
 ## [Běžné případy použití](reference/use-cases.md)
 ## [Podrobnosti o instalaci systému Linux](reference/linux.md)
+## [Účastníci programu Insider](reference/insiders.md)
 ## [Zpráva k vydání verze](https://aka.ms/vsls-releases)
-# Zdroje informací
-## [Odstraňování potíží](troubleshooting.md)
-## [Poslat názor](support.md)
+# Prostředky
+## [Poradce při potížích](troubleshooting.md)
+## [Poskytnutí zpětné vazby](support.md)
 ## [Nejčastější dotazy](faq.md)
 ## [Profil uživatele](user-profile.md)
