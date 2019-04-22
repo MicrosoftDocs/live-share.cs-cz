@@ -15,7 +15,7 @@ ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853583"
 ---
 <!--
@@ -61,17 +61,17 @@ Stažení a instalace rozšíření Visual Studio Live Share pak bude hračka:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
-        1. Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        1.Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2017 (verze 15.6 nebo vyšší)</strong><br />
+        <strong>Visual Studio 2017 15.6 nebo vyšší</strong><br />
         1. Nainstalujte nejnovější verzi sady <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6+) na Windows (7, 8.1 nebo 10).<br/>
-        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
         3. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="media/download.png" alt="Download button" ></a><br />
     </td>
@@ -164,7 +164,7 @@ Rychlý start
 Postupy
 
 - [Spolupráce ve Visual Studio Code](use/vscode.md)
-- [Spolupráce v sadě Visual Studio](use/vs.md)
+- [Spolupráce ve Visual Studiu](use/vs.md)
 
 Odkaz
 

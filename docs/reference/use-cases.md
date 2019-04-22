@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b6ecafc933c6521f6c21ec0dcd38c25e889a0e2
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853570"
 ---
 <!--
@@ -146,9 +146,9 @@ Vývoj skutečných je víc než jen psaní kódu. Protože Live Share také pod
 
 ## <a name="see-also"></a>Viz také:
 
-- [Podpora jazyka a libovolné platformy](platform-support.md)
+- [Podpora jazyků a platforem](platform-support.md)
 - [Požadavky na připojení pro Live Share](connectivity.md)
-- [Zabezpečení funkce Live Share](security.md)
+- [Funkce zabezpečení Live Share](security.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
 

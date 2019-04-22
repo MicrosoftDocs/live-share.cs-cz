@@ -15,7 +15,7 @@ ms.openlocfilehash: a63e2e22ac43d283876626b7fe5a2f016b5489fd
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853755"
 ---
 <!--
@@ -24,7 +24,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="insiders"></a>Programu insider
+# <a name="insiders"></a>Účastníci programu Insider
 
 Visual Studio Live Share týmu pokusí rychle řešit problémy v pořadí pro zpětnou vazbu uživatelů a jako součást, která nabízíme dvě samostatné funkce "kanály", který umožní se rozhodnout, jak rychle se zobrazí nové funkce. Ve výchozím nastavení, po instalaci rozšíření Visual Studio Live Share, které používáte `Stable` funkci set, která zahrnuje všechny funkce připravené pro produkční prostředí (například společně úpravy, sdílené ladění, terminály). Ale pokud chcete získat dřívější přístup k funkci pořád pracujeme, je můžete vyjádřit výslovný souhlas pro `Insiders` změnou následujících nastavení v prostředí (IDE) sady funkcí:
 
@@ -38,9 +38,9 @@ Visual Studio Live Share týmu pokusí rychle řešit problémy v pořadí pro z
 
 ## <a name="see-also"></a>Viz také:
 
-- [Podpora jazyka a libovolné platformy](platform-support.md)
+- [Podpora jazyků a platforem](platform-support.md)
 - [Požadavky na připojení pro Live Share](connectivity.md)
-- [Zabezpečení funkce Live Share](security.md)
+- [Funkce zabezpečení Live Share](security.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
 

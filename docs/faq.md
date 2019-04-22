@@ -15,7 +15,7 @@ ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853596"
 ---
 <!--
@@ -98,9 +98,9 @@ Můžete zobrazit sadu známé problémy a položky plán [tady](https://aka.ms/
 
 ## <a name="see-also"></a>Viz také:
 
-- [Podpora jazyka a libovolné platformy](platform-support.md)
+- [Podpora jazyků a platforem](platform-support.md)
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
-- [Zabezpečení funkce Live Share](reference/security.md)
+- [Funkce zabezpečení Live Share](reference/security.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
 

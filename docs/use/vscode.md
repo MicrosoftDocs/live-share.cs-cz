@@ -15,7 +15,7 @@ ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853635"
 ---
 <!--
@@ -24,7 +24,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="how-to-collaborate-using-visual-studio-code"></a>Postupy: Spolupráce pomocí Visual Studio Code
+# <a name="how-to-collaborate-using-visual-studio-code"></a>Postupy: Spolupráce ve Visual Studio Code
 
 Jste připraveni k získání spolupráce s Live Share v nástroji VS Code?  Pokud ano, jste na správné místo! V tomto článku jsme vás provedeme jak používat některé specifické funkce v aplikaci Visual Studio Live Share rozšíření pro Visual Studio Code.
 
@@ -65,7 +65,7 @@ Stažení a instalace rozšíření Visual Studio Live Share pak bude hračka:
 
 Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete souhlas s [licenčními podmínkami](https://aka.ms/vsls-license) a [prohlášením o zásadách ochrany osobních údajů](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Pokud narazíte na problémy, podívejte se na článek o [odstraňování potíží](../troubleshooting.md).
 
-[![Dstáhn](../media/download.png)](https://aka.ms/vsls-dl/vscode)
+[![Stáhnout](../media/download.png)](https://aka.ms/vsls-dl/vscode)
 
 ### <a name="linux-install-steps"></a>Postup instalace v Linuxu
 
@@ -154,11 +154,11 @@ Vzhledem k tomu, že tento seznam můžete získat dlouho, možná bude jednodu�
 
 ![Ikona stavu relace VS Code](../media/vscode-share-state.png)
 
-## <a name="share-a-project"></a>Sdílet projekt
+## <a name="share-a-project"></a>Sdílení projektu
 
 Po stažení a instalaci Visual Studio Live Share, postupujte podle následujících kroků spustit relaci spolupráci a pozvat kolegu pro práci s vámi.
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -237,7 +237,7 @@ Po stažení a instalaci Visual Studio Live Share, guests stačí provést něko
 
 Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otevřete odkaz na pozvánku ve webovém prohlížeči. Zde je, co můžete očekávat Pokud budete postupovat podle tohoto toku.
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -245,7 +245,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
     Teď stačí otevřít místní (nebo znovu otevřete) odkaz pozvání v prohlížeči.
 
-    > **Poznámka:**: Pokud jste ještě nenainstalovali rozšíření Live Share, zobrazí se vám s odkazy na marketplace pro rozšíření. Instalace rozšíření a restartujte nástroj a zkuste to znovu.
+    > **Poznámka:** Pokud jste ještě nenainstalovali rozšíření Live Share, zobrazí se vám s odkazy na marketplace pro rozšíření. Instalace rozšíření a restartujte nástroj a zkuste to znovu.
 
     Zobrazí se oznámení, spustí se nástroj Live Share povolené vyžaduje prohlížeče. Pokud jste povolili jeho spuštění vybrané nástroje, už budete připojíte k relaci spolupráce po jeho spuštění.
 
@@ -268,7 +268,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
 Můžete také ručně připojit bez použití webového prohlížeče, které mohou být užitečné v situacích, kdy už běží nástroj, který chcete použít, chcete použít jiný nástroj, než lze obvykle provést, nebo pokud máte potíže s získávání pozvat odkazy na pracovní z nějakého důvodu. Postup je jednoduchý:
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, znovu načíst a čeká se závislosti pro dokončení instalace, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Zobrazit [přihlášení](#sign-in) další podrobnosti.
 
@@ -487,7 +487,7 @@ K **Zastavit** sdílení místního serveru jako hostitele, najeďte myší polo
 
 ![VS Code stop sdílení serveru](../media/vscode-stop-sharing-server-viewlet.png)<br />
 
-## <a name="share-a-terminal"></a>Sdílet terminálu
+## <a name="share-a-terminal"></a>Sdílení terminálu
 
 Moderní vývojáři často používají celou řadu nástrojů příkazového řádku. Naštěstí Live Share umožňuje uživatelům, jako hostitele, volitelně "sdílely terminálu" hosty. Sdílený terminál může být jen pro čtení nebo plně spolupráci, tak i u hostů můžete spouštět příkazy a analyzovat výsledky. Můžete poskytnout viditelnost hosty do terminálu výstupu nebo mohly získat praktické a spuštění testů, sestavení nebo dokonce třídění specifických pro prostředí problémy, které mohlo dojít pouze v počítači.
 
@@ -534,11 +534,11 @@ Tady jsou stavy, které se obvykle zobrazí:
 
 Jsou aktuálně nějaké nedostatky, které hosté dojde při použití funkce popsané výše, hostitele relace spolupráci zachovat úplné funkce upřednostňovaném nástroji. Si přečtěte následující informace:
 
-- [Podpora jazyka a libovolné platformy](../reference/platform-support.md)
+- [Podpora jazyků a platforem](../reference/platform-support.md)
 - [Podpora rozšíření](../reference/extensions.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
-- [Poradce při potížích](../troubleshooting.md)
+- [Odstraňování potíží](../troubleshooting.md)
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -548,7 +548,7 @@ Prohlédněte si tyto další články pro další informace.
 - [Rychlý start: Připojte se k první relace](../quickstart/share.md)
 - [Postupy: Spolupráce pomocí sady Visual Studio](vs.md)
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
-- [Zabezpečení funkce Live Share](../reference/security.md)
+- [Funkce zabezpečení Live Share](../reference/security.md)
 - [Podrobné informace o instalaci systému Linux](../reference/linux.md)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).

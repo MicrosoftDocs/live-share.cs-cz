@@ -15,7 +15,7 @@ ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
 ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58853622"
 ---
 <!--
@@ -24,7 +24,7 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="how-to-collaborate-using-visual-studio"></a>Postupy: Spolupráce pomocí sady Visual Studio
+# <a name="how-to-collaborate-using-visual-studio"></a>Postupy: Spolupráce v sadě Visual Studio
 
 Jste připraveni k získání spolupráce s Live Share v sadě Visual Studio? Pokud ano, jste na správné místo! V tomto článku jsme vás provedeme jak používat některé konkrétní funkce v aplikaci Visual Studio Live Share rozšíření pro sadu Visual Studio.
 
@@ -43,17 +43,17 @@ Získávání přechodu je jednoduchý:
 
 For Visual Studio 2019
 1. Nainstalujte libovolnou verzi sady [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
-2. Instalace [podporované úlohy](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
-3. Visual Studio Live Share nainstalovaný ve výchozím nastavení se tyto úlohy.
+2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
+3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí.
 
 For Visual Studio 2017
 1. Nainstalujte libovolnou verzi sady [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6 +.
-2. Instalace [podporované úlohy](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
+2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
 3. [Stáhněte si](https://aka.ms/vsls-dl/vs) a nainstalovat rozšíření Visual Studio Live Share z webu marketplace.
 
 Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete souhlas s [licenčními podmínkami](https://aka.ms/vsls-license) a [prohlášením o zásadách ochrany osobních údajů](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx). Pokud narazíte na problémy, podívejte se na článek o [odstraňování potíží](../troubleshooting.md).
 
-[![Dstáhn](../media/download.png)](https://aka.ms/vsls-dl/vs)
+[![Stáhnout](../media/download.png)](https://aka.ms/vsls-dl/vs)
 
 ## <a name="sign-in"></a>Přihlášení
 
@@ -71,11 +71,11 @@ Výběr **externího účtu k** vám umožní vybrat účet nepodporuje funkci p
 
 Pokud narazíte na problémy, projděte si [řešení potíží s](../troubleshooting.md#sign-in) další tipy.
 
-## <a name="share-a-project"></a>Sdílet projekt
+## <a name="share-a-project"></a>Sdílení projektu
 
 Po stažení a instalaci Visual Studio Live Share, postupujte podle následujících kroků spustit relaci spolupráci a pozvat kolegu pro práci s vámi.
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Ve výchozím nastavení používá Visual Studio, je možné tento krok přeskočit zcela vaším účtem přizpůsobení.
 
@@ -152,7 +152,7 @@ Po stažení a instalaci Visual Studio Live Share, guests stačí provést něko
 
 Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otevřete odkaz na pozvánku ve webovém prohlížeči. Zde je, co můžete očekávat Pokud budete postupovat podle tohoto toku.
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Ve výchozím nastavení používá Visual Studio, je možné tento krok přeskočit zcela vaším účtem přizpůsobení.
 
@@ -162,7 +162,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
     Teď stačí otevřít místní (nebo znovu otevřete) odkaz pozvání v prohlížeči.
 
-    > **Poznámka:**: Pokud jste ještě nenainstalovali rozšíření Live Share, zobrazí se vám s odkazy na marketplace pro rozšíření. Instalace rozšíření a restartujte nástroj a zkuste to znovu.
+    > **Poznámka:** Pokud jste ještě nenainstalovali rozšíření Live Share, zobrazí se vám s odkazy na marketplace pro rozšíření. Instalace rozšíření a restartujte nástroj a zkuste to znovu.
 
     Zobrazí se oznámení, spustí se nástroj Live Share povolené vyžaduje prohlížeče. Pokud jste povolili jeho spuštění vybrané nástroje, už budete připojíte k relaci spolupráce po jeho spuštění.
 
@@ -185,7 +185,7 @@ Nejjednodušší způsob, jak připojit ke spolupráci relaci je jednoduše otev
 
 Můžete také ručně připojit bez použití webového prohlížeče, které mohou být užitečné v situacích, kdy už běží nástroj, který chcete použít, chcete použít jiný nástroj, než lze obvykle provést, nebo pokud máte potíže s získávání pozvat odkazy na pracovní z nějakého důvodu. Postup je jednoduchý:
 
-1. **Přihlášení**
+1. **Přihlásit se**
 
     Po instalaci rozšíření Live Share, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Ve výchozím nastavení používá Visual Studio, je možné tento krok přeskočit zcela vaším účtem přizpůsobení.
 
@@ -387,7 +387,7 @@ Všimněte si, že *hosté nelze* řídit, které porty na hostitelském počít
 
 K **Zastavit** místního serveru pro sdílení obsahu, hostitele jednoduše klikněte na sdílenou složku / stav relace tlačítko v horním pravém rohu jako výše, vyberte možnost "Spravovat sdílené místní servery", vyberte příslušný port a klikněte na tlačítko "Odebrat".
 
-## <a name="share-a-terminal"></a>Sdílet terminálu
+## <a name="share-a-terminal"></a>Sdílení terminálu
 
 Moderní vývojáři často používají celou řadu nástrojů příkazového řádku. Naštěstí Live Share umožňuje uživatelům, jako hostitele, volitelně "sdílely terminálu" hosty. Sdílený terminál může být jen pro čtení nebo plně spolupráci, tak i u hostů můžete spouštět příkazy a analyzovat výsledky. Můžete poskytnout viditelnost hosty do terminálu výstupu nebo mohly vyzkoušejte v praxi a spouštění testů, sestavení nebo prostředí i třídění konkrétní se problémy, které mohlo dojít pouze v počítači.
 
@@ -428,7 +428,7 @@ Tady jsou stavy, které se obvykle zobrazí:
 
 Jsou aktuálně nějaké nedostatky, které hosté dojde při použití funkce popsané výše, hostitele relace spolupráci zachovat úplné funkce upřednostňovaném nástroji. Si přečtěte následující informace:
 
-- [Podpora jazyka a libovolné platformy](../reference/platform-support.md)
+- [Podpora jazyků a platforem](../reference/platform-support.md)
 - [Podpora rozšíření](../reference/extensions.md)
 - [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
 - [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
@@ -441,6 +441,6 @@ Prohlédněte si tyto další články pro další informace.
 - [Rychlý start: Připojte se k první relace](../quickstart/join.md)
 - [Postupy: Spolupráce pomocí Visual Studio Code](vscode.md)
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
-- [Zabezpečení funkce Live Share](../reference/security.md)
+- [Funkce zabezpečení Live Share](../reference/security.md)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).

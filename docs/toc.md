@@ -28,7 +28,7 @@
 ## [Sdílení terminálu](use/vs.md#share-a-terminal)
 # Odkaz
 ## [Zabezpečení](reference/security.md)
-## [Připojení](reference/connectivity.md)
+## [Možnosti připojení](reference/connectivity.md)
 ## [Podpora jazyků](reference/platform-support.md)
 ## [Podpora rozšíření](reference/extensions.md)
 ## [Běžné případy použití](reference/use-cases.md)
@@ -36,7 +36,7 @@
 ## [Účastníci programu Insider](reference/insiders.md)
 ## [Zpráva k vydání verze](https://aka.ms/vsls-releases)
 # Prostředky
-## [Poradce při potížích](troubleshooting.md)
-## [Poskytnutí zpětné vazby](support.md)
+## [Odstraňování potíží](troubleshooting.md)
+## [Poslat názor](support.md)
 ## [Nejčastější dotazy](faq.md)
 ## [Profil uživatele](user-profile.md)
