@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b25158970f325bbc55618909315a8ed09d6f50a8
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853609"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987205"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -55,8 +55,8 @@ Instalaci rozšíření je snadné. Postupujte podle těchto kroků:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
-        1. Nainstalujte <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        1.Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (např. ASP.NET, .NET Core, C++, Python nebo Node.js)<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>

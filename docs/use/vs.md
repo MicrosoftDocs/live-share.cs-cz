@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55eb4b0a5e819b00754d75e4682dd1aa97bbf576
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853622"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987195"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -43,7 +43,7 @@ Získávání přechodu je jednoduchý:
 
 For Visual Studio 2019
 1. Nainstalujte libovolnou verzi sady [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
-2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
+2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (např. ASP.NET, .NET Core, C++, Python nebo Node.js)
 3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí.
 
 For Visual Studio 2017
