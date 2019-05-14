@@ -2,7 +2,7 @@
 title: Přehled – Visual Studio Live Share | Microsoft Docs
 description: Přehled rozšíření Visual Studio Live Share a jeho možností
 ms.custom: ''
-ms.date: 04/26/2018
+ms.date: 05/01/2019
 ms.reviewer: ''
 ms.suite: ''
 ms.topic: overview
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5f67086e9040a477e082cbd3ef27a1789c6406c5
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 6097d94b83f3c2370c87f1d27ba9fd51f24c9896
+ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853583"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64987176"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -62,7 +62,7 @@ Stažení a instalace rozšíření Visual Studio Live Share pak bude hračka:
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1.Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        2. Nainstalujte <a href="reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
