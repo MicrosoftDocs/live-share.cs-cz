@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: ed96ba572a58b8d3bfda7b634f1052a1b4e73051
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853635"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224728"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -106,6 +106,12 @@ Oznámení se zobrazí s výzvou, abyste se přihlásili pomocí webového prohl
 ![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
 
 > **Uživatelé Linuxu:** Můžete být vyzváni k zadání uživatelského kódu, pokud používáte starší verzi Live Share (v0.3.295 nebo níže). Aktualizovat na nejnovější verzi rozšíření, nebo klikněte "s vlastním?" Chcete-li zobrazit kód odkaz po přihlášení. Zobrazit [níže podrobnosti](#sign-in-using-a-user-code).
+
+#
+
+> **Pokročilé tip:** `liveshare.account` a `liveshare.accountProvider` nastavení umožňuje vybrat, který účet se použije pro automatické přihlášení v případě, že jste do mezipaměti přihlašovací údaje k několika účtům, které jsou k dispozici. 
+
+> Představte si například, že při práci na 2 projekty, které se chcete přihlásit pomocí jiné identity. V pracovním prostoru nastavení VSCode, můžete nastavit `liveshare.account` nastavení na různé e-mailové adresy v každém adresáři projektu, aby každá automaticky přihlásit pod správným účtem. `liveshare.accountProvider` Nastavení může být nastaven na hodnotu `"microsoft"` nebo `"github"` v případě, že používáte stejnou e-mailovou adresu s několika poskytovateli.
 
 Pokud Visual Studio Code se ujímají přihlášení po dokončení procesu přihlášení v prohlížeči, přečtěte si téma [Přihlaste se pomocí uživatelského kódu](#sign-in-using-a-user-code). Jinak, podívejte se na [řešení potíží s](../troubleshooting.md#sign-in) další tipy.
 

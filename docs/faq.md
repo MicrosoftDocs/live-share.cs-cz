@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 1b68dc90f4bac5e21c04c555ab2d8fc7f59aad55
-ms.sourcegitcommit: 1706889dd48377932868a03e88fbd2b4512a3729
+ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58853596"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224703"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -87,11 +87,7 @@ To může být žádoucí, aby mnoho scénářů, vývojáři často chtějí sp
 Naším cílem je podporovat různé prostředí, jazyků a platforem, ujistěte se, že jsme povolili spolupráce, bez ohledu na typ aplikace, a proto produkt. Zobrazit [jazyka a libovolné platformy podporují](reference/platform-support.md) , kde najdete podrobnosti o tom, co funguje už dnes.
 
 ## <a name="how-many-developers-can-join-a-collaboration-session"></a>Jak celá řada vývojářů může připojit k relaci spolupráci?
-V tuto chvíli podporujeme 30 souběžných hostech. Kromě toho pro vývojáře, který sdílí ("hostování") projekt. Ve výchozím nastavení jsme povolili až 5 hostů v relaci. 
-
-Pokud chcete povolit zvýšené hosta limit: 
-- **VS Code:** Přidejte do settings.json "liveshare.increasedGuestLimit":"true".
-- **VS:** Nastavení nástroje > Možnosti > Live Share > Increased hosta omezení na hodnotu "True"
+V tuto chvíli podporujeme 30 souběžných hostech. Kromě toho pro vývojáře, který sdílí ("hostování") projekt. 
 
 ## <a name="what-is-the-roadmap"></a>Co je plán?
 Můžete zobrazit sadu známé problémy a položky plán [tady](https://aka.ms/vsls-issues). Pokud chcete pouze požadavky na funkce najdete v tématu, ne všechny problémy, přečtěte si téma [tady](https://aka.ms/vsls-feature-requests). Doporučujeme vám nahoru vote existující položky souboru žádostí o nové funkce a protokolování zpráv o chybách, aby bylo možné Pomozte nám tvar směr produktu v budoucnu.

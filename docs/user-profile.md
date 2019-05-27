@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 38fb6fada1030bddac8f3437f19f0ae259f5626e
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1d3b4977745e33ba0ee1b599ea4257c4a49d970d
+ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640026"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224692"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,8 +28,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Při ověřování pomocí Visual Studio Live Share vytvoří profil uživatele za vás, která umožňuje všechny účastníky spolupráce s kým se (například e-mailovou adresu, miniatura). V daném okamžiku můžete zobrazit informace o profilu, která uložena Live Share za vás, tak, že přejdete na jednu z následující stránky (v závislosti na poskytovateli identity, které jste použili):
 
-- [Účet Microsoft / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
+- [Účet Microsoft / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/viewprofile)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/viewprofile)
 
 Na stránce se vás vyzve k přihlášení k ověření vaší identity a pak zobrazí nezpracovaného výstupu JSON pro svůj profil uživatele.
 
@@ -43,8 +43,8 @@ Pokud Visual Studio Live Share nemá aktuálně profilu uložená pro identitu, 
 
 Pokud chcete odebrat profil uživatele, můžete kliknout na odkaz s názvem `Click here to get your data removed from our systems` na [stránku profilu uživatele](#user-profile). Alternativně můžete navštíví některý z následujících stránkách přímo (v závislosti na poskytovateli identity, které jste použili):
 
-- [Účet Microsoft / Azure Active Directory](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
-- [GitHub](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
+- [Účet Microsoft / Azure Active Directory](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/microsoft/deleteme)
+- [GitHub](https://prod.liveshare.vsengsaas.visualstudio.com/auth/identity/github/deleteme)
 
 V opačném případě Visual Studio Live Share automaticky odstraní váš profil 30 dnů po posledním úspěšném přihlášení. V tomto kontextu že "úspěšné přihlášení" odkazuje na následující (v závislosti na nástroj, který používáte):
 
