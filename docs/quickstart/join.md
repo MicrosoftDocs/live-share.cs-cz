@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: c1f62cf12797279cc7bcb1a7ee1273667618ab46
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: ec3c983e91f849c6e966d2e5d0ae688e98b2b3f1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987186"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322820"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,7 +56,7 @@ Instalaci rozšíření je snadné. Postupujte podle těchto kroků:
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1.Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (např. ASP.NET, .NET Core, C++, Python nebo Node.js)<br />
+        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
@@ -104,7 +104,7 @@ Po instalaci rozšíření Live Share, restartování a čeká se závislosti pr
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item" />
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>

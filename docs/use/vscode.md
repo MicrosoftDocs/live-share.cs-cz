@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: bda0ca256af4a561724d96777e640eec1ca0f0fb
-ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
+ms.openlocfilehash: 079662c94f22497f5d96b4a3c6e35e4f13db2fa1
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224728"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322833"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -91,7 +91,7 @@ Visual Studio Live sdílet obvykle **nevyžaduje další instalační kroky** se
 
 Při neobvyklé, v některých distribucích budete **může být oznámeno, že vaše heslo správce (sudo) je vyžadována** k dokončení procesu instalace. Okno terminálu se zobrazí informující o nainstalovanou Spouštěč prohlížeče. Jednoduše zadejte svoje heslo po zobrazení výzvy a stisknutím klávesy enter po dokončení instalace zavřete okno terminálu.
 
-Můžete si přečíst další informace o Proč je to nezbytné, a kde Live sdílet místa soubory  **[tady](../reference/linux.md#linux-browser-integration)**. Mějte na paměti i v případě, že nebudete moci začít pracovat integrace prohlížeče se můžete stále  **[ručně připojit k relacím spolupráci](../use/vscode.md#join-manually)**.
+Můžete si přečíst další informace o Proč je to nezbytné, a kde Live sdílet místa soubory  **[tady](../reference/linux.md#linux-browser-integration)** . Mějte na paměti i v případě, že nebudete moci začít pracovat integrace prohlížeče se můžete stále  **[ručně připojit k relacím spolupráci](../use/vscode.md#join-manually)** .
 
 ## <a name="sign-in"></a>Přihlášení
 
@@ -109,8 +109,7 @@ Oznámení se zobrazí s výzvou, abyste se přihlásili pomocí webového prohl
 
 #
 
-> **Pokročilé tip:** `liveshare.account` a `liveshare.accountProvider` nastavení umožňuje vybrat, který účet se použije pro automatické přihlášení v případě, že jste do mezipaměti přihlašovací údaje k několika účtům, které jsou k dispozici. 
-
+> **Pokročilé tip:** `liveshare.account` a `liveshare.accountProvider` nastavení umožňuje vybrat, který účet se použije pro automatické přihlášení v případě, že jste do mezipaměti přihlašovací údaje k několika účtům, které jsou k dispozici.
 > Představte si například, že při práci na 2 projekty, které se chcete přihlásit pomocí jiné identity. V pracovním prostoru nastavení VSCode, můžete nastavit `liveshare.account` nastavení na různé e-mailové adresy v každém adresáři projektu, aby každá automaticky přihlásit pod správným účtem. `liveshare.accountProvider` Nastavení může být nastaven na hodnotu `"microsoft"` nebo `"github"` v případě, že používáte stejnou e-mailovou adresu s několika poskytovateli.
 
 Pokud Visual Studio Code se ujímají přihlášení po dokončení procesu přihlášení v prohlížeči, přečtěte si téma [Přihlaste se pomocí uživatelského kódu](#sign-in-using-a-user-code). Jinak, podívejte se na [řešení potíží s](../troubleshooting.md#sign-in) další tipy.
@@ -180,7 +179,7 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
     Nyní jednoduše **klikněte na tlačítko** "Live Share" stavový řádek položky nebo položek **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "sdílené složky za provozu: Spustit relaci spolupráce (sdílet) ".
 
-    ![Tlačítko sdílet](../media/vscode-share-button.png)
+    ![Tlačítko sdílet](../media/vscode-share-button-new.png)
 
     > [!NOTE]
     > Můžete být vyzváni softwarem klasické pracovní plochy brány firewall umožňující Live Share agenta pro otevření portu okamžiku, kdy budete sdílet. Přijímá to je naprosto volitelné, ale umožňuje zabezpečené "přímý režim" ke zlepšení výkonu při osoby, že pracujete s je ve stejné síti jako vy. Zobrazit [Změna režimu připojení](../reference/connectivity.md#changing-the-connection-mode) podrobnosti.

@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 339fb176eed78ece2117ba645a84fafe4f4247f4
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
+ms.sourcegitcommit: c702aafb65b0fc43cb210e1bb7340cef48b57f35
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987205"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67322813"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -34,7 +34,9 @@ Jste připraveni začít?  Týmová spolupráce by měl být tak rychlý a přir
 > Víte, že se můžete *připojit k vlastní relaci spolupráce*? Díky tomu si můžete Live Share vyzkoušet sami nebo můžete rozjet instanci Visual Studia nebo VS Code a vzdáleně se k ní připojit. V obou případech můžete použít i stejnou identitu. Vyzkoušejte to!
 
 Postupujte podle těchto kroků můžete začít sdílet.
-
+<!--
+Change the instructions to Install extension for VS Code and in-tool for VS?
+-->
 ## <a name="1-install-the-extension"></a>1. Instalace rozšíření
 
 Instalaci rozšíření je snadné. Postupujte podle těchto kroků:
@@ -56,7 +58,7 @@ Instalaci rozšíření je snadné. Postupujte podle těchto kroků:
     <td  style="border:none;">
         <strong>Visual Studio 2019 </strong><br />
         1.Nainstalujte sadu <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (např. ASP.NET, .NET Core, C++, Python nebo Node.js)<br />
+        2. Nainstalujte <a href="../reference/platform-support.md">podporované sady funkcí</a> (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
@@ -76,12 +78,15 @@ Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete 
 
 ## <a name="2-sign-in"></a>2. Přihlášení
 
+<!--
+Re-write the grammar here- run on sentence does not make sense. Change screen shots. There is another way of signing in as well- what if a user goes directly to the start collaboration. 
+-->
 Po instalaci rozšíření Live Share, restartování a čeká se závislosti pro dokončení instalace (VS Code), budete chtít přihlásit, aby ostatní účastníci vědět, kdo jste. Jednoduše klikněte na položku stavového řádku (VS Code) "Live Share" / "Sign in" tlačítko (nebo), abyste mohli začít.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-sign-in-button.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
+        <img src="../media/vscode-sign-in-button-new.png" width="100%" alt="Visual Studio Code sign in status bar item"/>
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-sign-in-button.png" width="100%" alt="Visual Studio sign in button"/>
@@ -109,12 +114,14 @@ Ve výchozím nastavení, Live Share **skryje** všech souborů a složek odkazo
 
 ## <a name="5-start-a-collaboration-session"></a>5. Spustit relaci spolupráce
 
+<!--
+-->
 Dále, jednoduše klikněte na tlačítko "Live Share" v rámci vašeho nástroje a odkaz na pozvánku je automaticky zkopíruje do schránky.
 
 <table style="border: none;">
 <tr style="border: none;">
     <td width="50%" style="vertical-align: top; border: none;">
-        <img src="../media/vscode-share-button.png" width="100%" alt="Visual Studio Code share status bar item" />
+        <img src="../media/vscode-share-button-new.png" width="100%" alt="Visual Studio Code share status bar item" />
     </td>
     <td width="50%" style="vertical-align: top; border: none;">
         <img src="../media/vs-share-button.png" width="100%" alt="Visual Studio share button"/>
