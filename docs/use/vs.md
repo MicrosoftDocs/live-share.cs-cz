@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 657b5079ba5669b6d01d732257b40444a8fa82d2
-ms.sourcegitcommit: cab8df5c29f9d91e702ef514def53944ee7701ba
+ms.openlocfilehash: eb631d2f3fecb07cb16b02d1cd02127221b0183d
+ms.sourcegitcommit: 94a6ec64e0054fe4829d554b7023a17a8c58a462
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "64987195"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67501445"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -43,7 +43,7 @@ Získávání přechodu je jednoduchý:
 
 For Visual Studio 2019
 1. Nainstalujte libovolnou verzi sady [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
-2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (např. ASP.NET, .NET Core, C++, Python nebo Node.js)
+2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).
 3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí.
 
 For Visual Studio 2017
@@ -59,15 +59,18 @@ Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete 
 
 Abyste mohli spolupracovat, budete potřebovat přihlášení do aplikace Visual Studio Live Share tak všem uživatelům ví, kdo jste. Jedná se čistě v rámci bezpečnostních opatření a nemá **není** přihlašují jakékoli marketing nebo jiných výzkumu. Můžete se přihlásit pomocí osobního účtu Microsoft (třeba @outlook.com), zajišťuje Microsoft pracovní nebo školní účet (AAD) nebo účet GitHub. Přihlášení je snadné.
 
-Ve výchozím nastavení používá Visual Studio vaše [aktivního účtu přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) , pokud jste už přihlášení do sady Visual Studio, je možné tento krok můžete přeskočit. Jinak se přihlaste běžným způsobem.
+Ve výchozím nastavení sada Visual Studio používá vaše [aktivního účtu přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio) , pokud jste už přihlášení do sady Visual Studio, je možné tento krok můžete přeskočit. Jinak se přihlaste běžným způsobem.
 
 ![VS přihlašovací tlačítko](../media/vs-sign-in-button.png)
 
+
 Pokud chcete použít jiný znak než Visual Studio [aktivního účtu přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), přejděte na stránku **nástroje &gt; možnosti &gt; Live Share &gt; uživatelský účet** pro přepnutí přihlašovací údaje.
 
-![Možnosti nástrojů VS Live sdílené složky](../media/vs-tools-options.png)
+![Možnosti nástrojů VS Live sdílené složky](../media/vs-tools-options-new.png)
 
 Výběr **externího účtu k** vám umožní vybrat účet nepodporuje funkci přizpůsobení sady Visual Studio jako GitHub. Prohlížeč se automaticky zobrazí při prvním použití funkce Live Share tak může provést přihlášení.
+>[!Tip]
+>Věděli jste, že se podíváte na **nástroje &gt; možnosti &gt; Live Share &gt; Obecné** zobrazíte všechna výchozí nastavení Live Share? Přizpůsobte si své prostředí spolupráce podle vašich potřeb. Můžete také zkusit všechny nové funkce Live Share výběrem **Upřesnit &gt; funkce &gt; Insiders** z uvnitř nastavení sdílení Live obecné!  
 
 Pokud narazíte na problémy, projděte si [řešení potíží s](../troubleshooting.md#sign-in) další tipy.
 
@@ -77,9 +80,8 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
 1. **Přihlásit se**
 
-    Po instalaci rozšíření Live Share, budete chtít přihlásit, aby další spolupracovníci vědět, kdo jste. Ve výchozím nastavení používá Visual Studio, je možné tento krok přeskočit zcela vaším účtem přizpůsobení.
-
-    Zobrazit [přihlášení](#sign-in) další podrobnosti.
+    Teď, když jste přihlášeni, budete chtít zahájit spolupráci relaci.
+    Není podepsán? Zkontrolujte [přihlášení](#sign-in) další podrobnosti.
 
 2. **Otevřete řešení, projektu nebo složky**
 
@@ -91,18 +93,16 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
 4. **Spustit relaci spolupráce**
 
-    Nyní stačí klikněte na tlačítko "Live Share" v pravém horním rohu.
+    Nyní klikněte na tlačítko "Live Share" v pravém horním rohu okna pro spuštění relace Live Share.     Sdílet odkaz na spolupráci relace se automaticky zkopíruje do schránky. 
 
     ![Tlačítko sdílet VS](../media/vs-share-button.png)
 
+    Po spuštění relace spolupráci poprvé se zobrazí okno nástroje Live Share. Zajistěte, aby že ukotvit toto okno k zajištění, že se že zobrazí při příštím spuštění relace Live Share.
+
+   ![Panel nástrojů VS Live Share | 72 × 561, 50 %](../media/vs-live-share-tool-window.png)
+
     > [!NOTE]
     > Můžete být vyzváni softwarem klasické pracovní plochy brány firewall umožňující Live Share agenta pro otevření portu okamžiku, kdy budete sdílet. Přijímá to je naprosto volitelné, ale umožňuje zabezpečené "přímý režim" ke zlepšení výkonu při osoby, že pracujete s je ve stejné síti jako vy. Zobrazit [Změna režimu připojení](../reference/connectivity.md#changing-the-connection-mode) podrobnosti.
-
-    Odkaz na pozvánku bude automaticky zkopíruje do schránky. Při otevření v prohlížeči, tento odkaz umožňuje ostatním uživatelům připojit se k nové relaci spolupráce, který s nimi sdílí obsah těchto složek.
-
-    Zobrazí se také "Live Share" tlačítko přechodu k předání "Stav relace". Zobrazit [stav relace](#session-states) informace níže v jak to vypadá.
-
-    Všimněte si, že pokud je potřeba získat odkaz na pozvánku znovu poté, co jste začali, sdílení, můžete k němu přístup kliknutím na sdílenou složku / relaci stav tlačítka a vyberte "Kopírovat odkaz".
 
 5. **[Volitelné] Povolení režimu jen pro čtení**
 
@@ -130,7 +130,16 @@ Po stažení a instalaci Visual Studio Live Share, postupujte podle následujíc
 
     V tématu [pozvánky a spojení přístup](../reference/security.md#invitations-and-join-access) najdete další podrobnosti o pozvání aspekty zabezpečení.
 
-To je všechno!
+8. **Spravovat relace Live Share**
+    
+    Jakmile vaše hostované otevře odkaz na sdílené relace v nástroji VS Code nebo Visual Studio se zobrazí, je uveden v části účastníků v panelu nástrojů Live Share. Nyní budete moci zobrazit soubor, který vaše hosta je aktuálně v vedle jejich názvu.  
+    
+    ![Panel nástrojů VS Live Share](../media/vs-live-share-tool-window-participant.png)
+
+    Panel nástrojů Live Share umožňuje přístup k všechny klíčové funkce pro správu vaší relace na jednom místě. 
+
+    > [!TIP]
+    > Neuvidí panel nástrojů Live Share už během vaší relace? Můžete si kdykoli **zobrazení &gt; ostatní Windows &gt; Live Share** a najděte ho!
 
 ### <a name="ending-the-collaboration-session"></a>Ukončení relace spolupráce
 
