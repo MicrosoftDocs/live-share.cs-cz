@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 4ed24b7c73767086e5b44909dd958c174b4f3398
-ms.sourcegitcommit: ee0d569c893c2a89374026fe7df70fa3027eac1a
+ms.openlocfilehash: ba2fd7558df2658efffda1c8578450f9c678d35d
+ms.sourcegitcommit: 21e564ac23293e373b515892fa881d049f333cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 09/19/2019
-ms.locfileid: "71117917"
+ms.locfileid: "71127421"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>Postupy: Technické rozhovory pomocí Live Share
 
-Než začnete používat Live Share k technickým rozhovorům, je nutné provést jeden integrálový krok: **Stáhněte si Visual Studio a balíček rozšíření Live Share z webu Marketplace** pomocí následujících [kroků.](../use/vscode.md#Installation)
+Než začnete používat Live Share k technickým rozhovorům, je nutné provést jeden integrálový krok: Pomocí následujících kroků **stáhněte Visual Studio Code a Live Share rozšíření balíčku z webu Marketplace** [.](../use/vscode.md#Installation)
 
 Live Share poskytuje možnost hostování opakovaně použitelných relací! To znamená, že můžete naplánovat předem Live Share relaci pro vaše technické pohovory a nemusíte si dělat starosti s vypršením platnosti odkazu.
 
