@@ -11,12 +11,12 @@ ms.author: fishah
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: a3b4c9f2b469e937d958e82df28a04044abf38d3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
-ms.translationtype: HT
+ms.openlocfilehash: c1b3e71578ed3ffb306060cec3354f33423928be
+ms.sourcegitcommit: 24eb903744b837dcedff67d8179f06862bd2aa61
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72178462"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72250658"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="contacts-in-live-share"></a>Kontakty v Live Share 
 
-Takže jste používali Live Share a všimnete si, že odesílání odkazů prostřednictvím externí aplikace (například chat nebo e-mail) může být opravdu rychlé? Víme, že pokud chceme podpořit spolupráci, je potřeba, abyste měli k dispozici nejmenší možný objem tření. Proto Live Share nyní má **Kontakty** , které nyní mají **stav**.
+Takže jste používali Live Share a všimnete si, že odesílání odkazů prostřednictvím externí aplikace (například chat nebo e-mail) může být opravdu rychlé? Víme, že pokud chceme podpořit spolupráci, je potřeba, abyste měli k dispozici nejmenší možný objem tření. Proto Live Share nyní má **Kontakty** se **stavem** .
 
 >Kontakty se automaticky povolí pro všechny verze **Live Share v 1.0.950** a vyšší.
 
@@ -60,12 +60,17 @@ Váš stav lze nastavit přímo v editoru, takže můžete k vašemu týmu signa
 **4. Offline:**  Po delší dobu budete offline, nebo pokud se rozhodnete [nesouhlasit se stavem sdílení](##ManagingPresence)
 
 
-## Správa stavu<a name="ManagingPresence"> </a> kontaktů
+## Správa stavu<a name="ManagingPresence"> </a> kontaktů a sdílení
 
-Pokud chcete tuto funkci odhlásit, můžete nastavení stavu jednoduše zakázat volbou `offline`. Jakmile je tato možnosti zakázaná, bude se vám pořád zobrazovat stav ostatních a zvát, ale váš stav nebude publikovaný a ostatní vás nemůžou přímo pozvat.
+Pokud chcete tuto funkci odhlásit, můžete to provést dvěma způsoby.
+1. Nastavení stavu můžete zakázat volbou `offline`. Jakmile je tato možnosti zakázaná, bude se vám pořád zobrazovat stav ostatních a zvát, ale váš stav nebude publikovaný a ostatní vás nemůžou přímo pozvat.
 Kliknutím na kruhový stav, který se zobrazí v následující rozevírací nabídce, můžete zvolit offline:
 
 ![dropdownstatus @ no__t-1 <em>zobrazuje rozevírací seznam stavů přítomnosti</em>
+
+2. Můžete otevřít `user settings` a přejít na *Extensions > Visual Studio Live Share > Live Share: Přítomnost @ no__t-0 a vypnutí služby pro přítomnost. Jakmile je tato možnosti zakázaná, bude se vám pořád zobrazovat stav ostatních a zvát, ale váš stav nebude publikovaný a ostatní vás nemůžou přímo pozvat.
+
+![presencesettings](../media/vscode-presence-setting.png)
 
 ## <a name="faqs"></a>Nejčastější dotazy 
 
