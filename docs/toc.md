@@ -29,6 +29,7 @@
 # Praktičtí průvodci: Technické rozhovory
 ## [Technické rozhovory](use/technical-interviews.md)
 # Odkaz
+## [Kontakty](reference/contacts.md)
 ## [Zabezpečení](reference/security.md)
 ## [Možnosti připojení](reference/connectivity.md)
 ## [Podpora jazyků](reference/platform-support.md)
