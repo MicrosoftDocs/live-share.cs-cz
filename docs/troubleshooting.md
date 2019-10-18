@@ -1,6 +1,6 @@
 ---
-title: Řešení potíží – Visual Studio Live sdílenou složku | Dokumentace Microsoftu
-description: Řešení potíží s tipy a triky pro Visual Studio Live Share.
+title: Řešení potíží – Visual Studio Live Share | Microsoft Docs
+description: Tipy a triky pro řešení potíží pro Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: afa11a77156fd0227c9d9cfd5ce701ae0211386e
+ms.sourcegitcommit: 5e0d384c71793a83b58023352f56f0a24783a2e4
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640208"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72531038"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,67 +24,67 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="troubleshooting-visual-studio-live-share"></a>Řešení potíží s Visual Studio za sdílené složky
+# <a name="troubleshooting-visual-studio-live-share"></a>Řešení potíží s Visual Studio Live Share
 
-Tento článek se týká řešení problémů s tipy, řešení a odpovědi na běžné problémy a otázky. Můžete také podívejte se na [nejčastější dotazy k](faq.md). 
+Tento článek popisuje tipy k odstraňování potíží, alternativní řešení a odpovědi na běžné problémy a otázky. Můžete si také prohlédnout [Nejčastější dotazy](faq.md). 
 
-## <a name="installation--tool-requirements"></a>Instalace a požadavky na nástroj
+## <a name="installation--tool-requirements"></a>Požadavky na instalaci/nástroj
 
-Následující jsou řešení potíží, tipy týkající se instalace Visual Studio Live Share.
+Níže najdete tipy k odstraňování potíží souvisejících s instalací Visual Studio Live Share.
 
-| Nástroj | Problém | Řešení nebo alternativní řešení |
+| Nástroj | Problém | Řešení/alternativní řešení |
 |------|---------|------------|
-| sada VS | Instalační služba rozšíření <strong>nejde najít verzi sady Visual Studio</strong> při pokusu o použití k instalaci rozšíření Visual Studio Live Share. | Vyžaduje Visual Studio Live Share **Visual Studio 2017 verze 15.6** nebo vyšší pro hostitele a hostů. Nainstalujte nejnovější stabilní verze [aktualizace sady Visual Studio 2017](https://visualstudio.com/vs/) a zkuste to znovu.|
-| VS Code | Objeví se chyba při pokusu o použití Visual Studio Live Share s VS Code na macOS <strong>El Capitan nebo jeho podadresářem</strong>. | Visual Studio Live Share pro podporu operačního systému je závislé na .NET Core která aktuálně [pouze podporuje macOS Sierra a vyšší.]((https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md).) |
-| VS Code | A "**závislostí se nepodařilo nainstalovat**" se zobrazí chyba while rozšíření je **dokončuje se instalace** na první spuštění nebo dojde k chybám **chybí nebo je již k dispozici soubory**. | Ověření, jste na **dobré síťové připojení**. Pokud jste, může běžet na **proxy nebo brány firewall** problém. Zobrazit [řešení potíží s připojením](#connectivity). <br /><br />|
-| VS Code | Instaluje se rozšíření Visual Studio Live Share z marketplace <strong>umisťuje stable/insiders verzi VS Code</strong> místo verze chci. | Spusťte VS Code stabilní nebo programu insider v závislosti na vašich předvoleb, klikněte na kartu "rozšíření", vyhledejte "Visual Studio Live Share" a instalaci z tohoto místa. |
-| VS Code (**Linux**) | Rozšíření Live Share neaktivuje a **se neobjeví žádné položky panelu Stav** po instalaci rozšíření na **Linux**. | Visual Studio Live Share závisí na .NET Core 2.0, který má několik požadavky pro Linux, které nemusí být splněny v některých distribucích systému Linux ve výchozím nastavení. Zobrazit [zde podrobnosti](reference/linux.md#install-linux-prerequisites) na co se má nainstalovat. |
+| sada VS | Instalační program rozšíření <strong>nemůže najít verzi sady Visual Studio</strong> , která se má použít při pokusu o instalaci rozšíření Visual Studio Live Share. | Visual Studio Live Share vyžaduje **Visual Studio 2017 verze 15,6** nebo vyšší pro hostitele i hosty. Nainstalujte nejnovější stabilní [aktualizaci sady Visual Studio 2017](https://visualstudio.com/vs/) a zkuste to znovu.|
+| VS Code | Při pokusu o použití Visual Studio Live Share s VS Code na macOS <strong>El Capitan nebo níže</strong>se zobrazí chyba. | Podpora operačního systému Visual Studio Live Share je závislá na rozhraní .NET Core, které aktuálně [podporuje jenom MacOS Sierra a](https://github.com/dotnet/core/blob/master/release-notes/2.0/2.0-supported-os.md)novější. |
+| VS Code | V případě, že se**nedají nainstalovat závislosti**, se zobrazí chyba při prvním spuštění rozšíření se **dokončí instalace** nebo dojde k chybám **nebo už přítomných souborů**. | Ověřte, že jste připojeni k **síťovému připojení**. Pokud se jedná o, můžete být spuštěni na **proxy serveru nebo na problém s bránou firewall** . Podívejte se na téma [řešení potíží s připojením](#connectivity). <br /><br />|
+| VS Code | Instalace rozšíření Visual Studio Live Share z webu Marketplace <strong>ho nainstaluje ve verzi stabilní/insider vs Code</strong> místo verze, kterou chci. | Zahajte VS Code stabilní nebo Insider v závislosti na vaší předvolbách, klikněte na kartu rozšíření, vyhledejte "Visual Studio Live Share" a z něj nainstalujte. |
+| VS Code (**Linux**) | Rozšíření Live Share se neaktivuje a po instalaci rozšíření na **Linux** **se nezobrazí žádné položky stavového řádku** . | Visual Studio Live Share závisí na rozhraní .NET Core 2,0, které má řadu požadavků na Linux, které nemusí být ve výchozím nastavení splněné v některých distribucích systému Linux. Podrobnosti o tom, co je potřeba nainstalovat, najdete [tady](reference/linux.md#install-linux-prerequisites) . |
 
-## <a name="sign-in"></a>Přihlášení
+## <a name="sign-in"></a>Přihlásit se
 
-Následující jsou tipy pro řešení problémů přihlášení problémy.
+Níže najdete tipy pro řešení problémů s přihlašováním.
 
-| Nástroj | Problém | Řešení nebo alternativní řešení |
+| Nástroj | Problém | Řešení/alternativní řešení |
 |------|---------|------------|
-| sada VS | Budete potřebovat k přihlášení do aplikace Visual Studio Live Share s <strong>jinou identitou</strong> než používáte k přihlášení do sady Visual Studio. | Přejděte na Nástroje > Možnosti > Live Share > uživatelský účet a vyberte alternativní účet. |
-| VS Code | Zatímco POP prohlížeče okna se během přihlašování a proces <strong>se objeví jako úspěšné na webové stránce</strong>, stavový řádek <strong>stále říká "Sign in"</strong> po zavření prohlížeče. | Po přihlášení klikněte na tlačítko "Se nedaří?" a postupujte podle pokynů k zadání dočasného uživatelský kód do nástroje.<br /><br />Budeme rádi také vidět, co může být děje, tak prosím [protokolovat chybu](https://aka.ms/vsls-problem). |
-| Všechny | Se zobrazuje <strong>limitu nebo chybě připojení</strong>. | Zobrazit [řešení potíží s připojením](#connectivity). |
-| Všechny | Po přihlášení pomocí služby Microsoft zajišťuje **pracovní nebo školní e-mailovou adresu** zobrazí zpráva, **"Vyžaduje schválení správcem"**. | Vaše zásada Azure AD je nastavená tak, aby vyžadovala "souhlas správce" pro přístup k obsahu adresáře nové aplikace. Zobrazit [tady](reference/security.md) další podrobnosti. |
-| VS Code (**macOS**) | Až budete přihlášení zobrazí chyba **SecKeychainAddGenericPassword() nepovedlo**. | Příčinou je téměř vždy běžný problém v systému macOS kde heslo změny se neprojeví v řetězci klíčů přihlášení. Vyzkoušejte si přicházející do "Přístup do řetězce klíčů", uzamčení řetězce klíčů přihlášení a odemknutí znovu. To může být dost informací k vyřešení problému, ale pokud se nemůžete ho odemknout pomocí aktuálního hesla, opakujte předchozí. Pokud to funguje, změňte přístupové heslo pro přihlášení na vaše aktuální heslo. Zobrazit [tady](https://support.apple.com/en-us/HT201609) podrobnosti. |
-| VS Code (**Linux**) | Při zadávání v uživatelském kódu po přihlášení v prohlížeči se zobrazí chyba **secret_password_store_sync() selhalo s kódem chyby XX**. | To je obvykle způsobena `gnome-keyring` a/nebo `libsecret-1-0` /  `libsecret` není nainstalována. Můžete ověřit gnome Správce klíčů je správně nakonfigurované nainstalováním `seahorse` a pak pomocí hesla a klíčů."aplikace v prostředí plochy. Další informace o [tady požadavky pro Linux](reference/linux.md#install-linux-prerequisites). |
-| VS Code (**Linux**) | Jste <strong>výzva k zadání uživatelského kódu</strong> s Live Share v0.3.295 nebo verzi uvedenou níže, ale žádný prohlížeč, zobrazí se k tomu, abyste ho můžete získat. | Pracujeme na odstranění kódu požadavky uživatelů na Linuxu. Ve střední čas by se zobrazit okno prohlížeče můžete použít k přihlášení. V opačném případě okno prohlížeče může být skrytý pod tlačítkem VS Code. Pokud se nejedná o případ, přečtěte si další tip.  |
-| VS Code | Po kliknutí na tlačítko "Sign in" (nebo pomocí "živé sdílené složky: Sign in"příkaz), <strong>žádné okno prohlížeče se zobrazí k tomu, abyste k zadání přihlašovacích údajů</strong>. | 1. [Přihlaste se tady](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login)<br />2. Po přihlášení klikněte na tlačítko "Se nedaří?"<br /> 3. Postupujte podle pokynů k zadání dočasného uživatelský kód do nástroje. |
-| Všechny | Chcete <strong>spojení</strong> relaci spolupráce</strong> ale <strong>ne / nechcete dostávat aktualizace e-mailem</strong>. | Přihlášení k rozšíření Live Share v kódu VS/VS neodpovídá <strong>není</strong> přihlašují přijímají aktualizace e-mailem.<br /><br />Sdílené složky za provozu vyžaduje hosté se přihlásit jako bezpečnostní opatření, že hostitel má přehled pro ty, kteří se připojili k identity. [Hlasovat, až tuto funkci](https://github.com/MicrosoftDocs/live-share/issues/3) Pokud chcete tuto možnost a povolíte anonymním uživatelům připojit (třeba uživatelé bez názvu nebo uživatelem definovaný název). |
+| sada VS | Musíte se přihlásit k Visual Studio Live Share s <strong>jinou identitou</strong> , než použijete k přihlášení do sady Visual Studio. | V nabídce Nástroje > Možnosti > Live Share > uživatelský účet vyberte alternativní účet. |
+| VS Code | Když se během přihlašování otevře okno prohlížeče a proces na <strong>webové stránce vypadá úspěšně</strong>, stavový řádek <strong>stále říká, "přihlásit"</strong> po zavření prohlížeče. | Po přihlášení klikněte na "máte potíže?" a postupujte podle pokynů a do nástroje zadejte dočasný uživatelský kód.<br /><br />Rádi bychom také viděli, co se může stát, a [zaprotokolovat chybu](https://aka.ms/vsls-problem). |
+| Všechny | Zobrazuje se <strong>časový limit nebo Chyba připojení</strong>. | Podívejte se na téma [řešení potíží s připojením](#connectivity). |
+| Všechny | Když se přihlašujete pomocí **pracovní nebo školní e-mailové adresy** Microsoftu, zobrazí se zpráva, že je **potřeba schválit správce**. | Vaše služba Azure AD principem je nastavená tak, aby vyžadovala "souhlas správce" pro nové aplikace, které přistupují k obsahu adresáře. Další podrobnosti najdete [tady](reference/security.md) . |
+| VS Code (**MacOS**) | Při přihlašování se zobrazí chyba s oznámením, že **SecKeychainAddGenericPassword () selhalo**. | To je téměř vždy kvůli běžnému problému s macOS, kde se změny hesla neprojeví v řetězci přihlašovacích údajů. Zkuste přejít do řetězce "přístup k řetězci klíčů", uzamknout přihlašovací řetězec řetězce a pak ho znovu odemknout. To může být dostačující pro vyřešení problému, ale pokud ho nemůžete odemknout s vaším aktuálním heslem, vyzkoušejte si předchozí. Pokud to funguje, změňte přihlašovací heslo řetězce klíčů na vaše aktuální heslo. Podrobnosti najdete [tady](https://support.apple.com/en-us/HT201609) . |
+| VS Code (**Linux**) | Při zadávání v uživatelském kódu po přihlášení přes prohlížeč se zobrazí chyba s oznámením, že **secret_password_store_sync () selhala s kódem chyby XX**. | To je obvykle způsobeno `gnome-keyring` a/nebo `libsecret-1-0` /  `libsecret` nejsou nainstalovány. Můžete ověřit, že je GNOME správně nakonfigurovaný, a to tak, že nainstalujete `seahorse` a pak použijete aplikaci hesla a klíče v desktopovém prostředí. Další informace o [požadavcích pro Linux najdete tady](reference/linux.md#install-linux-prerequisites). |
+| VS Code (**Linux**) | Zobrazí se <strong>výzva k zadání uživatelského kódu</strong> s Live Share v 0.3.295 nebo níže, ale nezobrazí se žádný prohlížeč, který vám to umožňuje získat ho. | Pracujeme na odstranění požadavku na kód uživatele v systému Linux. Ve středním čase by se měl zobrazit okno prohlížeče, které se používá k přihlášení. V takovém případě může být okno prohlížeče v VS Code skryté. Pokud se nejedná o tento případ, podívejte se na další tip.  |
+| VS Code | Po kliknutí na přihlásit (nebo pomocí příkazu "Live Share: Sign in") <strong>se nezobrazí žádné okno prohlížeče, které vám umožní zadat přihlašovací údaje</strong>. | 1. [Přihlaste se sem](https://insiders.liveshare.vsengsaas.visualstudio.com/auth/login) .<br />2. po přihlášení klikněte na "máte potíže?"<br /> 3. postupujte podle pokynů a do nástroje zadejte dočasný uživatelský kód. |
+| Všechny | Chcete se <strong>připojit</strong> k relaci spolupráce </strong> ale <strong>nechcete dostávat e-mailové aktualizace</strong>. | Přihlášení k rozšíření Live Share v aplikaci VS/VS Code <strong>neumožňuje přijímat</strong> aktualizace e-mailů.<br /><br />Live Share vyžaduje, aby se hosté přihlásili jako bezpečnostní opatření, takže hostitel bude mít přehled o identitě těch, ke kterým se připojili. [Tuto funkci můžete hlasovat](https://github.com/MicrosoftDocs/live-share/issues/3) , pokud chcete, aby se anonymní uživatelé mohli připojit (například uživatelé bez názvu nebo uživatelem definovaný název). |
 
-## <a name="share-and-join"></a>Sdílené složky a spojení
+## <a name="share-and-join"></a>Sdílet a připojit
 
-Následující jsou tipy pro řešení problémů přihlášení problémy.
+Níže najdete tipy pro řešení problémů s přihlašováním.
 
-| Nástroj | Problém | Řešení nebo alternativní řešení |
+| Nástroj | Problém | Řešení/alternativní řešení |
 |------|----------------|------------|
-| Všechny | <strong>Sdílené složky/spojení:</strong> Získáte vypršení časového limitu nebo chyba týkající se nebude moct připojit. | Zobrazit [řešení potíží s připojením](#connectivity). |
-| VS Code | <strong>Připojte se k:</strong> Jste byli <strong>není výzvami / připojit spusťte VS Code</strong> po otevření stránky spojení v prohlížeči. |  Tipy: <ul><li>Ujistěte se, když jste <i>alespoň jednou spustit VS Code a čekání na dokončení ve stavovém řádku instalace.</i></li><li>Pokud to nefunguje, zkuste spustit "živé sdílené složky: Příkaz pro nastavení Spouštěč".</li><li>**Uživatelé Linuxu**: Pokud se zobrazí výzva k zadání hesla správce (sudo) při spuštění výše uvedeného příkazu, proveďte to.</li><li>A konečně, naleznete v tématu [ruční spojování](reference/manual-join.md) jako alternativní řešení.</li></ul> Pokud dosáhnete tento problém, budeme rádi vidět, co může být děje, tak prosím [protokolovat chybu](https://aka.ms/vsls-new-issue). |
-| sada VS | <strong>Připojte se k:</strong> Jste byli <strong>není výzvami / připojit k uvedení VS</strong>  po otevření stránky spojení v prohlížeči. |  Zobrazit [ručně připojit](reference/manual-join.md).<br /><br /> Také rádi, pokud chcete zobrazit protokoly, proto prosím [protokolovat chybu](https://aka.ms/vsls-problem) pomocí sady Visual Studio "sestavy problém..." funkce. |
-| Všechny | <strong>Připojte se k:</strong> Chcete raději <strong>vložte odkaz spojení přímo do sady Visual Studio / VS Code</strong> místo kliknutí na webový odkaz. | Zobrazit [ručně připojit](reference/manual-join.md). |
-| Všechny | <strong>Připojte se k:</strong> Zobrazí se zpráva oznamující, "**vlastník pracovního prostoru se zdá být offline**," při připojování přes prohlížeč. | Možná řešení:<br /><ul><li>Zkuste [ruční spojování](reference/manual-join.md). Jsme viděli problémy s mezi oblastmi (například východní a západní USA) spojení kvůli problémům s služby, které nemají vliv na ruční spojení.</li><li>Živé sdílení možná nebudete moct směrování přímo do hostitele při spuštění v režimu připojení "auto". Zkuste [přenosový režim](reference/connectivity.md).</li></ul>Zobrazit [řešení potíží s připojením](#connectivity) pro víc možností |
-| VS Code | <strong>Připojte se k:</strong> Připojený prostřednictvím prohlížeče <strong>před přihlášením</strong>, se zobrazí výzva k přihlášení</strong>a nikdy dokončit připojení. |  Jedná se [známého problému](https://github.com/MicrosoftDocs/live-share/issues/167). Klikněte na znaménko v položky stavového řádku se přihlásit a pak znovu připojit. |
+| Všechny | <strong>Sdílet/připojit:</strong> Obdržíte časový limit nebo chybu, se kterou se nemůžete připojit. | Podívejte se na téma [řešení potíží s připojením](#connectivity). |
+| VS Code | <strong>Připojit:</strong> Po otevření stránky pro spojení v prohlížeči se vám <strong>nezobrazila výzva/spuštění vs Code</strong> . |  Tipy: <ul><li>Ujistěte se, že jste <i>spustili vs Code aspoň jednou a čekali na dokončení instalace na stavovém řádku.</i></li><li>Pokud to nepomůže, zkuste spustit příkaz Live Share: spuštění instalačního programu.</li><li>**Uživatelé systému Linux**: Pokud se zobrazí výzva k zadání hesla správce (sudo) při spuštění výše uvedeného příkazu, udělejte to prosím.</li><li>Nakonec se podívejte na alternativní řešení v části [připojení ručně](reference/manual-join.md) .</li></ul> Pokud tento problém obdržíte, rádi bychom zjistili, co se děje, a [zaprotokolovat chybu](https://aka.ms/vsls-new-issue). |
+| sada VS | <strong>Připojit:</strong> Po otevření stránky pro spojení v prohlížeči jste <strong>nemuseli zobrazit ani</strong> po otevření. |  Podívejte se na téma [ruční připojení](reference/manual-join.md).<br /><br /> Rádi bychom také viděli vaše protokoly, takže si [Zaprotokolujte chybu](https://aka.ms/vsls-problem) pomocí možnosti nahlásit problém pomocí sady Visual Studio. zapnut. |
+| Všechny | <strong>Připojit:</strong> Doporučuje se <strong>Vložit odkaz spojení přímo do sady Visual Studio nebo vs Code</strong> místo kliknutí na webový odkaz. | Podívejte se na téma [ruční připojení](reference/manual-join.md). |
+| Všechny | <strong>Připojit:</strong> Zobrazí se zpráva "**vlastník pracovního prostoru vypadá jako offline**," při připojení přes prohlížeč. | Možná alternativní řešení:<br /><ul><li>Zkuste se [připojit ručně](reference/manual-join.md). Zjistili jsme problémy s spojeními mezi oblastí (např. východ a západní USA) z důvodu problémů se službou, které neovlivňují ruční spojení.</li><li>Live Share nemůže být při spuštění v režimu připojení automaticky směrován přímo na hostitele. Vyzkoušejte [Přenosový režim](reference/connectivity.md).</li></ul>Další možnosti najdete v tématu [řešení potíží s připojením](#connectivity) . |
+| VS Code | <strong>Připojit:</strong> Připojili jste se přes prohlížeč <strong>před přihlášením</strong>, nebyli vyzváni k přihlášení </strong> a připojení se nikdy nedokončí. |  Jedná se o [známou chybu](https://github.com/MicrosoftDocs/live-share/issues/167). Klikněte na položku Přihlásit se stavovým řádkem a přihlaste se a potom se znovu připojte. |
 
 ## <a name="connectivity"></a>Připojení
 
-Následující informace můžou pomoct při řešení problémů, pokud máte problémy související s připojením nebo vypršení časového limitu při přihlášení, sdílení nebo připojení.
+Následující informace vám můžou pomoct při řešení potíží s připojením nebo vypršením časových limitů při přihlašování, sdílení nebo spojování.
 
-Jak je uvedeno v [požadavky na připojení pro Live Share](reference/connectivity.md) článku, jiné připojení režimy mají různé požadavky fungovat tak, že existuje několik různých potenciálních problémů děje.
+Jak je uvedeno v požadavcích na [připojení Live Share](reference/connectivity.md) článku, různé režimy připojení mají různé požadavky na fungování, takže existuje několik různých potenciálních problémů.
 
 | Nástroj | Problém | Pravděpodobná příčina |
 |------|------|----------------|
-| Všechny | Použití <strong>proxy</strong> a zobrazují se celou řadou potíží s připojením | Nastavení proxy serveru může být velmi obtížné.  Zkuste **HTTP_PROXY** a **HTTPS_PROXY** proměnné prostředí **globálně** a restartujte nástroj. Zobrazit [nastavení proxy serveru](reference/connectivity.md#proxies) další podrobnosti. Pravděpodobně existují některé konfigurace, které jsme zatím ještě nepodporují, takže [dejte nám vědět](https://github.com/MicrosoftDocs/live-share/issues/86) Pokud to nefunguje pro vás. |
-| VS Code | Po instalaci rozšíření a spuštění VS Code poprvé získáte <strong>chybu, když se ve stavovém řádku zobrazí "Dokončení instalace"</strong>. |  Nelze přistupovat k Internetu nebo přístupu k download.visualstudio.microsoft.com a/nebo osobní nebo podniková brána firewall neblokuje download.microsoft.com na portu 443. Zobrazit [tady](https://github.com/MicrosoftDocs/live-share/issues/58) informace o tom, proč je potřeba Live Share něco v tuto chvíli stahovat. |
-| Všechny | Jste <strong>nejde se přihlásit do aplikace Visual Studio Live Share</strong> | Nelze přistupovat k Internetu nebo přístupu k *. liveshare.vsengsaas.visualstudio.com na portu 80/443 zablokovaly osobní nebo podniková brána firewall. Zadejte https://insiders.liveshare.vsengsaas.visualstudio.com v prohlížeči a ověření budete přesměrováni na domovské stránce Visual Studio Live Share. |
-| Všechny | V <strong>režim automatického</strong> (výchozí), budou moct přihlásit, ale naleznete v tématu <strong>limitu nebo chybě připojení</strong> při sdílení nebo připojení. | Buď přímé i režimy se nedaří připojit nebo je chyba s režimem automatického přenosu. Pokud je to možné se připojit po [přepínání na přímé nebo režim přenosu](reference/connectivity.md#changing-the-connection-mode), prosím [vyvolat chybu](https://aka.ms/vsls-problem). |
-| Všechny | Jsou v <strong>přímý režim</strong>, budou moct přihlásit, ale najdete v článku <strong>limitu nebo chybě připojení</strong> při sdílení nebo připojení. | Host i hostitel nemůže připojit přímo. Zkuste [režim automatického nebo předávání](reference/connectivity.md#changing-the-connection-mode) zobrazíte, pokud se problém zmizí. Možná budete muset [ručně přes osobní bráně firewall povolit Live Share](reference/connectivity.md#manually-adding-a-firewall-entry) nebo jednoduše použít režim přenosu. |
-| Všechny | Jste v <strong>přenosový režim</strong>, budou moct přihlásit, ale budou upozorněni <strong>limitu nebo chybě připojení</strong> při sdílení nebo připojení. | Přístup k *. servicebus.windows.net na portu 80/443 blokovaný osobní nebo podniková brána firewall neblokuje. Zkuste [přímý režim](reference/connectivity.md#changing-the-connection-mode). |
+| Všechny | Používáte <strong>proxy server</strong> a zobrazuje se počet problémů s připojením. | Nastavení proxy serveru může být obtížné.  Zkuste nastavit proměnné prostředí **http_proxy** a **HTTPS_PROXY** **globálně** a pak restartujte nástroj. Další podrobnosti najdete v tématu [nastavení proxy serveru](reference/connectivity.md#proxies) . Je možné, že některé konfigurace ještě nepodporujeme, abychom [nás věděli](https://github.com/MicrosoftDocs/live-share/issues/86) , že vám to nevyhovuje. |
+| VS Code | Po instalaci rozšíření a spuštění VS Code poprvé dojde k <strong>chybě, když se ve stavovém řádku zobrazí zpráva "dokončí instalaci"</strong>. |  Nemůžete získat přístup k Internetu ani přístup k download.visualstudio.microsoft.com a/nebo download.microsoft.com na portu 443, který vaše osobní nebo podniková brána firewall zablokovala. V [této části najdete informace](https://github.com/MicrosoftDocs/live-share/issues/58) o tom, proč Live Share potřebují stáhnout něco v tomto okamžiku. |
+| Všechny | <strong>Nemůžete se přihlásit Visual Studio Live Share</strong> | Nemůžete získat přístup k Internetu ani přístup k *. liveshare.vsengsaas.visualstudio.com na portu 80/443 je zablokovaný vaší osobní nebo firemní bránou firewall. V prohlížeči zadejte https://insiders.liveshare.vsengsaas.visualstudio.com a ověřte, že máte na Visual Studio Live Share domovské stránce. |
+| Všechny | Pracujete v <strong>automatickém režimu</strong> (výchozí možnost), můžete se přihlásit, ale při sdílení nebo připojení se zobrazí <strong>Chyba s časovým limitem nebo připojením</strong> . | Buď přímé přenosové režimy, nebo došlo k chybě v režimu automatického přenosu. Pokud se budete moci připojit po [Přepnutí do režimu přímého nebo přenosu](reference/connectivity.md#changing-the-connection-mode), [vyvolejte chybu](https://aka.ms/vsls-problem). |
+| Všechny | Jste v <strong>přímém režimu</strong>, budete se moct přihlásit, ale při sdílení nebo připojení se zobrazí <strong>Chyba s časovým limitem nebo připojením</strong> . | Host a hostitel se nemohou přímo připojit. Vyzkoušejte si [režim automatického nebo přenosu](reference/connectivity.md#changing-the-connection-mode) , abyste viděli, jestli problém nezmizí. Možná budete muset [ručně Live Share přes osobní bránu firewall](reference/connectivity.md#manually-adding-a-firewall-entry) nebo jednoduše použít režim přenosu. |
+| Všechny | Jste v <strong>režimu přenosu</strong>, máte možnost se přihlásit, ale při sdílení nebo připojení se zobrazí oznámení o <strong>vypršení časového limitu nebo chybě připojení</strong> . | Přístup k *. servicebus.windows.net na portu 80/443 je blokovaný vaší osobní nebo podnikovou bránou firewall. Vyzkoušejte [přímý režim](reference/connectivity.md#changing-the-connection-mode). |
 
-Zobrazit [požadavky na připojení pro Live Share](reference/connectivity.md) přečtěte si další informace o požadavcích na připojení.
+Další informace o požadavcích na připojení najdete v článku [požadavky na připojení pro Live Share](reference/connectivity.md) .
 
 ## <a name="see-also"></a>Viz také:
 
@@ -100,11 +100,11 @@ Postupy
 
 Odkaz
 
-- [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
-- [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
+- [Všechny hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
+- [Všechny požadavky a omezení funkcí](https://aka.ms/vsls-feature-requests)
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
 - [Podrobnosti o instalaci systému Linux](reference/linux.md)
 - [Podpora jazyků a platforem](reference/platform-support.md)
 - [Podpora rozšíření](reference/extensions.md)
 
-Stále máte problémy? Je možné [poskytnout zpětnou vazbu](support.md).
+Pořád máte problémy? Můžete [poskytnout zpětnou vazbu](support.md).
