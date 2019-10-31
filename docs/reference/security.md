@@ -1,5 +1,5 @@
 ---
-title: Zabezpečení – Visual Studio Live sdílenou složku | Dokumentace Microsoftu
+title: Zabezpečení – Visual Studio Live Share | Microsoft Docs
 description: Informace o funkcích zabezpečení Visual Studio Live Share.
 ms.custom: ''
 ms.date: 12/17/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 2f3a2adf0be13071f22a8ea7e33800af6f9099b5
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640195"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170100"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,25 +24,25 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="security-features-of-live-share"></a>Zabezpečení funkce Live Share
+# <a name="security-features-of-live-share"></a>Funkce zabezpečení Live Share
 
-Relace spolupráci ve Visual Studio Live Share jsou výkonné, umožňují libovolný počet lidí připojit v relaci a společně úpravy, ladění a další. Však zadána tato úroveň přístupu, můžete nepochybně bude zajímat funkce zabezpečení, které poskytuje Live Share. V tomto článku poskytujeme některá doporučení a možnosti pro zabezpečení prostředí podle potřeby.
+Relace spolupráce v Visual Studio Live Share jsou výkonné v tom, že umožňují, aby se v relaci mohl připojit libovolný počet lidí a spolupracovat s nimi i s možností úprav, ladění a dalších možností. Vzhledem k této úrovni přístupu vám však nemusíte mít k dispozici žádné pochybnosti o funkcích zabezpečení Live Share. V tomto článku poskytneme některá doporučení a možnosti pro zabezpečení vašeho prostředí podle potřeby.
 
-**Stejně jako nástroj pro spolupráci, mějte na paměti, že by měl pouze sdílet kód, obsah a aplikace s uživateli, kterému můžete důvěřovat.**
+**Stejně jako u všech nástrojů pro spolupráci si pamatujte, že byste měli sdílet jenom svůj kód, obsah a aplikace s lidmi, kterým důvěřujete.**
 
 ## <a name="connectivity"></a>Připojení
 
-Všechna připojení v aplikaci Visual Studio Live Share jsou SSH nebo SSL zašifrované a ověřování proti centrální služby k zajištění, že pouze ty v relaci spolupráce můžou získat přístup k jeho obsahu. Ve výchozím nastavení Live Share pokusí přímé připojení a spadne zpět na předávání přes cloud, pokud nejde navázat připojení mezi Host a hostitel. Všimněte si, že relay cloud Live Share nezachová veškerý provoz směrovat přes něj a není "stará" provoz nijak. Pokud chcete raději nechcete použít předávací služby však můžete změnit nastavení vždy připojil přímo.
+Všechna připojení v Visual Studio Live Share jsou zašifrovaná pomocí protokolu SSH nebo SSL a ověřená proti centrální službě, aby se zajistilo, že k obsahu budou mít přístup jenom ty, které jsou v relaci spolupráce. Ve výchozím nastavení se Live Share pokusí o přímé připojení a vrátí se do cloudového přenosu, pokud nejde navázat spojení mezi hostem a hostitelem. Upozorňujeme, že Cloud Relay Live Share neuchovává žádný provoz, který prochází přes něj, a žádným způsobem nepracuje s přenosy "Snoop". Pokud ale chcete, aby Relay nepoužívali, můžete změnit nastavení tak, aby se vždy připojovalo přímo.
 
-Další informace o změně těchto chování a požadavky na připojení Live Share, najdete v tématu  **[požadavky na připojení pro Live Share](connectivity.md)**.
+Další informace o změně těchto chování a požadavcích na připojení Live Share najdete v tématu **[požadavky na připojení pro Live Share](connectivity.md)** .
 
-## <a name="invitations-and-join-access"></a>Pozvánky a připojení k přístupu
+## <a name="invitations-and-join-access"></a>Pozvánky a přístup k nim
 
-Pokaždé, když zahájit novou relaci pro spolupráci, Live Share generuje **nový jedinečný identifikátor** , který je umístěn v odkazu pozvánku. Tyto odkazy poskytují plnou, zabezpečené základní pozvat těch, kterým důvěřujete, protože identifikátor v odkazu je "bez uhodnutelných" a je _jediné platné po dobu trvání relace jeden spolupráci_.
+Pokaždé, když spustíte novou relaci spolupráce, Live Share vygeneruje **Nový jedinečný identifikátor** , který je umístěný v odkazu na pozvánku. Tyto odkazy poskytují Solid, zabezpečený základ pro pozvání, kterým důvěřujete, protože identifikátor v odkazu je "neuhodnoutelné" a je _platný pouze po dobu trvání jedné relace spolupráce_.
 
-### <a name="removing-an-unexpected-guest"></a>Odebírá se neočekávané hosta
+### <a name="removing-an-unexpected-guest"></a>Odebrání neočekávaného hosta
 
-Jako hostitele se automaticky zobrazí oznámení pokaždé, když se připojí relaci spolupráce hosta.
+Jako hostitel se automaticky oznámí, kdykoli se host připojí k relaci spolupráce.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -55,33 +55,33 @@ Jako hostitele se automaticky zobrazí oznámení pokaždé, když se připojí 
 </tr>
 </table>
 
-Stále lepší oznámení dává možnost Odebrat hosta, který je připojený, pokud z nějakého důvodu si nejste jisti je. (Například pokud jste omylem odeslali odkaz na celofiremní chatovací systém a náhodné zaměstnance připojené k.) Stačí kliknout na tlačítko "Odebrat" v oznámení, která se zobrazí a bude možné vyjmutí z relace spolupráci.
+Ještě lepší je, že vám oznámení umožní odebrat hosta, který se připojí, pokud z nějakého důvodu ho neznáte. (Pokud jste například omylem publikovali odkaz na systém chatu v rámci společnosti a náhodný zaměstnanec byl připojen.) Jednoduše klikněte na tlačítko odebrat v zobrazeném oznámení a budou vysunuty z relace spolupráce.
 
-V **VS Code**, i v případě, že máte zavře oznámení spojení, máte také možnost odebrat účastníka po tomto. Tak, že otevřete Live Share zobrazení Průzkumníka nebo na vlastní kartu na panelu aktivit VS Code, můžete najeďte myší nebo klikněte pravým tlačítkem na název člena a a vyberte ikonu "Odeberte účastníka" nebo možnost.
+V **vs Code**i v případě, že jste odzavřeli oznámení o připojení, máte také možnost odebrat účastníka. Otevřením zobrazení Live Share v Průzkumníkovi nebo vlastní karty na panelu VS Code aktivity můžete ukazatel myši napravit nebo kliknout pravým tlačítkem na jméno účastníka a vybrat ikonu odebrat účastníka nebo možnost.
 
-![Odebrat člena v nástroji VS Code](../media/vscode-remove-participant.png)
+![Odebrat účastníka v VS Code](../media/vscode-remove-participant.png)
 
-### <a name="requiring-guest-approval"></a>Vyžádáním souhlasu hosta
+### <a name="requiring-guest-approval"></a>Vyžadování schválení hostů
 
-Účastníci, které se připojit ke spolupráci relaci bude obvykle **přihlášení Live Share** pomocí pracovní nebo školní účet (AAD), osobní účet Microsoft nebo účet GitHub. While "oznámení + odebrat" výchozí pro přihlášení uživatele poskytuje dobrý poměr rychlosti a řízení pro tyto hosté, můžete chtít **uzamknout věci** o trochu výkonnější, pokud byste něco citlivé.
+Účastníci, kteří se připojí k relaci spolupráce, budou obvykle **přihlášeni Live Share** pomocí pracovního nebo školního účtu Microsoft (AAD), osobního účet Microsoft nebo účtu GitHub. Zatímco výchozí nastavení Notification + Remove pro přihlášené uživatele má dobrou kombinaci rychlosti a řízení pro tyto hosty, možná budete chtít při práci s citlivými **objekty uzamknout** trochu víc.
 
-Kromě toho může být v některých případech vynucení všechny hosté se přihlásit k spolupráce relace problematické. Mezi příklady patří s dotazem, nové Live Share připojení jako Host, školní nebo výuka scénáře osobě nebo při spolupráci s někým, kdo nemá jeden z typů podporovaných účtu. Z těchto důvodů, Live Share umožňuje uživatelů, kteří jsou **Nepřihlášený** připojit relací spolupráci jako **jen pro čtení** hosty. Zatímco hostitele je potřeba **schválit** tyto hosté předtím, než bylo možné připojit ke ve výchozím nastavení, můžete chtít zakázat tyto "anonymní" hosté nebo místo toho je vždy schválit.
+V některých případech se může stát, že se všem hostům přihlašujete, aby se mohl připojit k relaci spolupráce, můžou být problematické. Mezi příklady patří požadavek někoho nového na Live Share, aby se mohl připojit jako scénář pro hosty, učebnu nebo výuku, nebo když spolupracuje s někým, kdo nemá některý z podporovaných typů účtů. Z těchto důvodů můžou Live Share umožnit uživatelům, kteří nejsou **přihlášení** , připojit se k relacím spolupráce jenom jako hosté s **oprávněním jen pro čtení** . I když hostitel potřebuje **schválit** tyto hosty ještě předtím, než se může připojit ve výchozím nastavení, možná budete chtít zakázat tyto "anonymní" hosty, nebo je místo toho vždy schvalovat.
 
-#### <a name="requiring-guest-approval-for-signed-in-users"></a>Vyžádání schválení hosta pro přihlášení uživatele
+#### <a name="requiring-guest-approval-for-signed-in-users"></a>Vyžadování schválení hostů pro přihlášené uživatele
 
-Pokud chcete zabránit přihlášení hostů v připojení k vaší spolupráci až do "schválení" je, změňte následující nastavení:
+Pokud chcete zabránit přihlášenému hostům v připojení k vašim relacím o spolupráci, dokud je neschválíte, změňte následující nastavení:
 
-* V **VS Code**, přidejte následující settings.json (Soubor > Předvolby > Nastavení):
+* V **vs Code**přidejte následující nastavení do souboru Settings. JSON (předvolby pro > souborů > nastavení):
 
     ```json
     "liveshare.guestApprovalRequired": true
     ```
 
-* V **sady Visual Studio**, nastavte nástroje > Možnosti > Live Share > "Požadovat schválení guest" na hodnotu True.
+* V sadě **Visual Studio**nastavte nástroje > možnosti > Live Share > "vyžadovat schválení hostů" na hodnotu true.
 
-    ![Visual Studio okno nastavení s hosta schválení nastavení zvýrazněné](../media/vs-setting-guestapproval.png)
+    ![Okno nastavení sady Visual Studio s vybraným nastavením schválení hosta](../media/vs-setting-guestapproval.png)
 
-Od této chvíle budete vyzváni ke schválení každého typu Host, který připojí.
+Od tohoto okamžiku budete požádáni o schválení každého hosta, který se připojí.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -94,27 +94,27 @@ Od této chvíle budete vyzváni ke schválení každého typu Host, který při
 </tr>
 </table>
 
-Jako Host Pokud připojíte k relaci kde hostitele má toto nastavení povolené, vám dáme vědět ve stavovém řádku nebo se připojit dialogové okno, které Live Share čeká na hostiteli ke schválení.
+Pokud se stanete hostem, když se připojíte k relaci s povoleným nastavením hostitel, zobrazí se oznámení ve stavovém řádku nebo dialogovém okně připojit, které Live Share čeká na schválení hostitele.
 
-#### <a name="auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous"></a>Zamítnutí automatického nebo přijímá uživatelů, které nejste přihlášení (anonymní)
+#### <a name="auto-rejecting-or-accepting-users-that-are-not-signed-in-anonymous"></a>Automatické odmítnutí nebo přijetí nepodepsaných uživatelů (anonymní)
 
-Jak je popsáno výše, Live Share můžete nakonfigurovat tak, aby **uživatele, kteří nejsou přihlášeni** připojit k relaci spolupráci jako **jen pro čtení** hosty.  Přestože tyto **"anonymní" hosté musíte zadat název** při připojování, jednoduchý název neposkytuje stejnou úroveň záruky jako skutečné přihlášení. Proto **ve výchozím nastavení, hostitel se zobrazí výzva ke schválení** žádné anonymního typu Host bez ohledu na nastavení "požadovat schválení guest" nastavení popsané výše.
+Jak je popsáno výše, Live Share lze nakonfigurovat tak, aby umožňovala **uživatelům, kteří nejsou přihlášeni** , připojit relaci spolupráce jako hosty **jen pro čtení** .  I když tyto **"anonymní" hosty musí při připojování zadat název** , jednoduchý název neposkytuje stejnou úroveň záruky jako reálné přihlášení. Proto **je hostitel ve výchozím nastavení vyzván ke schválení** anonymního hosta bez ohledu na nastavení "vyžadovat schválení hostů".
 
-Je možné **vždy odmítnout** (zakázat anonymní hostů) nebo **vždy přijmout** anonymní uživatele místo toho následujícím způsobem:
+Můžete **vždycky odmítat** (zakázat anonymní hosty) nebo **Vždy přijímat** anonymní uživatele, a to následujícím způsobem:
 
-* V **VS Code**, nastavte `liveshare.anonymousGuestApproval` v settings.json (Soubor > Předvolby > Nastavení) k `accept`, `reject`, nebo `prompt` (výchozí) podle potřeby.
+* V **vs Code**nastavte `liveshare.anonymousGuestApproval` v Settings. json (> Nastavení > předvolby souboru) `accept`, `reject`nebo `prompt` (výchozí) podle potřeby.
 
-* V **sady Visual Studio**, nastavte nástroje > Možnosti > Live Share > "schválení anonymního typu host" na přijmout, zamítnutí nebo se zeptat (výchozí) jako odpovídající.
+* V sadě **Visual Studio**nastavte nástroje > možnosti > Live Share > "anonymního schvalování hostů" pro přijetí, odmítnutí nebo zadání výzvy (výchozí) podle potřeby.
 
- **Bez ohledu na to, mějte na paměti, že by měl odeslat pouze Live Share pozvánku odkazy na osoby, které důvěřujete.**
+ **Bez ohledu na to, že byste měli odesílat Live Share odkazy na pozvánky osobám, kterým důvěřujete.**
 
-## <a name="controlling-file-access-and-visibility"></a>Řízení přístupu k souborům a viditelnost
+## <a name="controlling-file-access-and-visibility"></a>Řízení přístupu k souborům a jejich viditelnost
 
-Live Share vzdálené modelu jako Host, poskytuje přístup Rychlé čtení a zápisu u souborů a složek, aniž by bylo nutné synchronizovat celý obsah projektu s vámi sdílí hostitele. Můžete proto nezávisle na sobě Procházet a upravovat soubory ve stromové struktuře celý sdílený soubor. **Tato volnost však představovat rizika pro hostitele.** V koncept vývojář může vyjádřit souhlas se službou zúčastnit a upravovat zdrojový kód bez vašeho vědomí nebo si přečtěte citlivé zdrojový kód nebo "tajné" nachází někde ve stromové struktuře sdílený soubor. V důsledku toho jako hostitel nemusí být vždy žádoucí hostem a mají přístup k rozsahu projektu, který chcete sdílet. Další výhodou tohoto modelu vzdálené Naštěstí je, že můžete se rozhodnout "vyloučit" soubory, které nechcete sdílet s kýmkoli, aniž byste museli obětovat na funkci. Hosté můžou stále účastnit věci, jako je ladění relace, které by obvykle vyžadovaly k těmto souborům přístup, pokud chtěli podobně své vlastní.
+Vzdálený model Live Share Host vám poskytne rychlý přístup pro čtení a zápis k souborům a složkám, které s vámi hostitel sdílí, a to bez nutnosti synchronizovat celý obsah projektu. Proto můžete nezávisle Procházet a upravovat soubory v celém stromu sdíleného souboru. **Tato volnost ale představuje určité riziko pro hostitele.** V rámci konceptu může vývojář použít a upravit zdrojový kód bez vašeho vědomí nebo zobrazit citlivý zdrojový kód nebo "tajné klíče", které jsou umístěné někde ve stromu sdílených souborů. V důsledku toho je možné, že jako hostitel nebudete vždy chtít, aby měl Host přístup k celému projektu, který sdílíte. Naštěstí, což je výhodou tohoto vzdáleného modelu, je, že se můžete rozhodnout, že nechcete sdílet soubory, které nechcete sdílet s kýmkoli, aniž by došlo ke ztrátě funkčnosti. Vaše hosty se můžou pořád zúčastnit, jako jsou relace ladění, které by obvykle vyžadovaly přístup k těmto souborům, pokud by si chtěli dělat vlastní věci.
 
-Můžete to udělat tak, že přidáte **. vsls.json** soubor do složky nebo projektu, jsou sdílení. Všechna nastavení, které přidáte do této formátovaného souboru json změní způsob Live Share zpracování souborů. Kromě toho, že přímou kontrolu, tyto soubory lze také potvrdit do správy zdrojového kódu, kdokoli klonování projektu budete moct využít výhod tato pravidla se žádné další úsilí na jejich část.
+To lze provést přidáním souboru **. vsls. JSON** do složky nebo projektu, který sdílíte. Všechna nastavení, která přidáte do tohoto souboru ve formátu JSON, mění způsob, jakým Live Share zpracovává soubory. Kromě toho, že máte přímý ovládací prvek, mohou být tyto soubory také zapsány do správy zdrojových kódů, aby každý klonování projektu mohli využít výhod těchto pravidel bez dalšího úsilí na jejich část.
 
-Tady je příklad. vsls.json souboru:
+Zde je příklad souboru. vsls. JSON:
 
 ```json
 {
@@ -134,25 +134,25 @@ Tady je příklad. vsls.json souboru:
 ```
 
 > [!NOTE]
-> Můžete provést také všechny soubory či složky sdíleného **jen pro čtení** při spuštění relace spolupráci. Zobrazit [níže](#read-only-mode) podrobnosti.
+> Všechny soubory a složky, které sdílíte, můžete také nastavit tak, aby při zahájení relace spolupráce byly sdílené jen **pro čtení** . Podrobnosti najdete [níže](#read-only-mode) .
 
-Projděme si jak těchto vlastností změnit, co můžete dělat.
+Podívejme se, jak se tyto vlastnosti mění, co můžou hosté dělat.
 
 ### <a name="properties"></a>Vlastnosti
 
-**ExcludeFiles** vlastnost umožňuje určit seznam vzorů souborů glob (velmi podobně jako ty najít soubory .gitignore), který brání Live Share v otevření určité soubory nebo složky pro hosty. Mějte na paměti, že jde o včetně scénáře, jako jsou Host _následující nebo přechod na vaši polohu úpravy krokování s vnořením do souboru během ladění spolupráce žádné funkce pro navigaci kódu, jako jsou přejít k definici a další._ Je určená pro soubory, které nechcete sdílet za žádných okolností, například těch, které obsahují tajné kódy, certifikáty a hesla. Například od té doby se ovládací prvek zabezpečení,. vsls.json soubory jsou vždycky vyloučení.
+Vlastnost **excludeFiles** umožňuje určit seznam vzorů souborů glob (velmi podobně jako u nalezených souborů. gitignore), které brání Live Share otevírání určitých souborů nebo složek pro hosty. Pamatujte na to, že se jedná o scénáře, jako je například Host, _nebo přechod do umístění pro úpravy, krokování do souboru během ladění s možností spolupráce, všechny funkce pro navigaci v kódu, jako je například přejít k definici a další._ Je určený pro soubory, které nikdy nechcete sdílet, jako ty, které obsahují tajné klíče, certifikáty nebo hesla. Například vzhledem k tomu, že soubory. vsls. JSON mají kontrolu zabezpečení, jsou vždy vyloučeny.
 
-**HideFiles** vlastnost je podobné, ale není úplně jako strict. Tyto soubory jsou skryté jednoduše ze stromu souborů. Pokud například chcete-li do jedné z těchto souborů během ladění, je stále otevřený v editoru. Tato vlastnost je primárně užitečná, pokud nemáte instalační soubor .gitignore (jako by tomu bylo pokud používáte systém správy různých zdrojového kódu) nebo pokud chcete jednoduše rozšířit, co je již existuje vyhnout se nepořádku nebo nejasnosti.
+Vlastnost **hideFiles** je podobná, ale ne poměrně jako striktní. Tyto soubory jsou ze stromu souborů jednoduše skryté. Například pokud jste se v průběhu ladění přestali Krokovat s jedním z těchto souborů, je stále otevřen v editoru. Tato vlastnost je primárně užitečná, pokud nemáte instalaci souboru. gitignore (jak by to bylo v případě, že používáte jiný systém správy zdrojového kódu), nebo pokud chcete jednoduše rozšířit to, co už je, aby nedocházelo k zbytečnému zaplnění nebo nejasnostem.
 
-**Gitignore** nastavení zjistí, jak má Live Share zpracovat obsah souborů .gitignore ve sdílených složkách. Ve výchozím nastavení jsou považovány všechny globy najít v souborech .gitignore, jako kdyby byly zadány ve vlastnosti "hideFiles". Ale můžete použít různé chování pomocí jedné z následujících hodnot:
+Nastavení **gitignore** určuje, jak má Live Share zpracovat obsah souborů. gitignore ve sdílených složkách. Ve výchozím nastavení se všechny globy nalezené v souborech. gitignore považují za, jako kdyby byly zadány ve vlastnosti "hideFiles". Můžete ale zvolit jiné chování pomocí jedné z následujících hodnot:
 
 | Možnost    | Výsledek                                                                                                                 |
 | --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `none`    | obsah souboru .gitignore jsou viditelné pro hosty stromovou strukturu souborů (za předpokladu, že nejsou filtrovány podle typu Host editor nastavení). |
-| `hide`    | **Výchozí hodnota.** Globy uvnitř .gitignore jsou zpracovávány jako by byly ve vlastnosti "hideFiles".                   |
-| `exclude` | Globy uvnitř .gitignore jsou zpracovávány jako by byly ve vlastnosti "excludeFiles".                                 |
+| `none`    | obsah. gitignore je viditelný pro hosty ve stromu souborů (za předpokladu, že nejsou filtrovány pomocí nastavení editoru hosta). |
+| `hide`    | **Výchozí hodnota.** Globy uvnitř. gitignore se zpracovávají, jako kdyby byly ve vlastnosti "hideFiles".                   |
+| `exclude` | Globy uvnitř. gitignore se zpracovávají, jako kdyby byly ve vlastnosti "excludeFiles".                                 |
 
-Z nevýhod `exclude` nastavení je, že obsah složky, například node_modules jsou často používány .gitignore, ale může být užitečná pro krokování s vnořením během ladění. V důsledku toho Live Share podporuje možnost vrátit pravidlem využívajícím "!" ve vlastnosti excludeFiles. Například to. soubor vsls.json by vyloučit vše, co v ".gitignore" s výjimkou node_modules:
+Nevýhodou nastavení `exclude` je, že obsah složek, jako je node_modules, často v. gitignore, ale může být užitečný pro krokování během ladění. V důsledku toho Live Share podporuje možnost obrátit pravidlo pomocí "!" ve vlastnosti excludeFiles. Například tento soubor. vsls. JSON vyloučí vše z ". gitignore" s výjimkou node_modules:
 
 ```json
 {
@@ -164,7 +164,7 @@ Z nevýhod `exclude` nastavení je, že obsah složky, například node_modules 
 }
 ```
 
-Skrýt a vyloučení pravidla se zpracovávají odděleně, tak pokud stále chcete skrýt node_modules přehlednost bez skutečně s výjimkou, lze jednoduše upravit soubor následujícím způsobem:
+Pravidla pro skrytí a vyloučení se zpracovávají samostatně, takže pokud stále chcete skrýt node_modules, aby se snížilo množství zbytečných souborů bez toho, abyste je vyloučili, můžete soubor jednoduše upravit následujícím způsobem:
 
 ```json
 {
@@ -179,93 +179,93 @@ Skrýt a vyloučení pravidla se zpracovávají odděleně, tak pokud stále chc
 }
 ```
 
-### <a name="vslsjson-files-in-sub-folders"></a>. vsls.json soubory v podsložkách
+### <a name="vslsjson-files-in-sub-folders"></a>soubory. vsls. JSON v podsložkách
 
-A konečně, stejně jako .gitignore,. vsls.json soubory mohou být umístěny v podsložkách. Skrýt/vyloučit pravidla jsou určeny začínající. vsls.json soubor v kořenové složce jste sdíleli (pokud existuje) a potom provede na každou podsložku ze zde nejlepší pro daný soubor hledat. vsls.json souborů ke zpracování. Obsah. vsls.json souborů ve složkách dále dolů stromovou strukturu souborů pak doplňují (nebo přepsat) pravidla naváže na vyšších úrovních.
+Nakonec, stejně jako soubory. gitignore,. vsls. JSON, lze umístit do podadresářů. Pravidla pro skrytí nebo vyloučení se určují spuštěním souboru. vsls. JSON v kořenové složce, kterou jste sdíleli (Pokud je k dispozici), a následným prohledáním v každé podsložce od sebe, aby se vyhledaly soubory. vsls. JSON, které se mají zpracovat. Obsah souborů. vsls. JSON ve složkách dále rozkryje strom souborů a pak doplní pravidla stanovená na vyšších úrovních.
 
-### <a name="disabling-external-file-sharing"></a>Zakázání sdílení externího souboru
+### <a name="disabling-external-file-sharing"></a>Zakazování sdílení externích souborů
 
-Ve výchozím nastavení, Live Share budou také mluvit o hostitele se otevře všechny soubory, které jsou externí sdílené složky nebo řešení. To usnadňuje rychlé otevřete další související soubory bez nutnosti opětovné sdílení.
+Ve výchozím nastavení bude Live Share sdílet taky všechny soubory, které hostitel otevře, které jsou externí pro sdílenou složku nebo řešení. Díky tomu můžete snadno rychle otevřít další související soubory, aniž byste museli znovu sdílet.
 
 Pokud chcete zakázat tuto funkci:
 
-* V **VS Code**, přidejte do settings.json následující:
+* V **vs Code**do nastavení. JSON přidejte následující:
 
     ```json
     "liveshare.shareExternalFiles": false
     ```
 
-* V **sady Visual Studio**, nastavte nástroje &gt; možnosti &gt; Live Share &gt; "Sdílené složky externích souborů" na hodnotu False
+* V sadě **Visual Studio**nastavte nástroje &gt; možnosti &gt; Live Share &gt; "sdílet externí soubory" na hodnotu false.
 
 ## <a name="read-only-mode"></a>Režim jen pro čtení
 
-Někdy, když budete sdílet váš kód jako hostitele, nechcete hosté provádět úpravy. Je třeba vaše hostem a podívejte se na část kódu nebo váš projekt se zobrazují na velký počet hostů a nechcete, aby veškeré úpravy zbytečné nebo nechtěné má být provedeno. Sdílené složky za provozu nabízí možnost sdílení projektů v režimu jen pro čtení.
+Někdy, když sdílíte kód jako hostitele, nechcete, aby mohli vaši hosté provádět úpravy. Může být nutné, aby se váš host prohlédl na některém z vašich kódů nebo aby se váš projekt zobrazoval na velký počet hostů a nemuseli být provedeny žádné zbytečné nebo náhodné úpravy. Live Share nabízí možnost sdílet projekty v režimu jen pro čtení.
 
-Jako hostitele, při sdílení máte možnost povolit režimu jen pro čtení pro relaci spolupráci. Poté, co Host připojí, nebudou moct provádět úpravy kódu, i když vám může stále vidět uživatele toho druhého kurzory a zvýrazní také procházet projektu.
+Při sdílení máte jako hostitele možnost povolit režim jen pro čtení pro relaci spolupráce. Když se připojí hostů, nebude moct provádět úpravy kódu, i když stále vidíte kurzory a světla každého druhého a také můžete procházet projekt.
 
-Budete moci stále společně ladit s hostů v režimu jen pro čtení. Hosté nebude se moct projít procesem ladění, ale můžete pořád přidat nebo odebrat zarážky a kontrolovat proměnné. Kromě toho můžete sdílet terminály (jen pro čtení) a servery s hosty.
+V režimu jen pro čtení můžete stále společně ladit s hosty. Hosté nebudou mít možnost Procházet proces ladění, ale přesto mohou přidávat nebo odebírat zarážky a kontrolovat proměnné. Kromě toho můžete s hosty sdílet i servery a terminály (jen pro čtení).
 
-Další informace o spuštění relace spolupráci jen pro čtení: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project)
+Můžete si přečíst další informace o spuštění relace spolupráce jen pro čtení: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project) .
 
 ## <a name="co-debugging"></a>Společné ladění
 
-Při jste řešení kódování palčivé problémy nebo chyby, může být velice užitečné při ladění s další pár očí. Visual Studio Live Share umožňuje "spolupráci ladění" nebo "společně ladění" sdílením relace ladění se všechny hosté při každém spuštění hostitele ladění.
+Při řešení problémů s obtížovým kódováním nebo chybám, které mají další pár očí, když může být ladění skutečně užitečné. Visual Studio Live Share umožňuje "společné ladění" nebo "společné ladění" sdílením relace ladění se všemi hosty, kdykoli hostitel spustí ladění.
 
-Jako hostitele budete mít plnou kontrolu nad při spuštění relace ladění nebo zastaví, ale společně ladění představují některé riziko, pokud obsah sdílíte s někým, kterým nedůvěřujete. Sdílená složka za provozu umožňuje hosté pozvat spouštět příkazy konzoly/REPL a není proto **riziko škodlivý objekt actor spuštěním příkazu není vhodné, aby běžela**.
+Jako hostitel máte při spuštění nebo zastavení relace ladění úplnou kontrolu, ale pokud sdílíte s někým, kterému nedůvěřujete, může společné ladění představovat některá rizika. Live Share umožňuje hostům pozvat na spouštění příkazů Console/REPL a existuje riziko, že **škodlivý objekt actor spouští příkazy, které nechcete spouštět**.
 
-V důsledku toho byste měli **pouze společně s těmi, že důvěřujete ladění.**
+V důsledku toho byste měli **jenom ladit společně s důvěryhodnými.**
 
-Víc se uč: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
+Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
 
 ## <a name="sharing-a-local-server"></a>Sdílení místního serveru
 
-Při společném ladění může být opravdu užitečné mít přístup k různým částem aplikace obsluhované hostitelem pro ladicí relaci. Můžete chtít přístup k aplikaci v prohlížeči, přístup k místní databázi nebo stiskněte tlačítko koncového bodu REST z vašich nástrojů. Sdílené složky za provozu umožňuje "sdílení na serveru", který mapuje na přesně stejný port na počítači hosta na počítači hostitele jiný místní port. V roli hosta, můžete pak můžou pracovat s aplikací stejně, jako kdyby byla spuštěná místně na svém počítači (například hostitele a hosta můžete jak přístup do webové aplikace spuštěné http://localhost:3000).
+Při společném ladění může být opravdu užitečné mít přístup k různým částem aplikace obsluhované hostitelem pro ladicí relaci. Můžete chtít mít přístup k aplikaci v prohlížeči, získat přístup k místní databázi nebo přejít z nástrojů na koncový bod REST. Live Share umožňuje "sdílet server", který mapuje místní port na počítači hostitele na přesný stejný port na počítači hosta. Jako host pak můžete s aplikací pracovat přesně tak, jako kdyby byla spuštěná místně na vašem počítači (například hostitel a Host může přistupovat k webové aplikaci běžící na http://localhost:3000).
 
-Nicméně jako hostitele, měli byste **velmi pečlivě s porty sdílíte** s hostů a pouze sdílené složky aplikace porty spíše systému porty. Pro hosty sdílené porty budou chovat stejně, jako kdyby je sdíleli, pokud byla spuštěna služba server nebo na vlastní počítač. To je velmi užitečný, ale pokud sdílí se Chybný port může být také rizikové. Z tohoto důvodu se neprovede Live Share nevyvozujte předpoklady o tom, co by měl nebo by se neměly sdílet bez nastavení konfigurace a na hostiteli provést akci.
+Nicméně jako hostitel byste měli **být velmi selektivními porty, které sdílíte** s hosty, a sdílet jenom porty aplikací namísto systémových portů. Pro hosty se budou sdílené porty chovat stejně, jako by byly spuštěné na svém vlastním počítači na serveru nebo službě. To je velmi užitečné, ale pokud je nesprávný port sdílený, může být také riskantní. Z tohoto důvodu Live Share neprovádí žádné předpoklady týkající se toho, co by se mělo nebo neměl sdílet bez nastavení konfigurace a hostitele, který provádí akci.
 
-V sadě Visual Studio **webové aplikace port** zadaný v projektech ASP.NET je **automaticky sdílené během ladění pouze** usnadnit přístup hosta s webovou aplikací při spuštění. Ale můžete vypnout tato automatizace nastavením nástroje > Možnosti > Live Share > "Sdílené složky webovou aplikaci na ladění" do "False", který preferujete.
+V aplikaci Visual Studio je **port webové aplikace** zadaný v projektech ASP.NET **automaticky sdílen pouze během ladění** , aby se usnadnil přístup hosta k webové aplikaci při spuštění. Tuto automatizaci ale můžete vypnout nastavením nástrojů > možností > Live Share > "sdílet webovou aplikaci při ladění" na hodnotu "false", pokud to dáváte přednost.
 
-Ve Visual Studio Code, Live Share pokusí **detekovat porty příslušná aplikace** a sdílet je. Můžete to však zakázat přidáním následujícího kódu do settings.json:
+V Visual Studio Code se Live Share pokusí **zjistit správné porty aplikací** a sdílet je. Můžete to ale zakázat přidáním následujícího kódu do Settings. JSON:
 
         liveshare.autoShareServers: false
 
-V obou případech buďte opatrní při sdílení další porty.
+V obou případech můžete při sdílení dalších portů dbát na výkon.
 
-Další informace o konfiguraci funkce tady: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server)
+Další informace o konfiguraci této funkce najdete tady: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server) .
 
 ## <a name="sharing-a-terminal"></a>Sdílení terminálu
 
-Moderní vývojáři často používají celou řadu nástrojů příkazového řádku. Live Share vám jako hostiteli naštěstí umožňuje volitelné „sdílení terminálu“ s hosty. Sdílený terminál může být jen pro čtení nebo plně spolupráci, tak i u hostů můžete spouštět příkazy a analyzovat výsledky. Jako hostitele budete moct povolit další spolupracovníci buď jenom zobrazit výstup, nebo použít libovolný počet příkazového řádku nástroje pro spuštění testů, sestavení, nebo dokonce i Třiďte problémy specifické pro prostředí.
+Moderní vývojáři často používají celou řadu nástrojů příkazového řádku. Live Share vám jako hostiteli naštěstí umožňuje volitelné „sdílení terminálu“ s hosty. Sdílený terminál může být jen pro čtení nebo zcela spolupracovat, takže vy i hosté můžou spustit příkazy a zobrazit výsledky. Jako hostitel můžete ostatním spolupracovníkům dovolit buď pouze zobrazit výstup, nebo použít libovolný počet nástrojů příkazového řádku pro spuštění testů, sestavení nebo dokonce třídění problémů specifických pro prostředí.
 
-Pouze hostitelé, můžete začít sdílené terminály, aby se zabránilo hostů z jednoho spuštění a něco se očekává nebo sledování. Když spustíte sdílený terminál jako hostitele, můžete určit, zda by měla být jen pro čtení nebo pro čtení a zápisu. Čtení a zápisu po terminálu everyone zadejte v terminálu, včetně hostitele, což usnadňuje zasáhnout, jestliže Host dělá něco, co nesouhlasíte. Však být bezpečné, měli byste **pouze poskytnout přístup pro čtení a zápisu pro hosty, když víte, které skutečně potřebují** a Zůstaňte u terminálů jen pro čtení pro scénáře, kde chceš jenom hostem a zobrazit výstup všechny příkazy spustíte.
+Jenom hostitelé můžou zahájit sdílené terminály, aby mohli hosté spustit jednu z nich a provádět něco, co neočekáváte nebo sledujete. Když spustíte sdílený terminál jako hostitele, můžete určit, jestli má být jen pro čtení nebo pro čtení a zápis. Když je terminál pro čtení a zápis, každý může do terminálu zadat, včetně hostitele, což usnadňuje zaznamenání toho, jestli uživatel nedělá něco, co nelíbíte. Aby bylo ale bezpečné, měli byste **hostům udělit přístup pro čtení a zápis jenom v případě, že víte, že ho skutečně potřebují** a že mají na scénářích, kde chcete, aby host zobrazil výstup všech spuštěných příkazů.
 
-V sadě Visual Studio nejsou terminály sdílené ve výchozím nastavení. V nástroji VS Code, jsou automaticky sdílet terminály **jen pro čtení** ve výchozím nastavení. Můžete to však zakázat přidáním následujícího kódu do settings.json:
+V aplikaci Visual Studio nejsou terminály sdíleny ve výchozím nastavení. V VS Code jsou terminály ve výchozím nastavení automaticky sdíleny **jen pro čtení** . Můžete to ale zakázat přidáním následujícího kódu do Settings. JSON:
 
 ```json
 "liveshare.autoShareTerminals": false
 ```
 
-Víc se uč: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![VS](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
+Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
 
-## <a name="aad-admin-consent"></a>AAD Admin Consent
+## <a name="aad-admin-consent"></a>Souhlas správce AAD
 
-Po přihlášení pomocí služby Microsoft zajišťuje **pracovní nebo školní e-mailovou adresu** může se zobrazit zpráva s oznámením **"Vyžaduje schválení správcem"** při přihlášení. Je to proto Live Share vyžaduje přístup pro čtení k uživatelské informace pro jeho funkce zabezpečení a vašeho tenanta Azure AD je nastavit tak, aby vyžadovala "souhlas správce" pro přístup k obsahu adresáře nové aplikace.
+Při přihlašování pomocí **pracovní nebo školní e-mailové adresy** Microsoftu se při přihlašování může zobrazit zpráva, že je **potřeba schválit správce** . Důvodem je to, že Live Share vyžaduje přístup pro čtení k informacím uživatelů pro své funkce zabezpečení a váš tenant služby Azure AD je nastavený tak, aby pro nové aplikace přistupující k obsahu adresáře vyžadoval souhlas správce.
 
-Správce AD by potřeba tento problém vyřešit pomocí následujících informací:
+Správce služby AD by tuto chybu musel vyřešit pomocí následujících informací:
 
-* **Název aplikace**: Visual Studio za sdílené složky (Insider)
-* **Typ aplikace**: Webové aplikace
-* **Stav aplikace**: Produkční
-* **Delegovaná oprávnění**: User.Read
+* **Název aplikace**: Visual Studio Live Share (Insider)
+* **Typ aplikace**: webová aplikace
+* **Stav aplikací**: provozní
+* **Delegovaná oprávnění**: uživatel. čtení
 * **Adresa URL aplikace**: https://insiders.liveshare.vsengsaas.visualstudio.com/
-* **Adresa URL pro odpověď**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
+* **Adresa URL odpovědi**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
-To by stačí provést jednou pro každého, kdo pomocí Live Share. Zobrazit [tady](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) a [tady](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal) podrobnosti.
+To je potřeba udělat jenom jednou pro kohokoli, kdo používají Live Share. Podrobnosti najdete [tady](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) . [](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal)
 
 ## <a name="see-also"></a>Viz také:
 
-* [Postupy: Spolupráce pomocí Visual Studio Code](../use/vscode.md)
-* [Postupy: Spolupráce pomocí sady Visual Studio](../use/vs.md)
+* [Postupy: spolupráce pomocí Visual Studio Code](../how-to-guides/vscode.md)
+* [Postupy: spolupráce pomocí sady Visual Studio](../how-to-guides/vs.md)
 * [Požadavky na připojení pro Live Share](connectivity.md)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).

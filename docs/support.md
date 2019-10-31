@@ -1,6 +1,6 @@
 ---
-title: Podpora platforem a jazyků – Visual Studio Live Share | Dokumentace Microsoftu
-description: Přehled o podpoře platforem a jazyků pro Visual Studio Live share.
+title: Podpora platforem a jazyků – Visual Studio Live Share | Microsoft Docs
+description: Přehled podpory platforem a jazyků pro živé sdílení sady Visual Studio
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: d220be7e4722d45ecd1511ec1c054a174ba195f0
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 36cd7cc5923e593c6bbd3220b5f4ba92a7ca6130
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640039"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170062"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,25 +24,25 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="contributing-feedback-and-support"></a>Přispívání, zpětná vazba a podpora
+# <a name="contributing-feedback-and-support"></a>Přispívání, názory a podpora
 
-Máte otázky nebo připomínky? Existuje mnoho způsobů, jak přispívat. Chceme znát váš názor!
+Máte dotaz nebo zpětnou vazbu? Existuje mnoho způsobů, jak přispívat. Chceme vás od vás.
 
 ## <a name="tldr"></a>TLDR
 
-Stručně řečeno:
+V krátkém formátu:
 
-- **Známé problémy:** Naleznete v tématu [chyby](https://aka.ms/vsls-bugs) nebo [funkce požadavky](https://aka.ms/vsls-feature-requests) a nahoru vote pomocí 👍 reakce.
-- **VS Code chyb:** [Protokolovat nový problém](https://aka.ms/vsls-new-issue). Používá "Live sdílené složky: Příkaz Export protokolů"a [-přetažením souboru zip](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) na chybu nebo [je e-mailem](mailto:vsls-feedback@microsoft.com).
-- **Chyby VS:** [Nápověda > Odeslat názor > ohlásit problém...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Reprodukovat problém před odesláním a protokoly bude automaticky připojen.
-- **Žádosti o funkce:** [Protokolovat novou žádost o](https://aka.ms/vsls-new-issue) nebo použijte 👍 reakce na [nahoru vote některý z existujících](https://aka.ms/vsls-feature-requests).
-- **Kontaktujte nás:** [ vsls-feedback@microsoft.com ](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter), nebo komunitou spustit [Slack](https://aka.ms/vsls-slack).
+- **Známé problémy:** Podívejte se na [chyby](https://aka.ms/vsls-bugs) nebo [požadavky na funkce](https://aka.ms/vsls-feature-requests) a hlas pomocí 👍 reakce.
+- **Vs Code chyby:** [zaznamenání nového problému](https://aka.ms/vsls-new-issue). Použijte příkaz Live Share: Export logs a [přetáhněte](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/) na chybu nebo [ji pošlete e-mailem](mailto:vsls-feedback@microsoft.com).
+- **Vs – chyby:** [pomáhat > Odeslat názor > nahlásit problém...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Před odesláním reprodukci problém a automaticky se připojí protokoly.
+- **Požadavky na funkce:** [zaznamenání nové žádosti](https://aka.ms/vsls-new-issue) nebo použití reakce 👍 k [hlasování některého existujícího](https://aka.ms/vsls-feature-requests).
+- **Kontaktujte nás:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com), [#vsliveshare](https://aka.ms/vsls-twitter)nebo [časovou rezervu](https://aka.ms/vsls-slack)spuštění komunity.
 
 Další podrobnosti najdete níže.
 
 ## <a name="documentation"></a>Dokumentace
 
-Některé z našich referenční dokumenty možná budete potřebovat!
+Některé z našich referenčních dokumentů můžou mít to, co potřebujete.
 
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
 - [Podpora jazyků a platforem](reference/platform-support.md)
@@ -52,19 +52,19 @@ Některé z našich referenční dokumenty možná budete potřebovat!
 
 ## <a name="issues-and-requests"></a>Problémy a požadavky
 
-Problémy s úložištěm GitHub a Visual Studio problém sestavy jsou skvělý způsob, jak spojte se s námi.
+Problémy GitHubu a sestavy problémů se sadou Visual Studio představují skvělý způsob, jak se spojit s námi.
 
-- [Až vote funkce nebo požádat o nový](https://aka.ms/vsls-feature-requests)
-- [Zjistěte, zda již někdo přístupů váš problém tak, že protokoluje chyby](https://aka.ms/vsls-bugs)
-- [Nahlášení problému sady Visual Studio](https://aka.ms/vsls-vsproblem)
-- [Nahlásit problém pro VS Code nebo služby](https://aka.ms/vsls-vscodeproblem)
-- [Projděte si tipy k přispívání!](https://aka.ms/vsls-problemtips)
+- [Prohlaste funkci nebo si vyžádejte novou.](https://aka.ms/vsls-feature-requests)
+- [Podívejte se, jestli už někdo narazí na problém hledáním protokolovaných chyb.](https://aka.ms/vsls-bugs)
+- [Nahlášení problému pro Visual Studio](https://aka.ms/vsls-vsproblem)
+- [Nahlášení problému pro VS Code nebo celkovou službu](https://aka.ms/vsls-vscodeproblem)
+- [Podívejte se na tipy pro přispívání!](https://aka.ms/vsls-problemtips)
 
 ## <a name="other"></a>Ostatní
 
-- **E-mailu:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
-- **Twitter:** Spuštění nám na Twitteru pomocí [#vsliveshare](https://aka.ms/vsls-twitter)!
-- **Slack:** Jsme také zablokování v komunitě spustit [Live Slack sdílené složky](https://aka.ms/vsls-slack).
+- **E-mail:** [vsls-feedback@microsoft.com](mailto:vsls-feedback@microsoft.com)
+- **Twitter:** Na Twitteru se dostanete pomocí [#vsliveshare](https://aka.ms/vsls-twitter).
+- **Časová rezerva:** Zamrzne jsme také [časovou rezervu Live Share](https://aka.ms/vsls-slack)v komunitě.
 
 ## <a name="see-also"></a>Viz také:
 
@@ -75,5 +75,5 @@ Rychlý start
 
 Postupy
 
-- [Spolupráce ve Visual Studio Code](use/vscode.md)
-- [Spolupráce ve Visual Studiu](use/vs.md)
+- [Spolupráce ve Visual Studio Code](how-to-guides/vscode.md)
+- [Spolupráce ve Visual Studiu](how-to-guides/vs.md)

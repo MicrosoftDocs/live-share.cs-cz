@@ -1,6 +1,6 @@
 ---
-title: Poznámky – Visual Studio Live sdílenou složku | Dokumentace Microsoftu
-description: Přehled změn ve vydání verze pro Visual Studio Live Share pro Visual Studio a VS Code.
+title: Poznámky k verzi – Visual Studio Live Share | Microsoft Docs
+description: Rozpis změn podle verze pro Visual Studio Live Share pro Visual Studio a VS Code.
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b104605c7e40d05ffe7e3ea5cf84b739ec119d2b
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: d75680324d3325b96d3c3dd57b8a95b680b1d4eb
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640169"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170079"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,10 +24,10 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="visual-studio-live-share-release-notes"></a>Zpráva k vydání verze pro Visual Studio za sdílené složky
+# <a name="visual-studio-live-share-release-notes"></a>Poznámky k verzi Visual Studio Live Share
 
 <!-- Placeholder in the event anyone has bookmarked the direct link -->
-Zpráva k vydání verze přesunuli do našich [úložiště GitHub se vzorovými](https://aka.ms/vsls-releases).
+Poznámky k verzi se přesunuly do našeho [úložiště GitHub](https://aka.ms/vsls-releases).
 
 ## <a name="see-also"></a>Viz také:
 
@@ -38,8 +38,8 @@ Rychlý start
 
 Postupy
 
-- [Spolupráce ve Visual Studio Code](../use/vscode.md)
-- [Spolupráce ve Visual Studiu](../use/vs.md)
+- [Spolupráce ve Visual Studio Code](../how-to-guides/vscode.md)
+- [Spolupráce ve Visual Studiu](../how-to-guides/vs.md)
 
 Odkaz
 

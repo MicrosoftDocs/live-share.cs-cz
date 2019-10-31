@@ -1,6 +1,6 @@
 ---
-title: Ruční spojení – Visual Studio Live Share | Dokumentace Microsoftu
-description: Informace o ruční spojování relaci spolupráce v aplikaci Visual Studio naživo sdílet.
+title: Ruční spojení – Visual Studio Live Share | Microsoft Docs
+description: Informace o ručním připojení k relaci spolupráce v aplikaci Visual Studio Live Share.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,83 +11,83 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8ec4bac1c169c17de5e5ec8d26352cc13d62683b
-ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
+ms.openlocfilehash: 1057c6276302fb0df682798dd06684b4835c051e
+ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58640065"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73170114"
 ---
-# <a name="join-a-session-manually"></a>Připojte se k relaci ručně
+# <a name="join-a-session-manually"></a>Ruční připojení k relaci
 
-Kromě Otevřít odkaz v prohlížeči připojit k relaci spolupráce, můžete ručně připojit zadáním nebo vložením odkazu do je už spuštěný nástroj. To může být užitečné, pokud chcete použít jiný nástroj, než lze obvykle provést, nebo pokud se vám nedaří se získat pozvánky odkazy na pracovní z nějakého důvodu.
+Kromě otevření odkazu v prohlížeči, který se připojí k relaci spolupráce, se můžete ručně připojit vložením odkazu do již běžícího nástroje. To může být užitečné, pokud chcete použít jiný nástroj, než obvykle, nebo pokud máte potíže s tím, že z nějakého důvodu chcete pracovat s odkazy na pozvánky.
 
-Přesné pokyny se liší mezi [sady Visual Studio](#join-from-visual-studio) a [Visual Studio Code](#join-from-visual-studio-code), si vyberte jakýkoliv nástroj, který máte v úmyslu používat pro další informace.
+Přesné pokyny se liší v rámci sady [Visual Studio](#join-from-visual-studio) a [Visual Studio Code](#join-from-visual-studio-code), takže si pro další informace vyberte nástroj, který chcete použít.
 
-## <a name="join-from-visual-studio-code"></a>Připojte se k Visual Studio Code
+## <a name="join-from-visual-studio-code"></a>Připojit z Visual Studio Code
 
-### <a name="1-sign-in"></a>1. Přihlášení
+### <a name="1-sign-in"></a>1. přihlášení
 
->**Poznámka:** Pokud chcete připojit k relaci spolupráci jako Host jen pro čtení, můžete přeskočit přihlášení. Bude mít přístup k zobrazení a navigace kódu, jež jsou sdílena ale nebudete moci provádět úpravy.
+>**Poznámka:** Pokud se chcete připojit k relaci spolupráce jako hosta jen pro čtení, můžete přeskočit přihlášení. Budete mít přístup k zobrazení a navigaci v okolí kódu, který je sdílený, ale nebude možné provádět úpravy.
 
 ![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
 
-Abyste mohli spolupracovat, budete potřebovat přihlášení do aplikace Visual Studio Live Share tak všem uživatelům ví, kdo jste. **Klikněte na tlačítko** na "Live Share" stavový řádek položky nebo stisknutím klávesy **Ctrl + Shift + P / Cmd + Shift + P** a vyberte "živé sdílené složky: Přihlaste se pomocí prohlížeče"příkaz.
+Aby bylo možné spolupracovat, budete se muset Visual Studio Live Share přihlásit, aby všichni znali, kdo máte. **Klikněte** na položku Live share na stavovém řádku nebo stiskněte **kombinaci kláves CTRL + SHIFT + P/Cmd + Shift + P** a vyberte příkaz Live Share: přihlásit se pomocí prohlížeče.
 
-![VS Code přihlašovací tlačítko](../media/vscode-sign-in-button.png)
+![Tlačítko pro přihlášení VS Code](../media/vscode-sign-in-button.png)
 
-Při oznámení se zobrazí spuštění s výzvou, abyste se přihlásili, spustí se váš prohlížeč. Dokončete proces v prohlížeči přihlašování a pak jednoduše zavřít prohlížeč, až budete hotovi.
+Prohlížeč se spustí, když se zobrazí oznámení, že se zobrazí výzva k přihlášení. Dokončete proces přihlášení v prohlížeči a po dokončení jednoduše zavřete prohlížeč.
 
-Pokud používáte o problémech s VS Code není ujímají úspěšné přihlášení, klikněte na odkaz "Nedaří" na obrazovce úspěch v prohlížeči a postupujte podle pokynů. Podívejte se na [řešení potíží s](../troubleshooting.md#sign-in) další tipy.
+Pokud dochází k problémům s VS Code neúspěšném přihlášením, klikněte na odkaz "máte potíže" na obrazovce úspěšné v prohlížeči a postupujte podle pokynů. Další tipy najdete v [řešení potíží](../troubleshooting.md#sign-in) .
 
-### <a name="2-use-the-join-command"></a>2. Použití příkazu join
+### <a name="2-use-the-join-command"></a>2. použijte příkaz JOIN.
 
-Otevřete Live Share viewlet na panelu aktivit VS Code a vyberte "připojení k relaci spolupráce..." ikona nebo položku.
+Otevřete Live Share Viewlet na řádku VS Code aktivity a vyberte "připojit se k relaci pro spolupráci...". ikona nebo položka.
 
-![Ikona viewlet spojení](../media/vscode-join-viewlet.png)
+![Ikona připojení Viewlet](../media/vscode-join-viewlet.png)
 
->**Poznámka:** Pokud se připojíte jako Host jen pro čtení, můžete pak požádáni o zadání zobrazovaný název, který pomůže účastníky můžete identifikovat v relaci.
+>**Poznámka:** Pokud se připojujete jako host jen pro čtení, budete vyzváni k zadání zobrazovaného názvu, který pomůže účastníkům v relaci identifikovat.
 
-### <a name="3-paste-the-invite-link"></a>3. Vložte odkaz pozvánky
+### <a name="3-paste-the-invite-link"></a>3. Vložte odkaz pro pozvání.
 
-Vložte adresu URL pozvánky byly odeslány a přístupů 'zadejte potvrzení.
+Vložte adresu URL pozvánky, kterou jste poslali, a potvrďte akci ENTER.
 
-A to je vše! Musí být připojené k okamžité relaci spolupráce.
+A je to! V tuto chvíli byste měli být připojeni k relaci spolupráce.
 
-## <a name="join-from-visual-studio"></a>Připojte se k ze sady Visual Studio
+## <a name="join-from-visual-studio"></a>Připojení ze sady Visual Studio
 
-### <a name="1-sign-in"></a>1. Přihlášení
+### <a name="1-sign-in"></a>1. přihlášení
 
-Po instalaci, spusťte sadu Visual Studio a přihlásit, pokud nemáte. Pokud budete muset použít jiné přihlášení pro sadu Visual Studio než vaše [aktivního účtu přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), přejděte na stránku **nástroje &gt; možnosti &gt; Live Share &gt; uživatelský účet**.
+Po instalaci spusťte aplikaci Visual Studio a přihlaste se, pokud jste to ještě neučinili. Pokud potřebujete použít jiné přihlášení pro aplikaci Visual Studio, než je váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio), v nabídce **nástroje &gt; možnosti &gt; Live Share &gt; uživatelský účet**.
 
-![Přihlaste se VS](../media/vs-sign-in-button.png)
+![VS – přihlášení](../media/vs-sign-in-button.png)
 
-Stále se nedaří? Zobrazit [řešení potíží s](../troubleshooting.md#sign-in).
+Pořád máte problémy? Viz [Poradce při potížích](../troubleshooting.md#sign-in).
 
-### <a name="2-use-the-join-command"></a>2. Použití příkazu join
+### <a name="2-use-the-join-command"></a>2. použijte příkaz JOIN.
 
-Jednoduše přejděte na **soubor > připojte se k relaci spolupráce**.
+Stačí přejít na **soubor > připojit se k relaci spolupráce**.
 
-![Připojení k nabídce VS](../media/vs-join.png)
+![Nabídka VS JOIN](../media/vs-join.png)
 
-### <a name="3-paste-the-invite-link"></a>3. Vložte odkaz pozvánky
+### <a name="3-paste-the-invite-link"></a>3. Vložte odkaz pro pozvání.
 
-Vložte adresu URL pozvánky byly odeslány a přístupů 'zadejte potvrzení.
+Vložte adresu URL pozvánky, kterou jste poslali, a potvrďte akci ENTER.
 
-A to je vše! Musí být připojené k okamžité relaci spolupráce.
+A je to! V tuto chvíli byste měli být připojeni k relaci spolupráce.
 
 ## <a name="see-also"></a>Viz také:
 
 Rychlý start
 
-- [Rychlý start: Sdílejte svůj první projekt](../quickstart/share.md)
-- [Rychlý start: Připojte se k první relace](../quickstart/join.md)
+- [Rychlý Start: sdílení prvního projektu](../quickstart/share.md)
+- [Rychlý Start: připojení první relace](../quickstart/join.md)
 
 Postupy
 
-- [Postupy: Spolupráce pomocí Visual Studio Code](../use/vscode.md)
-- [Postupy: Spolupráce pomocí sady Visual Studio](../use/vs.md)
-- [Postupy: Poskytnout zpětnou vazbu](../support.md)
+- [Postupy: spolupráce pomocí Visual Studio Code](../how-to-guides/vscode.md)
+- [Postupy: spolupráce pomocí sady Visual Studio](../how-to-guides/vs.md)
+- [Postupy: poskytnutí zpětné vazby](../support.md)
 
 Odkaz
 
