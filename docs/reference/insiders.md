@@ -36,8 +36,8 @@ Tým Visual Studio Live Share je vše o iteracích rychle, vyzkoušení nových 
 Live Share teď můžou hostovat opakovaně použitelné relace! Opakovaně použitelné relace poskytují možnost znovu použít relaci Live Share pro různé scénáře. To znamená, že můžete naplánovat předem Live Share relaci pro vaše technické rozhovory, týdenní Mob relaci programování, použít stejnou relaci při podávání přítele a spoustu dalšího.
 
 Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
-1. Přejít na @no__t 0 pomocí `Ctrl+Shift+P`
-1. Zadejte "živý SHA..." a klikněte na sdílenou složku ** @ no__t-1Live: Vytvořte příkaz k opakovanému použití odkazu na relaci @ no__t-0 @ no__t-1.
+1. Přejít na `Command Palette` pomocí `Ctrl+Shift+P`
+1. Zadejte "živý SHA..." a klikněte na příkaz ' **_Live Share: vytvořit opakovaně použitelný odkaz na relaci_** '.
 
 ![VSCode – reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -54,7 +54,7 @@ Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
 
 ## Staňte se Insider <a name="BecomeanInsider"></a>
 
-Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Live Share používáte sadu funkcí `Stable`, která zahrnuje všechny funkce připravené pro produkční prostředí (např. společné úpravy, sdílené ladění, terminály). Pokud byste ale chtěli získat dřívější přístup k funkci, na které pracujeme, můžete se rozhodnout, že ve svém prostředí IDE chcete nastavit funkci `Insiders` změnou následujícího nastavení:
+Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Live Share používáte sadu funkcí `Stable`, která zahrnuje všechny funkce připravené pro produkční prostředí (např. společné úpravy, sdílené ladění, terminály). Pokud byste ale chtěli získat předběžný přístup k funkci, na které pracujeme, můžete se na `Insiders` sadu funkcí vyjádřit tak, že změníte následující nastavení v integrovaném vývojovém prostředí:
 
 * Visual Studio
 
@@ -64,7 +64,7 @@ Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Li
 
     ![feature-set-vscode](../media/feature-set-vscode.png)
 
-Následující části popisují sadu funkcí, které jsou aktuálně v rámci sady funkcí `Insiders`, a jsou proto připravené k vyhodnocení po změně výše uvedeného nastavení:
+Následující části popisují sadu funkcí, které jsou aktuálně ve `Insiders` sadě funkcí a jsou proto připravené k vyhodnocení po změně výše uvedeného nastavení:
 
 
 
