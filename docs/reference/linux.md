@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 27a3d76f14cd3c8df312abe7ab36185109ac7e89
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 69bc178ebb4052757f984d67482d216335f46dac
+ms.sourcegitcommit: 5180aab73c086cbded6aae01aa01f71fb991dee1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170130"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818073"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -26,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Podrobnosti instalace pro Linux
 
-Linux je vysoce proměnlivé prostředí a s sheerm počtem desktopových prostředí a distribucí může být složitější, aby bylo možné pracovat. Pokud jste přistoupili k podporovaným verzím **desktopu Ubuntu Desktop** (16.04 +), **CentOS 7**nebo **Fedora Workstation** (27 +) a používáte pouze **oficiální distribuce vs Code**, měli byste proces rovnou dopředt. V případě, že používáte nestandardní konfiguraci nebo distribuci pro příjem dat, je však možné, že nebudete moci spustit hiccups. V tomto dokumentu najdete některé informace o požadavcích a některých podrobnostech k odstraňování potíží, které vám můžou pomáhat začít, i když je konfigurace podporovaná jenom v komunitě. Upozorňujeme, že Live Share podporuje jenom **64 systému Linux**.
+Linux je vysoce proměnlivé prostředí a s sheerm počtem desktopových prostředí a distribucí může být složitější, aby bylo možné pracovat. Pokud jste přistoupili k podporovaným verzím **desktopu Ubuntu Desktop** (16.04 +), **CentOS 7**nebo **Fedora Workstation** (27 +) a používáte pouze **oficiální distribuce vs Code**, měli byste proces rovnou dopředt. V případě, že používáte nestandardní konfiguraci nebo distribuci pro příjem dat, je však možné, že nebudete moci spustit hiccups. V tomto dokumentu najdete některé informace o požadavcích a některých podrobnostech k odstraňování potíží, které vám můžou pomáhat začít, i když je vaše konfigurace podporovaná jenom v komunitě. Upozorňujeme, že Live Share podporuje jenom **64 systému Linux**.
 
 ## <a name="install-linux-prerequisites"></a>Nainstalovat požadavky pro Linux
 
@@ -46,7 +46,7 @@ Pokud nechcete, **vs Code spustit příkaz**, můžete také kdykoli ručně spu
 
 I když výše uvedený instalační skript zahrnuje celou řadu distribucí, možná vás zajímá, co většinou v instalacích Vanilla chybí. V následujícím seznamu jsou uvedeny knihovny klíčů, které chybí v nové instalaci dané distribuce. V tomto seznamu najdete taky několik tipů, které vám pomůžou začít pracovat, pokud dojde k problému.
 
-| Šíření | Vanilla instalovat chybějící knihovny | Další kroky |
+| Distribuce | Vanilla instalovat chybějící knihovny | Další kroky |
 |--------|-------------------|----|
 | Ubuntu Desktop 18,04 (64 bitů) | &lt;žádné&gt;  | &lt;žádné&gt; |
 | Ubuntu Desktop 16,04 (64 bitů) | &lt;žádné&gt; | &lt;žádné&gt; |
@@ -75,7 +75,7 @@ Distribuce mimo Debian/Ubuntu nebo RHL stromy nejsou oficiálně podporovány Vi
 
 > **PR Welcome:** Pokud vás zajímá aktualizace těchto informací s vaší oblíbenou distribucí, odešlete žádost o přijetí změn pro [Tento soubor](https://github.com/MicrosoftDocs/live-share/tree/master/docs/reference/linux.md) v úložišti GitHub docs. Ještě lepší, pokud byste chtěli získat instalační program závislosti, který podporuje vaši oblíbenou distribuci, můžete [pro tento soubor](https://github.com/MicrosoftDocs/live-share/blob/master/scripts/linux-prereqs.sh)odeslat žádost o přijetí změn.
 
-| Šíření | Práce? | Vanilla instalovat chybějící knihovny | Další kroky |
+| Distribuce | Práce? | Vanilla instalovat chybějící knihovny | Další kroky |
 |--------------|----------|-------------------|------------------|
 | Oblouk Linux (64 bitů) | Ano | Se liší. Možné knihovny: `gcr liburcu openssl-1.0 krb5 zlib icu gnome-keyring libsecret desktop-file-utils xorg-xprop` | <ul><li>Podporováno [instalačním skriptem předpokladů](#install-linux-prerequisites).</li><li>Použijte balíček [Visual Studio-Code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR pro vs Code.</li><li>pro použití automatizovaného instalačního skriptu pro instalaci bude nutné nainstalovat `sudo`.</li><li>`gnome-keyring` může vyžadovat další [kroky nastavení](https://wiki.archlinux.org/index.php/GNOME/Keyring) v některých desktopových prostředích.</ul> |
 | Manjaro 17,1 (64 bitů) | Ano | `xorg-xprop liburcu` | <ul><li>Podporováno [instalačním skriptem předpokladů](#install-linux-prerequisites).</li><li>Použijte balíček [Visual Studio-Code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) AUR pro vs Code.</li></ul> |
@@ -93,7 +93,7 @@ Typické chybějící knihovny v instalacích Vanilla najdete v části [Tipy po
 
 Požadavky na nativní knihovny Visual Studio Live Share pocházejí ze svého použití .NET Core 2,1, libsecret k uchování přihlašovacích údajů a integrace prohlížeče. Následující tabulka shrnuje tyto požadavky pro distribuci oficiálně podporované .NET Core.
 
-| Šíření | .NET Core reqs | Reqs úložiště přihlašovacích údajů| Reqs integrace prohlížeče |
+| Distribuce | .NET Core reqs | Reqs úložiště přihlašovacích údajů| Reqs integrace prohlížeče |
 |--------------|-----------|--------------------|------------|
 | Ubuntu a distribuce pro podřízené | `libssl1.0.0 libkrb5-3 zlib1g libicu55` (pro Ubuntu 16,04, mentolová 18,3) nebo `libicu57` (pro Ubuntu 17,10) nebo `libicu60` (pro Ubuntu 18,04, mentolová 19) | `libsecret-1-0 gnome-keyring` (nebo libsecret support KWallet nepodporuje libsecret) | `desktop-file-utils x11-utils` |
 | Debian 9 a distribuce po podřízeném | `libssl1.0.2 libkrb5-3 zlib1g libicu57` | `libsecret-1-0 gnome-keyring` (nebo libsecret support KWallet nepodporuje libsecret) | `desktop-file-utils x11-utils` |
@@ -155,11 +155,11 @@ V některých případech distribuce buď nepodporují toto umístění, nebo vy
 
 Pokud místo toho chcete spustit příkaz sami, můžete místo toho kliknout na Kopírovat místo toho, aby se příkaz terminálu zkopíroval do schránky.
 
-Nakonec, pokud se rozhodnete tento krok úplně přeskočit, můžete se k [relacím na spolupráci připojit ručně](../how-to-guides/vscode.md#join-manually), ale nebudete se moci připojit otevřením odkazu pro pozvání v prohlížeči. Všimněte si, že můžete kdykoli znovu získat přístup k příkazu, a to tak, že podržíte **kombinaci kláves CTRL + SHIFT + P/Cmd + Shift + P** a vyberete příkaz "Live Share: spouštěcí program spouštěče".
+Nakonec, pokud se rozhodnete tento krok úplně přeskočit, můžete se k [relacím na spolupráci připojit ručně](../use/vscode.md#join-manually), ale nebudete se moci připojit otevřením odkazu pro pozvání v prohlížeči. Všimněte si, že můžete kdykoli znovu získat přístup k příkazu, a to tak, že podržíte **kombinaci kláves CTRL + SHIFT + P/Cmd + Shift + P** a vyberete příkaz "Live Share: spouštěcí program spouštěče".
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: spolupráce pomocí Visual Studio Code](../how-to-guides/vscode.md)
+- [Postupy: spolupráce pomocí Visual Studio Code](../use/vscode.md)
 - [Požadavky na připojení pro Live Share](connectivity.md)
 - [Funkce zabezpečení Live Share](security.md)
 
