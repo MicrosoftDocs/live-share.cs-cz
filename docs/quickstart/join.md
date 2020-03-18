@@ -11,18 +11,19 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b550790fff3a5ed70db9e1256e020c1865215866
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 7b8b3d9b566231f4b4205b559232ef1752fd9441
+ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508569"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
+
 
 # <a name="quickstart-join-your-first-collaboration-session"></a>Rychlý Start: připojení první relace spolupráce
 
@@ -44,7 +45,7 @@ Instalace rozšíření je snadná. Stačí postupovat podle těchto kroků:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-code.svg" width="128px" alt="Visual Studio Code logo"/></td>
     <td style="border:none;">
         <strong>Visual Studio Code (1.22.0+)</strong><br />
-        1. Nainstalujte <a href="https://code.visualstudio.com/">Visual Studio Code</a> pro Windows (7, 8.1 nebo 10), macOS <b>(Sierra+)</b>, 64bitový Linux <b>(<a href="../how-to-guides/vscode.md#installation">podrobnosti</a>)</b>.<br />
+        1. Nainstalujte <a href="https://code.visualstudio.com/">Visual Studio Code</a> pro Windows (7, 8.1 nebo 10), macOS <b>(Sierra+)</b>, 64bitový Linux <b>(<a href="../use/vscode.md#installation">podrobnosti</a>)</b>.<br />
         2. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
         3. Zvolte Znovu načíst a počkejte, až se stáhnou a nainstalují závislosti (sledujte stavový řádek).<br />
         4. <strong>Linux</strong>: Pokud se zobrazí výzva k <a href="../reference/linux.md#install-linux-prerequisites">instalaci knihoven</a>, klikněte na nainstalovat, zadejte heslo a po dokončení vs Code restartujte.<br />
@@ -116,7 +117,7 @@ V **vs Code**se prohlížeč spustí, když se zobrazí oznámení o spuštění
 
 ![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
 
-> **Uživatelé systému Linux:** Pokud používáte starší verzi Live Share (v 0.3.295 nebo níže), může se zobrazit výzva k zadání kódu uživatele. Aktualizujte na nejnovější verzi rozšíření nebo klikněte na "máte potíže?" odkaz po přihlášení, aby se zobrazil kód [Podrobnosti najdete tady](../how-to-guides/vscode.md#sign-in-using-a-user-code).
+> **Uživatelé systému Linux:** Pokud používáte starší verzi Live Share (v 0.3.295 nebo níže), může se zobrazit výzva k zadání kódu uživatele. Aktualizujte na nejnovější verzi rozšíření nebo klikněte na "máte potíže?" odkaz po přihlášení, aby se zobrazil kód [Podrobnosti najdete tady](../use/vscode.md#sign-in-using-a-user-code).
 
 V **aplikaci Visual Studio**Live Share automaticky používá váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). V důsledku toho se můžete jednoduše přihlásit stejným způsobem jako normálně. Pokud ale dáváte přednost jinému přihlášení než k vašemu účtu přizpůsobení sady Visual Studio, v nabídce **nástroje &gt; možnosti &gt; Live Share &gt; uživatelský účet** a vyberte jiné přihlašovací údaje.
 
@@ -138,7 +139,7 @@ Pokud je hostitel v režimu offline, budete místo toho upozorněni v tomto okam
 
 ## <a name="5-collaborate"></a>5. spolupráce
 
-A je to! Za chvíli budete připojeni k relaci spolupráce vašeho kolegů. Ve výchozím nastavení hostitel automaticky akceptuje lidi, kteří se připojují, ale pokud je hostitel nastavený tak, aby [vyžadoval schválení hosta](../reference/security.md#requiring-guest-approval) , zobrazí se v dialogovém okně stavový řádek/spojení, že Live share na hostiteli čeká na schválení vaší žádosti o připojení.
+A to je vše! Za chvíli budete připojeni k relaci spolupráce vašeho kolegů. Ve výchozím nastavení hostitel automaticky akceptuje lidi, kteří se připojují, ale pokud je hostitel nastavený tak, aby [vyžadoval schválení hosta](../reference/security.md#requiring-guest-approval) , zobrazí se v dialogovém okně stavový řádek/spojení, že Live share na hostiteli čeká na schválení vaší žádosti o připojení.
 
 > **Tip zabezpečení:** Jako host se připojuje k relaci spolupráce, je důležité pochopit, že hostitelé můžou omezovat přístup k určitým souborům nebo funkcím. Chcete pochopit důsledky zabezpečení některých funkcí a nastavení Live Share? Podívejte se na článek o [zabezpečení](../reference/security.md) .
 
@@ -159,10 +160,10 @@ Máte potíže? Podívejte se na článek o [odstraňování potíží](../troub
 Další informace najdete v těchto dalších článcích.
 
 - [Rychlý Start: sdílení prvního projektu](share.md)
-- [Postupy: spolupráce pomocí Visual Studio Code](../how-to-guides/vscode.md)
-- [Postupy: spolupráce pomocí sady Visual Studio](../how-to-guides/vs.md)
+- [Postupy: spolupráce pomocí Visual Studio Code](../use/vscode.md)
+- [Postupy: spolupráce pomocí sady Visual Studio](../use/vs.md)
 
-Odkaz
+Referenční informace
 
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
 - [Funkce zabezpečení Live Share](../reference/security.md)
