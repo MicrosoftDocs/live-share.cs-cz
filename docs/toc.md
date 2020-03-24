@@ -6,6 +6,7 @@
 # Rychlý start
 ## [Sdílení prvního projektu](quickstart/share.md)
 ## [Připojení k první relaci](quickstart/join.md)
+## [Připojení z prohlížeče](quickstart/browser-join.md)
 # Praktičtí průvodci: VS Code
 ## [Přehled](use/vscode.md)
 ## [Instalace](use/vscode.md#installation)

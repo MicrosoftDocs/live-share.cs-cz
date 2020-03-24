@@ -11,15 +11,15 @@ ms.author: fubaduba
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 10679c4ef44e2bdaeb4d8a8f25107b10b5f52243
-ms.sourcegitcommit: c2ff6f29393990e91390875bb065bb811c071353
+ms.openlocfilehash: e74268abd215fd17ec67028d94de69f18685f808
+ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76978898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508556"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
@@ -33,7 +33,7 @@ Vítá vás Visual Studio Live Share! Rozšíření Live Share vám umožňuje u
 Jste připraveni začít? V tomto článku vám seznámíme s některými koncepcemi a ukážeme, jak instalovat potřebná rozšíření. Pokud hledáte zkrácenou verzi, podívejte se na naše články Rychlý start o [sdílení](quickstart/share.md) a [připojení](quickstart/join.md).
 
 > [!TIP]
-> Víte, že se můžete *připojit k vlastní relaci spolupráce*? Díky tomu si můžete Live Share vyzkoušet sami nebo můžete rozjet instanci Visual Studia nebo VS Code a vzdáleně se k ní připojit. U obou instancí můžete dokonce používat stejnou identitu. Vyzkoušejte to!
+> Věděli jste, že se teď můžete *k relaci Live Share připojit z prohlížeče*? To znamená, že už si nemusíte instalovat desktopového klienta, abyste mohli spolupracovat! Stačí kliknout na odkaz, který vám někdo nasdílí, a v prohlížeči pak budete mít plnohodnotné prostředí editoru VS Code. Další informace najdete [tady](quickstart/browser-join.md).
 
 ## <a name="install-visual-studio-live-share"></a>Instalace rozšíření Visual Studio Live Share
 
