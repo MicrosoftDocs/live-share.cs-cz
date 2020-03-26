@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f3a2adf0be13071f22a8ea7e33800af6f9099b5
-ms.sourcegitcommit: c6ef4e5a9aec4f682718819c58efeab599e2781b
+ms.openlocfilehash: 2d471a6d5ba84efb192073799444a13f2be62279
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73170100"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295974"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -32,9 +32,21 @@ Relace spolupráce v Visual Studio Live Share jsou výkonné v tom, že umožňu
 
 ## <a name="connectivity"></a>Připojení
 
-Všechna připojení v Visual Studio Live Share jsou zašifrovaná pomocí protokolu SSH nebo SSL a ověřená proti centrální službě, aby se zajistilo, že k obsahu budou mít přístup jenom ty, které jsou v relaci spolupráce. Ve výchozím nastavení se Live Share pokusí o přímé připojení a vrátí se do cloudového přenosu, pokud nejde navázat spojení mezi hostem a hostitelem. Upozorňujeme, že Cloud Relay Live Share neuchovává žádný provoz, který prochází přes něj, a žádným způsobem nepracuje s přenosy "Snoop". Pokud ale chcete, aby Relay nepoužívali, můžete změnit nastavení tak, aby se vždy připojovalo přímo.
+Když inicializujete relaci mezi partnerskými uzly, Live Share pokusy o navázání připojení typu peer-to-peer, a to jenom v případě, že to není možné (např. kvůli branám Firewall/NAT), se vrátí k používání Cloud Relay. V obou typech připojení (P2P nebo Relay) se ale všechna data přenášená mezi partnerskými uzly zašifrují pomocí protokolu SSH. V případě připojení typu relay je šifrování SSH vrstveno nad objekty WebSocket šifrovanými protokolem TLS. To znamená, že Live Share nezávisí na zabezpečení služby Cloud Relay. I v případě, že Relay došlo k ohrožení zabezpečení, nebylo by možné dešifrovat žádnou Live Share komunikaci.
+
+Role Live Share služby je omezená na ověřování uživatelů a zjišťování relací. Služba sama o sobě neukládá ani nikdy nemá přístup k jakémukoli obsahu relace. Veškerý obsah uživatele v Live Share se přenáší přes relaci SSH. Zahrnuje kód, terminály, sdílené servery a jakékoli další funkce pro spolupráci, které poskytuje Live Share nebo rozšíření, která jsou na něm sestavena.
 
 Další informace o změně těchto chování a požadavcích na připojení Live Share najdete v tématu **[požadavky na připojení pro Live Share](connectivity.md)** .
+
+### <a name="wire-encryption"></a>Šifrování drátu 
+
+Protokol SSH používá pro vytvoření sdíleného tajného klíče pro relaci výměnu klíčů Diffie-Hellman a je odvozen z klíče pro symetrické šifrování AES. Šifrovací klíč se pravidelně otáčí po celou dobu trvání relace. Tajný klíč sdílené relace a všechny šifrovací klíče se udržují pouze v paměti obou stran a jsou platné pouze po dobu trvání relace. Nikdy se nezapisují na disk ani neodesílají do žádné služby (včetně Live Share).
+
+### <a name="peer-authentication"></a>Partnerské ověřování
+
+Relace SSH je také obousměrně ověřena. Hostitel (role serveru SSH) používá ověřování pomocí veřejného a privátního klíče, jako je standard pro protokol SSH. Když hostitel sdílí relaci Live Share, vygeneruje pro relaci jedinečnou dvojici veřejného a privátního klíče RSA. Privátní klíč hostitele je udržován pouze v paměti v hostitelském procesu; Nikdy se nezapisuje na disk nebo se neposílá do žádné služby, včetně služby Live Share. Veřejný klíč hostitele se publikuje ve službě Live Share společně s informacemi o připojení relace (IP adresa nebo koncový bod přenosu), kde k němu můžou přistupovat hosty prostřednictvím odkazu na pozvánku. Když se host připojí k relaci SSH hostitele, Host použije ověřovací protokol hostitele SSH k ověření, že hostitel obsahuje privátní klíč odpovídající publikovanému veřejnému klíči (bez toho, aby se uživatel mohl podívat na privátní klíč).
+
+Host používá token Live Share k ověření samotného hostitele. Token je podepsaný token JWT vydaný službou Live Share, který obsahuje deklarace identity uživatele (získané prostřednictvím přihlášení MSA, AAD nebo GitHub). Token má také deklarace identity, které naznačují, že host má povolený přístup k této konkrétní Live Share relaci (protože měl odkaz na pozvánku a/nebo byl speciálně pozván hostitel). Hostitel tento token ověří a zkontroluje deklarace identity (a v závislosti na možnostech se může uživateli zobrazit výzva k zadání hostitele) předtím, než se povolí hostovi připojit k relaci.
 
 ## <a name="invitations-and-join-access"></a>Pozvánky a přístup k nim
 
@@ -152,7 +164,7 @@ Nastavení **gitignore** určuje, jak má Live Share zpracovat obsah souborů. g
 | `hide`    | **Výchozí hodnota.** Globy uvnitř. gitignore se zpracovávají, jako kdyby byly ve vlastnosti "hideFiles".                   |
 | `exclude` | Globy uvnitř. gitignore se zpracovávají, jako kdyby byly ve vlastnosti "excludeFiles".                                 |
 
-Nevýhodou nastavení `exclude` je, že obsah složek, jako je node_modules, často v. gitignore, ale může být užitečný pro krokování během ladění. V důsledku toho Live Share podporuje možnost obrátit pravidlo pomocí "!" ve vlastnosti excludeFiles. Například tento soubor. vsls. JSON vyloučí vše z ". gitignore" s výjimkou node_modules:
+Nevýhodou nastavení `exclude` je, že obsah složek, jako je node_modules, je často v. gitignore, ale může být užitečný pro krokování během ladění. V důsledku toho Live Share podporuje možnost obrátit pravidlo pomocí "!" ve vlastnosti excludeFiles. Například tento soubor. vsls. JSON vyloučí vše z ". gitignore" s výjimkou node_modules:
 
 ```json
 {
@@ -164,7 +176,7 @@ Nevýhodou nastavení `exclude` je, že obsah složek, jako je node_modules, ča
 }
 ```
 
-Pravidla pro skrytí a vyloučení se zpracovávají samostatně, takže pokud stále chcete skrýt node_modules, aby se snížilo množství zbytečných souborů bez toho, abyste je vyloučili, můžete soubor jednoduše upravit následujícím způsobem:
+Pravidla pro skrytí a vyloučení se zpracovávají samostatně, takže pokud stále chcete skrýt node_modules pro snížení zbytečných souborů bez toho, abyste je skutečně vyloučili, můžete soubor jednoduše upravit následujícím způsobem:
 
 ```json
 {
@@ -205,7 +217,7 @@ Při sdílení máte jako hostitele možnost povolit režim jen pro čtení pro 
 
 V režimu jen pro čtení můžete stále společně ladit s hosty. Hosté nebudou mít možnost Procházet proces ladění, ale přesto mohou přidávat nebo odebírat zarážky a kontrolovat proměnné. Kromě toho můžete s hosty sdílet i servery a terminály (jen pro čtení).
 
-Můžete si přečíst další informace o spuštění relace spolupráce jen pro čtení: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-project) .
+Můžete si přečíst další informace o spuštění relace spolupráce jen pro čtení: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-project) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-project) .
 
 ## <a name="co-debugging"></a>Společné ladění
 
@@ -215,7 +227,7 @@ Jako hostitel máte při spuštění nebo zastavení relace ladění úplnou kon
 
 V důsledku toho byste měli **jenom ladit společně s důvěryhodnými.**
 
-Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#co-debugging)
+Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#co-debugging) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#co-debugging)
 
 ## <a name="sharing-a-local-server"></a>Sdílení místního serveru
 
@@ -231,7 +243,7 @@ V Visual Studio Code se Live Share pokusí **zjistit správné porty aplikací**
 
 V obou případech můžete při sdílení dalších portů dbát na výkon.
 
-Další informace o konfiguraci této funkce najdete tady: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-server) .
+Další informace o konfiguraci této funkce najdete tady: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-server) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-server) .
 
 ## <a name="sharing-a-terminal"></a>Sdílení terminálu
 
@@ -245,7 +257,7 @@ V aplikaci Visual Studio nejsou terminály sdíleny ve výchozím nastavení. V 
 "liveshare.autoShareTerminals": false
 ```
 
-Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../how-to-guides/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../how-to-guides/vs.md#share-a-terminal)
+Další informace: [![VS Code](../media/vscode-icon-15x15.png)](../use/vscode.md#share-a-terminal) [![vs](../media/vs-icon-15x15.png)](../use/vs.md#share-a-terminal)
 
 ## <a name="aad-admin-consent"></a>Souhlas správce AAD
 
@@ -260,12 +272,12 @@ Správce služby AD by tuto chybu musel vyřešit pomocí následujících infor
 * **Adresa URL aplikace**: https://insiders.liveshare.vsengsaas.visualstudio.com/
 * **Adresa URL odpovědi**: https://insiders.liveshare.vsengsaas.visualstudio.com/auth/redirect/windowslive/
 
-To je potřeba udělat jenom jednou pro kohokoli, kdo používají Live Share. Podrobnosti najdete [tady](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) . [](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal)
+To je potřeba udělat jenom jednou pro kohokoli, kdo používají Live Share. Podrobnosti najdete [tady](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes) . [here](https://stackoverflow.com/questions/39861830/azure-ad-admin-consent-from-the-azure-portal)
 
-## <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také
 
-* [Postupy: spolupráce pomocí Visual Studio Code](../how-to-guides/vscode.md)
-* [Postupy: spolupráce pomocí sady Visual Studio](../how-to-guides/vs.md)
+* [Postupy: spolupráce pomocí Visual Studio Code](../use/vscode.md)
+* [Postupy: spolupráce pomocí sady Visual Studio](../use/vs.md)
 * [Požadavky na připojení pro Live Share](connectivity.md)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).

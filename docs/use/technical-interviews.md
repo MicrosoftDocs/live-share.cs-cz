@@ -11,38 +11,40 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 810c60754c0be4f11511fb1ccbb0bb612de42e5d
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019806"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295952"
 ---
 <!--
-Copyright © Microsoft Corporation
+Copyright &copy; Microsoft Corporation
 All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>Postupy: provádění technických rozhovorů pomocí Live Share
 
-Než začnete používat Live Share k technickým rozhovorům, je nutné provést jeden integrálový krok: **stažení Visual Studio Code a balíček rozšíření Live Share z webu Marketplace** pomocí následujících [kroků.](../use/vscode.md)
+Pomocí Live Share pro rozhovory umožníte, aby si revidující a kandidáti měli rychlou a spolehlivou relaci s pohovorem, a to s využitím integrovaného vývojového prostředí (IDE) s plnou věrností. 
 
-Live Share poskytuje možnost hostování opakovaně použitelných relací! To znamená, že můžete naplánovat předem Live Share relaci pro vaše technické pohovory a nemusíte si dělat starosti s vypršením platnosti odkazu.
 
-> [!TIP] 
->Opakovaně použitelná propojení relace je trvalé a trvá po dobu 30 dnů od jejího vytvoření nebo data posledního použití. Při generování opakovaně použitelného odkazu relace pro váš rozhovor se ujistěte, že je pohovor do 30 dnů od data vytvoření odkazu. V případě vypršení platnosti odkazu stačí vytvořit novou opakovaně použitelnou relaci. (K dispozici je způsob, jak zajistit, aby propojení nikdy nevypršelo, ale je to pro rozhovory jen snazší.)
+## <a name="setup-for-interviewer"></a>Nastavení pro revidujícího 
+Pokud chcete pohovor s kandidátem na Live Share musíte nejdřív ze dvou klientských počítačů:
 
-### <a name="what-to-do-as-an-interviewer"></a>**Co dělat jako revidující?**
+Nainstalovat [Visual Studio](../use/vs.md) , které přináší sestavení s rozšířením Live Share
 
-Jako revidující budete působit jako hostitel relace Live Share. Pokud nejste obeznámeni s Live Share, doporučujeme vám Přečtěte si část " [sdílení projektu](../use/vscode.md) " v našem průvodci.
+>[!TIP] 
+> Pro Live Share se ujistěte, že jste v nabídce *nástroje > možnosti > Live Share > pokročilé > funkce*. To vám umožní používat naši integrovanou podporu zvukového volání pro rozhovory.
 
-Teď vytvořte relaci Live Share pro váš technický rozhovor a místo běžné relace pro spolupráci vytvoříte speciální "opakovaně použitelnou relaci". To vám umožní mít Live Shareou relaci, která se dá naplánovat předem a pak ji použít kdykoli.
+Nebo nainstalujte [Visual Studio Code](../.use/vscode.md) a stáhněte [Live Share rozšíření balíčku]() z webu Marketplace. Balíček rozšíření vám poskytne naši zvukovou podporu pro rozhovory. 
 
-Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
+## <a name="scheduling-an-interview"></a>Plánování pohovoru 
+
+**Live Share v vs Code** poskytuje možnost vytvářet relace Live Share předem. Pomocí následujících kroků můžete vytvořit relaci předem:
 
 1. Přejít na `Command Palette` pomocí `Ctrl+Shift+P`
-1. Zadejte "živý SHA..." a klikněte na příkaz ' **_Live Share: vytvořit opakovaně použitelný odkaz na relaci_** '.
+1. Zadejte "živý SHA..." a klikněte na příkaz '_Live Share: vytvořit opakovaně použitelný odkaz na relaci_'.
 
 ![VSCode – reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -50,23 +52,39 @@ Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
 
 ![VSCode – reusablesessionnotif](../media/vscode-notification-resuablesession.png)
 
-4. Vaše opakovaně použitelná relace se vytvořila! Sdílejte odkaz s vaší relací a použijte ho pokaždé, když budete mít přístup k této relaci.
+4. pošlete odkaz.
 
 Jakmile budete mít tento odkaz, stačí ho sdílet s interviewee prostřednictvím e-mailu nebo podle vašeho výběru mechanismu plánování. Stačí kliknout na tento odkaz v okamžiku rozhovoru a bude se nacházet v relaci Live Share. 
+> [!TIP] 
+>Opakovaně použitelná propojení relace je trvalé a trvá po dobu 30 dnů od jejího vytvoření nebo data posledního použití. Při generování opakovaně použitelného odkazu relace pro váš rozhovor se ujistěte, že je pohovor do 30 dnů od data vytvoření odkazu. V případě vypršení platnosti odkazu stačí vytvořit novou opakovaně použitelnou relaci. (K dispozici je způsob, jak zajistit, aby propojení nikdy nevypršelo, ale je to pro rozhovory jen snazší.)
 
-### <a name="what-to-do-as-the-interviewee"></a>**Co dělat jako Interviewee?**
+**Poznámka:** V současné době není Live Share v aplikaci Visual Studio možné vytvářet relace předem. Pro rozhovory, které provádíte pomocí Live Share v aplikaci Visual Studio, můžete postupovat podle našeho průvodce, jak [spustit relaci okamžité](../quickstart/share.md) Live Share.
 
-Pokud očekáváte, že budete provádět technický rozhovor pomocí Live Share, jste na hodně štěstí! Chceme mít jistotu, že jste obeznámeni se základními funkcemi Live Share, abyste se mohli svými pohovorem cítit.
 
-1. Než se podíváte na rozhovor, podrobnější informace si přečtěte [Průvodce postupy](../use/vscode.md) , abyste se seznámili s tím, jak Live Share funguje.
 
-1. Možná budete chtít nainstalovat Visual Studio Code předem, abyste nečekali na dokončení instalace po zahájení rozhovoru.
+## <a name="setup-for-candidate"></a>Nastavení pro kandidáta
+I když kandidát může vždycky nainstalovat aplikaci Visual Studio nebo Visual Studio Code, aby se mohla spojit s pohovorem, není potřeba. **K relacím na Live Share rozhovorů se dá přihlásili kandidáti bez předchozího nastavení.** Můžou kliknout na odkaz na rozhovor v době relace a **připojit se z prohlížeče**. Další informace najdete [tady.](../quickstart/browser-join.md)
 
-1. Pokud nemáte čas, nedělejte si starosti. Vše, co potřebujete k úplnému pohovoru, je odkaz na Live Share relaci, kterou váš revidující vám pošle během plánování pohovoru. Pouhým kliknutím na odkaz se vás automaticky provede všemi potřebnými kroky.
 
-1. V okamžiku rozhovoru stačí kliknout na odkaz a postupovat podle kroků, které vás provede. Pokud jste v brzké době nebo jste viděli pozdě, nedělejte si starosti! Jenom přijdete o "předsálí", který se vašemu spolupohledu připojí. Nejsou nutné žádné další kroky a jakmile se provedený revidující připojí k relaci, automaticky spustí.
+
+<!--
+### **What to do as an Interviewer?**
+
+As an interviewer you will act as the host of the Live Share session. If you are not familiar with Live Share, we suggest you refer to the [share a project](../use/vscode.md) section of our how-to guide
+### **What to do as the Interviewee?**
+
+If you are expecting to do a Technical Interview using Live Share, you are in luck! We want to make sure you are familiar with the basic Live Share features so you feel comfortable during your interview.
+
+1. Before the interview, take some time and look over the [How-to guide](../use/vscode.md) so you understand how Live Share works.
+
+1. You may want to install Visual Studio Code beforehand so that you are not waiting for the installation to complete once you start your interview
+
+1. If you don't have the time, no worries. All you need to have a full interview is the link to a Live Share session your interviewer sends you while scheduling the interview. Just clicking on the link will automatically take you through all the steps needed.
+
+1. At the time of the interview, just click on the link and follow the steps it takes you through. If you are early or your interviewer is late to the interview, don't worry! You will just be in the 'lobby' waiting for your interviewer to join. No other steps are required, and once your interviewer joins the session will automatically start.
 
 >[!NOTE]
->Pokud zjistíte, že se relace odpojila před nebo po připojení k prodanému spolupohledu, nedělejte si starosti. Pokud (ještě není uzavřený), stačí ukončit tuto relaci a znovu kliknout na stejný odkaz.
+>If you find that the session has disconnected before or after the interviewer joined, don't worry. Just exit out of that session if (it isn't already closed) and re-click on the same link!
 
-Nyní je vše nastaveno na použití Live Share pro rozhovor. 
+You are now all set to go with using Live Share for your interview! 
+-->

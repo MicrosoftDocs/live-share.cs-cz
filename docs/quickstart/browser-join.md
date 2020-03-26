@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 741292a3df8b86a8f7a9484875b352ebe6e8ec10
-ms.sourcegitcommit: 382f069abbd81ed258d497a974b30379be36b4f0
+ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
+ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510623"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80295917"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -27,8 +27,6 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Všechny Live Share relace spolupráce teď mají možnost připojit se v prohlížeči. To znamená, že host pro vaši relaci už není potřeba instalovat VS Code nebo Visual Studio, aby se mohl připojit k vaší relaci. To je užitečné hlavně pro všechny tyto instance, pokud chcete, aby se někdo rychle dostal do vaší relace, nebo pro studenty, kteří na stolních počítačích často nemají nainstalované klienty pro stolní počítače.
 
-> [!TIP]
-> V části Nejčastější dotazy níže najdete nejčastější dotazy týkající se připojení z prohlížeče.
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Jak připojit relaci Live Share z prohlížeče 
 
@@ -46,20 +44,24 @@ Live Share vygeneruje odkaz spojení, který bude možné sdílet s hostem. Host
 Jakmile se host připojí k relaci, může na stejné úrovni, jako by se jednalo o spolupráci od klientů pro stolní počítače.
 
 ![Animace plné přesnosti](https://user-images.githubusercontent.com/51928518/76942009-40e24d80-68ba-11ea-885c-6eb1069ed550.gif)
-# <a name="frequently-asked-questions"></a>Nejčastější dotazy 
 
-##### <a name="1-is-there-an-environment-running-in-the-background-that-is-hosting-my-session-in-the-browser"></a>1. je prostředí spuštěné na pozadí, které hostuje moji relaci v prohlížeči?
-Když se připojíte k Live Share relaci z prohlížeče, nedošlo k žádnému novému pronově prostředí. Jedná se o službu bez serveru. 
-##### <a name="2-do-i-have-to-pay-for-the-service-of-joining-from-the-browser"></a>2. musím platit za službu připojení z prohlížeče?
-Spojení z prohlížeče je zdarma, podobně jako u všech Live Share.
+<!---
+# Frequently asked questions 
 
-##### <a name="3-how-is-this-different-from-visual-studio-online"></a>3. jak se to liší od služby Visual Studio Online?
-Když se připojíte z prohlížeče, získáte přístup k klientovi VS Code jenom z prohlížeče během relace. Po ukončení relace budou všechny soubory a složky společně s možnostmi editoru zavřeny. Pokud chcete použít Editor v prohlížeči, který je zálohovaný s vlastním prostředím pro úpravy vlastních souborů, musíte použít [Visual Studio Online.](aka.ms/vso)
+##### 1. Is there an environment running in the background, that is hosting my session in the browser?
+When you join a Live Share session from the browser, there is no new environment spun up. It is a serverless service. 
+##### 2. Do I have to pay for the service of joining from the browser?
+Joining from the browser is free, much like all of Live Share.
 
-##### <a name="4-does-this-work-for-all-browsers"></a>4. udělá tuto práci pro všechny prohlížeče?
-Ano. To funguje na všech prohlížečích. 
-##### <a name="5-is-there-a-vs-client-that-i-can-use-in-the-browser"></a>5. je to klient VS, který můžu v prohlížeči použít?
-Ještě nemáte k dispozici. 
+##### 3. How is this different from Visual Studio Online?
+When you join from the browser, you only access the VS Code client from the browser during the session. Once the session ends, all the files and folders along with editor capabilities will close. To use an editor in the browser, backed with your own environment to edit your own files, you must use [Visual Studio Online.](aka.ms/vso)
 
-# <a name="feedback-and-issues"></a>Názory a problémy 
-Toto je funkce ve verzi Preview a doufáme, že získáme zpětnou vazbu od uživatele, abychom mohli vylepšit prostředí. Vyplňte prosím jakékoli názory nebo problémy, které vidíte v našem úložišti GitHub [.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+##### 4. Does this work for all browsers?
+Yes. This works on all browsers. 
+##### 5. Is there a VS client that I can use in the browser?
+We do not have this available yet. 
+
+# Feedback and issues 
+This is a preview feature, and we hope to get user feedback to improve the experience. Please fill out any feedback or issues you see on our GitHub repo [here.](https://github.com/MicrosoftDocs/live-share/issues/new?template=bug_report.md)
+
+--->
