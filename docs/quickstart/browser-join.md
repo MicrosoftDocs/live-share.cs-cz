@@ -1,6 +1,6 @@
 ---
 title: Připojení z prohlížeče – Visual Studio Live Share | Microsoft Docs
-description: Představení připojení z prohlížeče p
+description: Představujeme připojení z prohlížeče
 ms.date: 03/18/2020
 ms.reviewer: ''
 ms.suite: ''
@@ -10,12 +10,12 @@ ms.author: fishah
 manager: joncart
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9544e1ad333903c663b9b4ecda35ca745020b4ae
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 5e485397ff23be0fdab8449fad6237d829775c55
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295917"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569532"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -25,7 +25,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="preview-joining-a-live-share-session-from-the-browser"></a>✨ [Preview] ✨ se připojuje k Live Share relaci z prohlížeče
 
-Všechny Live Share relace spolupráce teď mají možnost připojit se v prohlížeči. To znamená, že host pro vaši relaci už není potřeba instalovat VS Code nebo Visual Studio, aby se mohl připojit k vaší relaci. To je užitečné hlavně pro všechny tyto instance, pokud chcete, aby se někdo rychle dostal do vaší relace, nebo pro studenty, kteří na stolních počítačích často nemají nainstalované klienty pro stolní počítače.
+Všechny Live Share relace spolupráce teď mají možnost připojit se z prohlížeče. To znamená, že host pro vaši relaci už není potřeba instalovat VS Code nebo Visual Studio, aby se mohl připojit k vaší relaci. To je užitečné hlavně pro všechny tyto instance, pokud chcete, aby se někdo rychle dostal do vaší relace, nebo pro studenty, kteří na stolních počítačích často nemají nainstalované klienty pro stolní počítače.
 
 
 # <a name="how-to-join-a-live-share-session-from-the-browser"></a>Jak připojit relaci Live Share z prohlížeče 

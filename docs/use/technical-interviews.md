@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0ac1ba213c59df2dc3b1d05d89e4186c823a250f
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
+ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295952"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83569519"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -35,15 +35,15 @@ Pokud chcete pohovor s kandidátem na Live Share musíte nejdřív ze dvou klien
 Nainstalovat [Visual Studio](../use/vs.md) , které přináší sestavení s rozšířením Live Share
 
 >[!TIP] 
-> Pro Live Share se ujistěte, že jste v nabídce *nástroje > možnosti > Live Share > pokročilé > funkce*. To vám umožní používat naši integrovanou podporu zvukového volání pro rozhovory.
+> Pro Live Share se ujistěte, že jste v nabídce *nástroje> možnosti > Live Share > pokročilé > funkce*. To vám umožní používat naši integrovanou podporu zvukového volání pro rozhovory.
 
-Nebo nainstalujte [Visual Studio Code](../.use/vscode.md) a stáhněte [Live Share rozšíření balíčku]() z webu Marketplace. Balíček rozšíření vám poskytne naši zvukovou podporu pro rozhovory. 
+Nebo nainstalujte [Visual Studio Code](../use/vscode.md) a stáhněte [Live Share rozšíření balíčku](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) z webu Marketplace. Balíček rozšíření vám poskytne naši zvukovou podporu pro rozhovory. 
 
 ## <a name="scheduling-an-interview"></a>Plánování pohovoru 
 
 **Live Share v vs Code** poskytuje možnost vytvářet relace Live Share předem. Pomocí následujících kroků můžete vytvořit relaci předem:
 
-1. Přejít na `Command Palette` pomocí `Ctrl+Shift+P`
+1. Přejít na adresu `Command Palette` pomocí`Ctrl+Shift+P`
 1. Zadejte "živý SHA..." a klikněte na příkaz '_Live Share: vytvořit opakovaně použitelný odkaz na relaci_'.
 
 ![VSCode – reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
