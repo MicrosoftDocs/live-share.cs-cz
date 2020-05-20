@@ -3,6 +3,7 @@
 ## [Úvod](index.md)
 ## [Funkce](overview/features.md)
 ## [Běžné případy použití](reference/use-cases.md)
+## [Co je nového](overview/what's-new.md)
 # Rychlý start
 ## [Sdílení prvního projektu](quickstart/share.md)
 ## [Připojení k první relaci](quickstart/join.md)
