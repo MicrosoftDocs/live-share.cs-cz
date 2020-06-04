@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: 4a8effee55f3f2ff035df1c40eebefb3a628760f
-ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
+ms.openlocfilehash: f473cbba9cd79e1ab1f4fbb010ca6c6f8e27c045
+ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83569781"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84337148"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -22,20 +22,38 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="integrated-chat-and-audio-support"></a>Integrovaná podpora chatu a zvuku
-#### <a name="preview"></a>Tisk
+## <a name="integrated-chat"></a>Integrovaný chat 
+Live Share teď má integrovaný chat pro [Visual Studio Code](..\use\vscode.md) a [Live Share Web.](..\quickstart\browser-join). To znamená, že můžete s partnerskými uzly komunikovat přímo z integrovaného vývojového prostředí (IDE).
 
-Live Share bude mít nyní integrovaný chat pro [Visual Studio Code](..\use\vscode.md) a [Live Share Web.](..\quickstart\browser-join)
-Live Share chat i zvuk umožňují uživatelům v rámci své Live Shareé komunikace komplexní komunikaci. K těmto funkcím má hostitel i hosté v relaci přístup pomocí Visual Studio Code a Live Share webu. 
+>[!TIP]
+>Live Share dříve poskytovalo doprovodné rozšíření. To znamenalo, že uživatelé s tímto rozšířením můžou používat chat v rámci Live Share. Toto rozšíření bylo teď odepsáno a všichni uživatelé Live Share v VS Code a webovém klientovi budou mít chatovací službu.
 
-*Udržujte si přehled o aktualizacích, jak začít s těmito službami!*
+### <a name="common-questions"></a>Časté dotazy
 
-#### <a name="common-questions"></a>Časté dotazy
+##### <a name="why-am-i-seeing-this-error-message"></a>Proč se mi zobrazuje tato chybová zpráva?
 
-###### <a name="1-when-will-these-preview-features-be-enabled"></a>1. kdy budou tyto funkce verze Preview povoleny?
-Pro uživatele Visual Studio Code a Live Share webových uživatelů se v nadcházejícím týdnu povolí Live Share chat a audio.
+Pokud jste zakázali automatické aktualizace pro rozšíření (včetně Live Share a rozšíření doprovodného chatu Live Share), zobrazí se následující chybové zprávy.
 
-###### <a name="2-will-all-live-share-sessions-default-to-and-audio-call"></a>2. všechny Live Share relace jsou ve výchozím nastavení zapnuté a zvukové volání?
-Ne. Chat i zvuk jsou volitelné, abyste je mohli přidat do pracovního postupu, pokud chcete.
+1. Pokud máte hostitele nebo hosta, v případě, že máte nainstalovanou příponu doprovodného chatu Live Share, pokud se zobrazí:
+
+>Aktualizujte prosím `Live Share Chat` doprovodné rozšíření. Nainstalovaná verze již není kompatibilní.
+
+Tato chybová zpráva vyžaduje, abyste v doprovodném chatu Live Share použili nové integrované prostředí chatu.
+Navštivte web Marketplace a vyhledejte *chat* a aktualizujte na nejnovější verzi. 
+
+2. Jako host, pokud máte nejnovější verze rozšíření Live Share a pokud vidíte:
+
+>Hostitel této relace spolupráce je aktuálně odpojen od chatu nebo používá verzi _Live Share_ , která tuto funkci nepodporuje. [Další informace] 
+
+Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platformy k hostování relace, která ještě nepodporují integrovaný chat Live Share. Může se zobrazit také chybová zpráva 1. uvedená výše.
+
+3. Pokud se zobrazí tato chybová zpráva jako hostitel nebo Host: 
+
+> Osoba, kterou se snažíte kontaktovat, je momentálně nedostupná nebo používá verzi _Live Share_ , která tuto funkci nepodporuje. [Další informace] 
+
+>Služba chat je aktuálně odpojena.Zkuste to prosím za chvíli znovu.
+
+Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platformy k hostování relace, která ještě nepodporují integrovaný chat Live Share. Můžou být taky nedostupné hned. Může se zobrazit také chybová zpráva 1. uvedená výše.
 
 
+**Aby bylo možné integrovat do uživatelsky integrovaného chatu, musíte mít automatické aktualizace pro vaše Live Share rozšíření na.** 
