@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: f473cbba9cd79e1ab1f4fbb010ca6c6f8e27c045
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.openlocfilehash: 55425a7d57775a4e042e87b8dceb86532e1b966a
+ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337148"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85796060"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -56,4 +56,4 @@ Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platfo
 Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platformy k hostování relace, která ještě nepodporují integrovaný chat Live Share. Můžou být taky nedostupné hned. Může se zobrazit také chybová zpráva 1. uvedená výše.
 
 
-**Aby bylo možné integrovat do uživatelsky integrovaného chatu, musíte mít automatické aktualizace pro vaše Live Share rozšíření na.** 
+**Aby bylo možné používat integrovaný chat, musíte mít automatické aktualizace pro vaše Live Share rozšíření na.** 

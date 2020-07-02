@@ -1,6 +1,6 @@
 ---
-title: Sdílet rychlý start – sdílení v sadě Visual Studio Live Share | Dokumenty společnosti Microsoft
-description: Zkrácený návod na sdílení prvního projektu pomocí relace spolupráce visual studio live share.
+title: Rychlý Start pro sdílení – Visual Studio Live Share | Microsoft Docs
+description: Zkrácený návod ke sdílení prvního projektu pomocí Visual Studio Live Share relace spolupráce.
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: e65656c604a9dbc479a03a503fe01d7e2d938072
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: 9bee74ed4d494e948f2255321faab3fb5093d694
+ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "73170008"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85796073"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -24,22 +24,22 @@ All rights reserved.
 Creative Commons Attribution 4.0 License (International): https://creativecommons.org/licenses/by/4.0/legalcode
 -->
 
-# <a name="quickstart-share-your-first-project"></a>Úvodní příručka: Sdílení prvního projektu
+# <a name="quickstart-share-your-first-project"></a>Rychlý Start: sdílení prvního projektu
 
 Vítá vás Visual Studio Live Share! Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje vám okamžitě a bezpečně sdílet váš aktuální projekt a pak podle potřeby sdílet ladicí relace, terminálové instance, webové aplikace místního hostitele, hlasové hovory a další věci.
 
-Jste připraveni začít?  Týmová spolupráce by měla být tak rychlá a přirozená, že je těžší to neudělat! Z tohoto důvodu visual studio live share usnadňuje začínáme, takže můžete bez problémů začít sdílet svou práci a nápady.
+Jste připraveni začít?  Týmová spolupráce by měla být tak rychlá a přirozená, takže ji nebudete moct dělat těžší. Z tohoto důvodu je Visual Studio Live Share snadné začít, takže můžete hladce začít sdílet práci a nápady.
 
 > [!TIP]
-> Víte, že se můžete *připojit k vlastní relaci spolupráce*? Díky tomu si můžete Live Share vyzkoušet sami nebo můžete rozjet instanci Visual Studia nebo VS Code a vzdáleně se k ní připojit. Můžete dokonce použít stejnou identitu v obou případech. Vyzkoušejte to!
+> Víte, že se můžete *připojit k vlastní relaci spolupráce*? Díky tomu si můžete Live Share vyzkoušet sami nebo můžete rozjet instanci Visual Studia nebo VS Code a vzdáleně se k ní připojit. Stejnou identitu můžete dokonce použít i v obou instancích. Vyzkoušejte to!
 
-Stačí postupovat podle těchto kroků a začít sdílet.
+Stačí pomocí těchto kroků začít sdílet.
 <!--
 Change the instructions to Install extension for VS Code and in-tool for VS?
 -->
-## <a name="1-install-the-extension"></a>1. Nainstalujte rozšíření
+## <a name="1-install-the-extension"></a>1. Instalace rozšíření
 
-Instalace rozšíření je snadná. Postupujte podle následujících kroků:
+Instalace rozšíření je snadná. Stačí postupovat podle těchto kroků:
 
 <table style="width: 100%; border:none;">
 <tr>
@@ -49,7 +49,7 @@ Instalace rozšíření je snadná. Postupujte podle následujících kroků:
         1. Nainstalujte <a href="https://code.visualstudio.com/">Visual Studio Code</a> pro Windows (7, 8.1 nebo 10), macOS <b>(Sierra+)</b>, 64bitový Linux <b>(<a href="../use/vscode.md#installation">podrobnosti</a>)</b>.<br />
         2. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
         3. Zvolte Znovu načíst a počkejte, až se stáhnou a nainstalují závislosti (sledujte stavový řádek).<br />
-        4. <strong>Linux</strong>: Pokud se zobrazí výzva k <a href="../reference/linux.md#install-linux-prerequisites">instalaci knihoven</a>, klepněte na tlačítko Instalovat, zadejte heslo, restartujte VS Code po dokončení.<br />
+        4. <strong>Linux</strong>: Pokud se zobrazí výzva k <a href="../reference/linux.md#install-linux-prerequisites">instalaci knihoven</a>, klikněte na nainstalovat, zadejte heslo a po dokončení vs Code restartujte.<br />
         <a href="https://aka.ms/vsls-dl/vscode"><img src="../media/download.png" alt="Download button"></a>
     </td>
 </tr>
@@ -58,7 +58,7 @@ Instalace rozšíření je snadná. Postupujte podle následujících kroků:
     <td  style="border:none;">
         <strong>Visual Studio 2019</strong><br />
         1.Nainstalujte <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2.Nainstalujte <a href="../reference/platform-support.md">podporované úlohy</a>. (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
+        2.Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
@@ -66,8 +66,8 @@ Instalace rozšíření je snadná. Postupujte podle následujících kroků:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 (verze 15.6 nebo vyšší)</strong><br />
-        1.Nainstalujte nejnovější verzi <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studia 2017</a> (15.6+) do Windows (7, 8.1 nebo 10).<br/>
-        2.Nainstalujte <a href="../reference/platform-support.md">podporované úlohy</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        1.Nainstalujte nejnovější verzi sady <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 +) ve Windows (7, 8,1 nebo 10).<br/>
+        2.Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
         3. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
@@ -81,7 +81,7 @@ Stažením a používáním rozšíření Visual Studio Live Share vyjadřujete 
 <!--
 Re-write the grammar here- run on sentence does not make sense. Change screen shots. There is another way of signing in as well- what if a user goes directly to the start collaboration. 
 -->
-Po instalaci rozšíření Live Share, restartování a čekání na dokončení instalace závislostí (Kód VS) se budete chtít přihlásit, abyste ostatní účastníci věděli, kdo jste. Stačí kliknout na položku stavového řádku "Live Share" (Kód VS) / "Přihlásit se" (VS), abyste mohli začít.
+Po instalaci rozšíření Live Share, restartování a čekání na dokončení instalace (VS Code) se budete chtít přihlásit, aby mohli ostatní účastníci informovat o tom, kdo máte. Chcete-li začít, stačí kliknout na položku stavového řádku "Live Share" (VS Code)/"přihlašovat" (a).
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -94,29 +94,29 @@ Po instalaci rozšíření Live Share, restartování a čekání na dokončení
 </tr>
 </table>
 
-Ve **VS Code**se váš prohlížeč spustí, zatímco se zobrazí oznámení s žádostí o přihlášení. Dokončete proces přihlášení ve vašem prohlížeči a po dokončení jednoduše zavřete prohlížeč.
+V **vs Code**se prohlížeč spustí, když se zobrazí oznámení o spuštění, které vás vyzve k přihlášení. Dokončete proces přihlášení v prohlížeči a po dokončení jednoduše zavřete prohlížeč.
 
-![Informační zpráva s žádostí o přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
+![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
 
-> **Uživatelé Linuxu:** Pokud používáte starší verzi live share (v0.3.295 nebo nižší), můžete být vyzváni k zadání uživatelského kódu. Aktualizujte na nejnovější verzi rozšíření nebo klikněte na tlačítko "Potíže?" odkaz po přihlášení zobrazíte kód. Podrobnosti naleznete [zde](../use/vscode.md#sign-in-using-a-user-code).
+> **Uživatelé systému Linux:** Pokud používáte starší verzi Live Share (v 0.3.295 nebo níže), může se zobrazit výzva k zadání kódu uživatele. Aktualizujte na nejnovější verzi rozšíření nebo klikněte na "máte potíže?" odkaz po přihlášení, aby se zobrazil kód [Podrobnosti najdete tady](../use/vscode.md#sign-in-using-a-user-code).
 
-V **sadě Visual Studio**live share automaticky používá váš účet [individuálního nastavení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). V důsledku toho se můžete jednoduše přihlásit jako obvykle. Pokud však dáváte přednost použití jiného přihlášení než váš účet přizpůsobení sady Visual Studio, přejděte na **účet Nástroje &gt; možnosti &gt; živého sdílení &gt; a** vyberte různá pověření.
+V **aplikaci Visual Studio**Live Share automaticky používá váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). V důsledku toho se můžete jednoduše přihlásit stejným způsobem jako normálně. Pokud ale dáváte přednost jinému přihlášení než k vašemu účtu přizpůsobení sady Visual Studio, použijte ** &gt; možnosti nástroje &gt; Live Share &gt; uživatelský účet** a vyberte jiné přihlašovací údaje.
 
-Viz [řešení potíží,](../troubleshooting.md#sign-in) pokud stále řešíte problémy.
+Pokud stále dochází k potížím, přečtěte si téma [řešení potíží](../troubleshooting.md#sign-in) .
 
-## <a name="3-open-a-folder-project-or-solution"></a>3. Otevření složky, projektu nebo řešení
+## <a name="3-open-a-folder-project-or-solution"></a>3. Otevřete složku, projekt nebo řešení.
 
-Normální pracovní postup použijte k otevření složky, projektu nebo řešení, které chcete sdílet v sadě Visual Studio nebo Visual Studio Code.
+Použijte běžný pracovní postup k otevření složky, projektu nebo řešení, které chcete sdílet v aplikaci Visual Studio nebo Visual Studio Code.
 
-### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [Volitelné] Aktualizace skrytých nebo vyloučených souborů
+## <a name="4-optional-update-hidden-or-excluded-files"></a>4. [nepovinné] aktualizace skrytých nebo vyloučených souborů
 
-Ve výchozím nastavení live share **skryje** všechny soubory nebo složky odkazované v souborech .gitignore ve sdílených složkách před hosty. **Skrytí** souboru zabrání jeho zobrazení ve stromu souborů hosta. **Vyloučení** souboru platí přísnější pravidlo, které brání Live Share z otevření pro hosta v situacích, jako je přejít na definici, nebo pokud krok do souboru při ladění nebo je "následovat". Chcete-li skrýt nebo vyloučit různé soubory, lze do projektu přidat soubor **.vsls.json** s těmito nastaveními. Podrobnosti [najdete v tématu řízení přístupu k souborům a viditelnosti.](../reference/security.md#controlling-file-access-and-visibility)
+Ve výchozím nastavení Live Share **skrývá** všechny soubory nebo složky, na které se odkazuje ve sdílených složkách z hostů. **Skrytím** souboru znemožníte jeho zobrazení ve stromu souborů hosta. **Vyloučení** souboru platí přísnější pravidlo, které brání Live Share jeho otevření pro hosta v situacích, jako je například definice přejít k definici, nebo pokud se do souboru při ladění nebo při ladění používá "za". Pokud chcete skrýt nebo vyloučit jiné soubory, můžete do projektu pomocí těchto nastavení přidat **.vsls.js** pro soubor. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
-## <a name="5-start-a-collaboration-session"></a>5. Zahájení relace spolupráce
+## <a name="5-start-a-collaboration-session"></a>5. zahájení relace spolupráce
 
 <!--
 -->
-Dále jednoduše klikněte na tlačítko "Live Share" v nástroji a odkaz na pozvánku se automaticky zkopíruje do schránky.
+Potom jednoduše klikněte v nástroji na "Live Share" a odkaz na pozvánku se automaticky zkopíruje do schránky.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -130,13 +130,13 @@ Dále jednoduše klikněte na tlačítko "Live Share" v nástroji a odkaz na poz
 </table>
 
 > [!NOTE]
-> Software brány firewall plochy vás může požádat, aby agentovi Live Share povolil otevřít port při prvním sdílení. Přijetí je zcela volitelné, ale umožňuje zabezpečené "přímý režim" ke zlepšení výkonu, když osoba, se kterou pracujete, je ve stejné síti jako vy. Podrobnosti naleznete [v tématu změna režimu připojení.](../reference/connectivity.md#changing-the-connection-mode)
+> Možná budete požádáni o váš software brány firewall na ploše, aby mohl agent Live Share otevřít port při prvním sdílení. Přijetí je zcela volitelné, ale umožňuje zabezpečený "přímý režim", aby se zlepšil výkon, když osoba, se kterou pracujete, je ve stejné síti jako vy. Podrobnosti najdete v tématu [Změna režimu připojení](../reference/connectivity.md#changing-the-connection-mode) .
 
-## <a name="6-optional-enable-read-only-mode"></a>6. [Volitelně] Povolit režim jen pro čtení
+## <a name="6-optional-enable-read-only-mode"></a>6. [volitelné] povolit režim jen pro čtení
 
-Po spuštění relace spolupráce můžete nastavit relaci jen pro čtení, abyste zabránili hostům v úpravách sdíleného kódu.
+Po zahájení relace spolupráce můžete nastavit relaci jen pro čtení a zabránit tak hostům v provádění úprav v kódu, který se sdílí.
 
-Po sdílení obdržíte oznámení, že odkaz na pozvánku byl zkopírován do schránky. Poté můžete vybrat možnost, aby byla relace jen pro čtení.
+Po sdílení se dostanete oznámení, že se odkaz na pozvánku zkopíroval do schránky. Pak můžete vybrat možnost nastavit relaci jen pro čtení.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -149,21 +149,21 @@ Po sdílení obdržíte oznámení, že odkaz na pozvánku byl zkopírován do s
 </tr>
 </table>
 
-V **kódu VS**můžete také spustit relaci jen pro čtení na kartě Live Share viewlet.
+V **vs Code**můžete také na kartě Live Share Viewlet spustit relaci jen pro čtení.
 
-![Informační zpráva s žádostí o přihlášení pomocí webového prohlížeče](../media/vscode-read-only-viewlet.png)
+![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-read-only-viewlet.png)
 
-### <a name="7-send-someone-the-invite-link"></a>7. Poslat někomu odkaz na pozvánku
+## <a name="7-send-someone-the-invite-link"></a>7. poslat někomu pozvánku odkaz
 
-Pošlete odkaz přes e-mail, Slack, Skype atd. Otevření odkazu v prohlížeči jim umožňuje připojit se k relaci spolupráce, která sdílí obsah složky, projektu nebo řešení, které jste otevřeli. Upozorňujeme, že vzhledem k úrovni přístupu k relacím live share, které mohou hosté poskytnout, **byste měli sdílet pouze s lidmi, kterým důvěřujete,** a promyslet si důsledky toho, co sdílíte.
+Pošlete odkaz prostřednictvím e-mailu, časové rezervy, Skypu atd. na ty, které chcete pozvat. Otevřením odkazu v prohlížeči umožníte, aby se připojili k relaci spolupráce, která sdílí obsah složky, projektu nebo řešení, které jste otevřeli. Všimněte si, že vzhledem k tomu, že úroveň přístupu Live Share relace může poskytnout hostům, **byste měli sdílet jenom s lidmi, kterým důvěřujete** , a zamyslete se nad důsledky sdílení.
 
-> **Bezpečnostní tip:** Chcete porozumět bezpečnostním důsledkům některých funkcí služby Live Share? Podívejte se na [bezpečnostní](../reference/security.md) článek.
+> **Tip zabezpečení:** Chcete pochopit důsledky zabezpečení některých funkcí Live Share? Podívejte se na článek o [zabezpečení](../reference/security.md) .
 
-Pokud má pozvaný host otázky, [článek Úvodní příručka: Připojte se k prvnímu](join.md) článku o zahájení relace poskytuje další informace o tom, jak hosta zprovoznit.
+Pokud má host, kterého jste pozvali, dotazy, [rychlý Start: připojení k první relaci](join.md) obsahuje další informace o tom, jak začít pracovat jako host.
 
-## <a name="8-optional-approve-the-guest"></a>8. [Nepovinné] Schválit hosta
+## <a name="8-optional-approve-the-guest"></a>8. [volitelné] schvalte hosta.
 
-Ve výchozím nastavení se hosté automaticky připojí k vaší relaci spolupráce a budete upozorněni, až budou připraveni s vámi spolupracovat.
+Ve výchozím nastavení se hosté připojovat k vaší relaci spolupráce automaticky a vy budete upozorněni, až budou připraveni pracovat s vámi.
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -176,31 +176,31 @@ Ve výchozím nastavení se hosté automaticky připojí k vaší relaci spolupr
 </tr>
 </table>
 
-Můžete se rozhodnout vyžadovat explicitní "schválení" pro každého, kdo se místo toho připojí. Pokud máte toto nastavení zapnuté, zobrazí se oznámení s výzvou ke schválení hosta při pokusu o připojení k relaci.
+Místo toho se můžete rozhodnout, že budete vyžadovat explicitní schválení pro kohokoli. Pokud je toto nastavení zapnuté, zobrazí se při pokusu o připojení k vaší relaci výzva k potvrzení uživatele.
 
-Podrobnosti o zapnutí této funkce naleznete [v části vyžadování schválení hostem.](../reference/security.md#requiring-guest-approval)
+Podrobnosti o tom, jak tuto funkci zapnout, najdete v tématu [vyžadování schválení hostů](../reference/security.md#requiring-guest-approval) .
 
-## <a name="9-collaborate"></a>9. Spolupracujte!
+## <a name="9-collaborate"></a>9. spolupráce
 
-A to je vše! Po vstupu hosta do vás můžete vyzkoušet několik věcí:
+A to je vše! Tady je několik věcí, které si můžete vyzkoušet, jakmile se k hostovi připojíte:
 
-1. Přecházat k různým souborům v projektu nezávisle a provést některé úpravy
-1. Sledujte hosta a sledujte, jak se posouvají, dělají úpravy a přecházejí do různých souborů
-1. Spuštění společné relace ladění s nimi
-1. Sdílení serveru, abyste se mohli podívat na něco jako webovou aplikaci spuštěnou na jejich počítači
+1. Přechod k různým souborům v projektu nezávisle na sobě a provádění některých úprav
+1. Sledujte hosta a sledujte, jak se posouvají, proveďte úpravy a přejděte do různých souborů.
+1. Spustit relaci spoluladění s nimi
+1. Nasdílejte Server, abyste se mohli podívat na něco jako na webové aplikaci běžící na svém počítači.
 1. Sdílení terminálu a spuštění některých příkazů
 
-Podívejte se na [Visual Studio Kód](../use/vscode.md) a Visual [Studio](../use/vs.md) rozšíření dokumenty informace o tom, jak provádět tyto akce a další.
+Další informace o tom, jak provádět tyto akce a další, najdete v dokumentaci k rozšířením pro [Visual Studio Code](../use/vscode.md) a [Visual Studio](../use/vs.md) .
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](../troubleshooting.md) nebo nám [pošlete svůj názor](../support.md).
 
 ## <a name="next-steps"></a>Další kroky
 
-Podívejte se na tyto další články pro více informací.
+Další informace najdete v těchto dalších článcích.
 
-- [Úvodní příručka: Připojte se k první relaci spolupráce](join.md)
-- [Postup: Spolupráce pomocí kódu sady Visual Studio](../use/vscode.md)
-- [Postup: Spolupráce pomocí Sady Visual Studio](../use/vs.md)
+- [Rychlý Start: připojení první relace spolupráce](join.md)
+- [Postupy: spolupráce pomocí Visual Studio Code](../use/vscode.md)
+- [Postupy: spolupráce pomocí sady Visual Studio](../use/vs.md)
 
 Referenční informace
 
