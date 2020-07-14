@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 308f3746bfcdd1f2a428106c1d3e579f49df0cf3
-ms.sourcegitcommit: 50069912a317f8685976013e80738bbaa403a3fe
+ms.openlocfilehash: b343fb129952003f9c9fcab7dcb9f5e3b28660a1
+ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72171993"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300277"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -30,14 +30,35 @@ Tým Visual Studio Live Share je vše o iteracích rychle, vyzkoušení nových 
 
 ## <a name="new-to-insiders"></a>✨ Novinky pro program Insider ✨
 
+### <a name="planned-sessions-vs-code"></a>**Plánované relace (VS Code)**
+Opakovaně použitelné relace nyní mají místo v Live Share Viewlet. Plánované relace vám umožní jako hostitele relace Live Share vytvořit propojení Live Share relace předem. 
+
+
+![Obrázek plánované-Session-CreateLink-VSCode ](../media/planned-session-creation-vscode.png)
+ *znázorňující vytvoření nové plánované relace z Viewlet*
+
+Díky tomu můžete tento odkaz sdílet jako součást pravidelně naplánovaných schůzek ve vašich týmech, vašich rozhovorech nebo relacích párování.
+Jakmile je relace naplánovaná předem, máte k ní přístup přímo z Live Share Viewlet. 
+
+![Obrázek plánované relace-Session-VSCode ](../media/planned-session-copylink-vscode.png) * znázorňující "plánované relace" ve službě Live Share Viewlet
+
+>[!TIP]
+>Zapněte v programu Insider Live Share v VS Code, aby používala možnost plánované >relace. Přečtěte si, jak se stát s buildem Insider níže. 
+
+Možnost plánované relace v aplikaci Visual Studio je momentálně pouze interní funkcí. V případě, že přejdete do fáze Insider, vraťte se prosím na aktualizace. 
+
+
+# <a name="pushed-to-public"></a>Vloženo na veřejné 
+
+Následující funkce programu Insider byly vloženy na veřejné.
 
 ### <a name="reusable-sessions-vs-code"></a>**Opakovaně použitelné relace (VS Code)**
 
 Live Share teď můžou hostovat opakovaně použitelné relace! Opakovaně použitelné relace poskytují možnost znovu použít relaci Live Share pro různé scénáře. To znamená, že můžete naplánovat předem Live Share relaci pro vaše technické rozhovory, týdenní Mob relaci programování, použít stejnou relaci při podávání přítele a spoustu dalšího.
 
 Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
-1. Přejít na `Command Palette` pomocí `Ctrl+Shift+P`
-1. Zadejte "živý SHA..." a klikněte na příkaz ' **_Live Share: vytvořit opakovaně použitelný odkaz na relaci_** '.
+1. Přejít na adresu `Command Palette` pomocí`Ctrl+Shift+P`
+1. Zadejte "živý SHA..." a klikněte na příkaz '**_Live Share: vytvořit opakovaně použitelný odkaz na relaci_**'.
 
 ![VSCode – reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
 
@@ -52,23 +73,23 @@ Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
  
 
 
-## Staňte se Insider <a name="BecomeanInsider"></a>
+## <a name="become-an-insider"></a>Staňte se Insider <a name="BecomeanInsider"> </a>
 
-Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Live Share používáte sadu funkcí `Stable`, která zahrnuje všechny funkce připravené pro produkční prostředí (např. společné úpravy, sdílené ladění, terminály). Pokud byste ale chtěli získat předběžný přístup k funkci, na které pracujeme, můžete se na `Insiders` sadu funkcí vyjádřit tak, že změníte následující nastavení v integrovaném vývojovém prostředí:
+Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Live Share používáte `Stable` sadu funkcí, která zahrnuje všechny funkce připravené pro produkční prostředí (např. společné úpravy, sdílené ladění, terminály). Pokud byste ale chtěli získat dřívější přístup k funkci, na které pracujeme, můžete se přihlásit k `Insiders` sadě funkcí změnou následujícího nastavení v integrovaném vývojovém prostředí:
 
 * Visual Studio
 
-    ![feature-set-vs](../media/feature-set-vs.png)
+    ![sada funkcí – vs](../media/feature-set-vs.png)
 
 * Visual Studio Code 
 
-    ![feature-set-vscode](../media/feature-set-vscode.png)
+    ![funkce Set-VSCode](../media/feature-set-vscode.png)
 
-Následující části popisují sadu funkcí, které jsou aktuálně ve `Insiders` sadě funkcí a jsou proto připravené k vyhodnocení po změně výše uvedeného nastavení:
+Následující části popisují sadu funkcí, které jsou aktuálně v `Insiders` sadě funkcí, a proto jsou připravené k vyhodnocení po změně výše uvedeného nastavení:
 
 
 
-## <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také
 
 - [Podpora jazyků a platforem](platform-support.md)
 - [Požadavky na připojení pro Live Share](connectivity.md)

@@ -11,12 +11,12 @@ ms.author: fubaduba
 manager: JonathanCarter
 ms.workload:
 - liveshare
-ms.openlocfilehash: db2365b92f5b18198a2f976e1c6ce3d5abb755c5
-ms.sourcegitcommit: d7f923c1bcd0430b48065ea2c0902b470f530987
+ms.openlocfilehash: ff5dff3e6a88dba8e0d6f49c5bdcf52d1163ef1a
+ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83569519"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86300269"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -26,22 +26,34 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="how-to-do-technical-interviews-using-live-share"></a>Postupy: provádění technických rozhovorů pomocí Live Share
 
-Pomocí Live Share pro rozhovory umožníte, aby si revidující a kandidáti měli rychlou a spolehlivou relaci s pohovorem, a to s využitím integrovaného vývojového prostředí (IDE) s plnou věrností. 
+Pomocí Live Share pro rozhovory umožníte, aby si revidující a kandidáti měli rychlou a spolehlivou relaci s pohovorem, a to s využitím integrovaného vývojového prostředí (IDE) s plnou věrností. Tento kurz se zaměřuje na použití ["plánovaných relací"](../reference/insiders.md) a [Live Shareho webového připojení](../quickstart/browser-join.md) pro prostředí s pohovorem. 
 
+## <a name="setup-for-interviewer-vs-code"></a>Nastavení pro revidujícího (VS Code)
 
-## <a name="setup-for-interviewer"></a>Nastavení pro revidujícího 
-Pokud chcete pohovor s kandidátem na Live Share musíte nejdřív ze dvou klientských počítačů:
+Nainstalujte [Visual Studio Code](../use/vscode.md) a stáhněte [Live Share rozšíření balíčku](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) z webu Marketplace. Balíček rozšíření vám poskytne naši zvukovou podporu pro rozhovory.
 
-Nainstalovat [Visual Studio](../use/vs.md) , které přináší sestavení s rozšířením Live Share
+>[!TIP]
+>Pokud chcete mít v VS Code nejlepší možnosti zobrazení pomocí Live Share, nezapomeňte zapnout příznak funkce Live Share Insiders. *Předvolby: rozšíření UserSettings > > Visual Studio Live Share > sadě funkcí: Insiders*
 
->[!TIP] 
-> Pro Live Share se ujistěte, že jste v nabídce *nástroje> možnosti > Live Share > pokročilé > funkce*. To vám umožní používat naši integrovanou podporu zvukového volání pro rozhovory.
-
-Nebo nainstalujte [Visual Studio Code](../use/vscode.md) a stáhněte [Live Share rozšíření balíčku](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) z webu Marketplace. Balíček rozšíření vám poskytne naši zvukovou podporu pro rozhovory. 
+>[!NOTE]
+> Live Share chat v VS Code obsahuje sestavení s rozšířením Live Share.
 
 ## <a name="scheduling-an-interview"></a>Plánování pohovoru 
 
 **Live Share v vs Code** poskytuje možnost vytvářet relace Live Share předem. Pomocí následujících kroků můžete vytvořit relaci předem:
+
+### <a name="option-a-insider"></a>Možnost A (Insider)
+1. `Planned Sessions`V Viewlet otevřete a vytvořte novou relaci. Nyní teď vytvořila relaci Live Share pro vás, která bude k dispozici z Viewlet po dobu rozhovoru. 
+
+![plánované – Session – CreateLink](../media/planned-session-creation-vscode.PNG)
+
+
+2. Kopírovat odkaz z Viewlet a odeslat ho kandidátovi. Odkaz, který pošlete na kandidáta, je možné použít v době, kdy se pohovor připojí k relaci.
+
+![plánované – Session – COPYLINK](../media/planned-session-copylink-vscode.PNG)
+
+
+### <a name="option-b-not-an-insider"></a>Možnost B (nejedná se o program Insider)
 
 1. Přejít na adresu `Command Palette` pomocí`Ctrl+Shift+P`
 1. Zadejte "živý SHA..." a klikněte na příkaz '_Live Share: vytvořit opakovaně použitelný odkaz na relaci_'.
@@ -64,7 +76,6 @@ Jakmile budete mít tento odkaz, stačí ho sdílet s interviewee prostřednictv
 
 ## <a name="setup-for-candidate"></a>Nastavení pro kandidáta
 I když kandidát může vždycky nainstalovat aplikaci Visual Studio nebo Visual Studio Code, aby se mohla spojit s pohovorem, není potřeba. **K relacím na Live Share rozhovorů se dá přihlásili kandidáti bez předchozího nastavení.** Můžou kliknout na odkaz na rozhovor v době relace a **připojit se z prohlížeče**. Další informace najdete [tady.](../quickstart/browser-join.md)
-
 
 
 <!--
