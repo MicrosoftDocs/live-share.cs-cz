@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0d328ad39b35ae1c6338825848857342765418d9
-ms.sourcegitcommit: 3a1b22eac528b0f6a241f9fec7ec20264db24cfe
+ms.openlocfilehash: f3005deae16cba2c16b59d9570b11cc7e35c6f84
+ms.sourcegitcommit: c484bdb0d54c23a47561b3cf492cf2a10b2b1599
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74019799"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88577005"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -47,9 +47,9 @@ V tomto dokumentu se dozvíte o některých případech použití, které Visual
 
 ## <a name="quick-assistance"></a>Rychlá pomoc
 
-Když narazíte na problém (například při pokusu o vyřešení chyby, nastavením prostředí), můžete použít Visual Studio Live Share k okamžitému vyhledání pomoci od jiného partnera. V mnoha případech není okamžitě jasné, jaký kontext má osoba poskytující podporu, a proto Live Share pomáhá zjednodušit poskytnutí přístupu k celému projektu a pokud je to potřeba, přírůstkové sdílení dalších (např. místní server, jen pro čtení). terminál). Není nutné odesílat fragmenty kódu ani chybové zprávy zpět.
+Když narazíte na problém (například při pokusu o vyřešení chyby, nastavením prostředí), můžete použít Visual Studio Live Share k okamžitému vyhledání pomoci od jiného partnera. V mnoha případech není okamžitě jasné, jaký kontext má osoba poskytující přístup, a proto Live Share pomáhá zjednodušit poskytnutí přístupu k celému projektu, a pokud je to potřeba, přírůstkové sdílení dalších (například místního serveru, terminálu jen pro čtení). Není nutné odesílat fragmenty kódu ani chybové zprávy zpět.
 
-Vzhledem k tomu, že Live Share umožňuje sdílet aktivní relaci ladění, aniž by to vyžadovalo "hostů" k instalaci některého z nezbytných sad SDK pro platformy (např. Node. js, přejít, .NET Core) nebo rozšíření nástrojů, vám může usnadnit získání řešení rychleji a zabránit tomu, že ne reprodukci v mém počítači "situace. Live Share vám umožňuje sdílet stav ladění s ostatními, pro libovolný programovací jazyk nebo běhové prostředí (např. Kubernetes, reagovat na nativní aplikaci), a nezávisle na tom, co potřebujete s tím pomáhat, můžete také sdílet!
+Vzhledem k tomu, že Live Share umožňuje sdílet aktivní relaci ladění, aniž by to vyžadovalo "hostů" k instalaci některého z nezbytných sad SDK pro platformy (např. Node.js, jít, .NET Core) nebo rozšíření nástrojů, může vám to usnadnit řešení rychleji a zabránit tomu, aby se v situaci v mém počítači nereprodukciy. Live Share vám umožňuje sdílet stav ladění s ostatními, pro libovolný programovací jazyk nebo běhové prostředí (např. Kubernetes, reagovat na nativní aplikaci), a nezávisle na tom, co potřebujete s tím pomáhat, můžete také sdílet!
 
 ### <a name="office-hours"></a>Hodiny kanceláře
 
@@ -80,12 +80,12 @@ Chcete-li tento případ použití přerušit ještě dále, následující polo
 V současné době Live Share podporuje až 30 hostů v rámci relace.
 > [!TIP]
 > Povolení 30 hostů v relaci:
-> - **Vs Code:** přidejte "LiveShare. increasedGuestLimit": "true" do Settings. JSON
+> - **Vs Code:** přidejte "LiveShare. increasedGuestLimit": "true" pro settings.js
 > - **Vs:** Nastavení nástrojů > možností > Live Share > zvýšil limit počtu hostů na hodnotu "true". 
 
 ### <a name="coding-competitions--hack-a-thons"></a>Kódování soutěží/napadení – A – Thons
 
-Kódování soutěží a napadení – a – thons jsou efektivní krátkodobé, proměnlivé variace Mob programování. Členové týmu a jejich stávající role jsou také potenciálně dynamické. Vzhledem k tomu, že tento případ použití je obvykle také časově citlivý, je schopnost spolupracovat v reálném čase, aniž by bylo nutné přijmout zcela nový nástroj a možnost společné spolupráce, aniž by byla omezena na jednu obrazovku nebo klávesnici, může při rostoucím způsobu přicházet k protokolu. rychlostí.
+Kódování soutěží a napadení – a – thons jsou efektivní krátkodobé, proměnlivé variace Mob programování. Členové týmu a jejich stávající role jsou také potenciálně dynamické. Vzhledem k tomu, že tento případ použití je obvykle také časově citlivý, je schopnost spolupracovat v reálném čase, aniž by bylo nutné přijmout zcela nový nástroj a možnost společné spolupráce bez omezení na jednu obrazovku nebo klávesnici, může při zvýšení rychlosti přejít do protokolu.
 
 Vzhledem k tomu, že účastníci v tomto prostředí nemusí vždy plně "důvěřovat", můžete z relace kdykoli odebrat (a zablokovat) hosta. To poskytuje "hostitelé" s úplnou kontrolou nad jejich prostředím.
 
@@ -107,7 +107,7 @@ Obecně řečeno Live Share snaží pomáhat vývojářům při sdílení zkuše
 
 ### <a name="peer-mentoring--onboarding"></a>Partnerský poradce/připojování
 
-Když zadáváte vývojáře k novému základu kódu, oblasti funkcí, technologii, atd. můžete použít Live Share k jeho procházení prostřednictvím projektu (pomocí `Follow Mode`), takže můžou sledovat společně s vámi, ale z vlastního osobního rozhraní IDE. Vzhledem k tomu, že Live Share umožňuje hostům nezávisle na projektu (například otevření souboru, provádění `Peek Definition`), může postupovat podle potřeby, ale také provádět rychlé průzkumy podle potřeby (například "Hmm", co tato funkce dělá? ").
+Když zadáváte vývojáře k novému základu kódu, oblasti funkcí, technologii, atd. můžete použít Live Share k jejich procházení prostřednictvím projektu (pomocí `Follow Mode` ), takže můžou sledovat společně s vámi, ale z vlastního osobního rozhraní IDE. Vzhledem k tomu, že Live Share umožňuje hostům nezávisle na projektu (například otevírání souboru, provádění `Peek Definition` ), může postupovat podle potřeby, ale také provádět rychlé průzkumy podle potřeby (například "Hmm", co tato funkce dělá? ").
 
 ### <a name="team-brown-bags"></a>Penalty pro Team Brown
 
@@ -115,7 +115,7 @@ Týmové hnědé sáčky jsou efektivní jako partnerského přihlašování, al
 
 ### <a name="classroom-lectures"></a>Přednášky učebny
 
-Když instruktori učební lekce, můžou použít Live Share ke sdílení projektu s studenty místo pouhého zobrazení obrazovky. To umožňuje, aby celá třída následovala s učitelem a současně dokázala pracovat s projektem sami. Kromě toho učitel může požádat jednotlivé studenty, aby pomohli řešit určitou část lekce (například metodu, kterou bychom volali? "), která může pomoct v sociálních aspektech třídy, aniž by se museli zabývat na přední straně místnosti. nebo dokonce fyzicky přítomná ve stejné místnosti (např. online kurzy).
+Když instruktori učební lekce, můžou použít Live Share ke sdílení projektu s studenty místo pouhého zobrazení obrazovky. To umožňuje, aby celá třída následovala s učitelem a současně dokázala pracovat s projektem sami. Kromě toho může učitel požádat jednotlivé studenty, aby pomohli řešit určitou část lekce (například metodu, kterou bychom volali? "), která může pomoci při sociálních aspektech třídy, aniž by museli studentům projít na přední straně místnosti, nebo dokonce fyzicky přítomná ve stejné místnosti (např. online kurzy).
 
 Aby bylo možné pomoci v nastavení učebny, Live Share umožňuje sdílení v režimu jen pro čtení. Instruktoři můžou použít režim jen pro čtení, který jim umožní sdílet své projekty s studenty, aniž by museli dělat starosti s zbytečnými nebo náhodnými úpravami.
 
@@ -123,7 +123,7 @@ Kromě toho Live Share podpora umožňuje až 30 hostům připojit se do relace 
 
 Povolení této funkce:
 
-- **Vs Code:** Přidejte "LiveShare. increasedGuestLimit": "true" do Settings. JSON.
+- **Vs Code:** Přidejte "LiveShare. increasedGuestLimit": "true" pro settings.js.
 - **Vs:** Nastavení nástrojů > možností > Live Share > zvýšil limit počtu hostů na hodnotu "true".
 
 Aby bylo možné plně optimalizovat Live Share pro tento scénář, musíme zjednodušit způsob, jakým jsou iniciované relace ([#422](https://github.com/MicrosoftDocs/live-share/issues/422)).
@@ -136,15 +136,15 @@ Vzhledem k tomu, že Live Share umožňuje okamžitě sdílet váš projekt s os
 
 Vzhledem k tomu, že Live Share umožňuje sdílet libovolný adresář, můžete ho použít k provádění revizí kódu, i když aktuálně nepoužíváte správu verzí (i když byste to měli!), nebo pokud váš tým nepoužívá PR (např. vývoj na základě šachty
 
-Live Share aktuálně nesdílí rozdílové správy zdrojového kódu, což je kritická část kontextu při použití pro revize kódu. To je v našem plánu a kdykoli se vám na ni povede žádná zpětná vazba, ([hlasujte 👍 tady](https://github.com/MicrosoftDocs/live-share/issues/36)).
+Live Share aktuálně nesdílí rozdílové správy zdrojového kódu, což je kritická část kontextu při použití pro revize kódu. Toto je v našem plánu a každá zpětná vazba o prioritách se výrazně vážíme ([Hlasujte 👍 tady](https://github.com/MicrosoftDocs/live-share/issues/36)).
 
 ## <a name="technical-interviews"></a>Technické rozhovory
 
-Při prohlížení kandidátů na pozici pro vývojáře může být často užitečné jít mimo diskuze v programu Tabule a místo toho sledovat problémy s kódováním z vlastního integrovaného vývojového prostředí (zejména v případě, že váš tým nebo organizace má "standardizované" prostředí pro nástroj, který Chcete je vidět, jak je používat). To nejen přináší výhody práce způsobem, který je potenciálně přirozenější (většina vývojářů nekóduje kód na tabulích), ale také poskytuje okamžitou zpětnou vazbu nebo pomoc při práci (například chyby sestavení, IntelliSense). V mnoha případech je důležitější pochopit postup, který je kandidátný na kandidáta, a to na rozdíl od jejich schopností nepamatují přesná syntaxe nebo názvy rozhraní API. Tímto způsobem Live Share poskytuje prostředí, které je podobné jako relace programování v relaci, ale umožňuje, aby účastník byl ve svém vlastním prostředí (včetně nastavení operačního systému, jako je usnadnění přístupu), a pracoval stejně jako i pro místní nebo vzdálené rozhovory.
+Při prohlížení kandidátů na pozici pro vývojáře může být často užitečné jít mimo diskuze tabule a místo toho řešit problémy s kódováním z vlastního integrovaného vývojového prostředí (zejména v případě, že váš tým nebo organizace má "standardizované" nástroje pro nástroj, který byste si chtěli použít. To nejen přináší výhody práce způsobem, který je potenciálně přirozenější (většina vývojářů nekóduje kód na tabulích), ale také poskytuje okamžitou zpětnou vazbu nebo pomoc při práci (například chyby sestavení, IntelliSense). V mnoha případech je důležitější pochopit postup, který je kandidátný na kandidáta, a to na rozdíl od jejich schopností nepamatují přesná syntaxe nebo názvy rozhraní API. Tímto způsobem Live Share poskytuje prostředí, které je podobné jako relace programování v relaci, ale umožňuje, aby účastník byl ve svém vlastním prostředí (včetně nastavení operačního systému, jako je usnadnění přístupu), a pracoval stejně jako i pro místní nebo vzdálené rozhovory. Připojení relace z webu umožňuje kandidátovi používat vývojové prostředí týmu a základ kódu, aniž byste museli stahovat cokoli. 
 
 Kromě toho je vývoj v reálném světě více než pouhým psaním kódu. Vzhledem k tomu, že Live Share podporuje také sdílené ladění, úlohy a terminály, umožňuje spolupracovníkům sledovat kandidáty při diagnostice problému a poskytnout jim vhodné nástroje potřebné k jejich vyřešení (např. ladění, spuštění testů). Vzhledem k tomu, že je všechny kontexty vzdálené z počítače hostitele, můžou kandidáti rychle přejít do prostředí pro rozhovor, aniž by museli nastavit počítač (po instalaci Live Share). Týmy pak můžou udržovat úložiště sdílených vzájemně se používaných aplikací (nebo použít svůj skutečný základ kódu produktu), který by se mohl klonovat a sdílet s kandidáty, protože jednoduše jim pošle adresu URL relace před každým pohovorem.
 
-## <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také
 
 - [Podpora jazyků a platforem](../reference/platform-support.md)
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
