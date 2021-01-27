@@ -1,5 +1,5 @@
 ---
-title: Rychlý Start pro sdílení – Visual Studio Live Share | Microsoft Docs
+title: Rychlé zprovoznění sdílení | Microsoft Docs
 description: Zkrácený návod ke sdílení prvního projektu pomocí Visual Studio Live Share relace spolupráce.
 ms.custom: ''
 ms.date: 03/22/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 9bee74ed4d494e948f2255321faab3fb5093d694
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 6422168bcb3d73a660ac90a415388ef1f29459d4
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796073"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870817"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +28,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 Vítá vás Visual Studio Live Share! Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje vám okamžitě a bezpečně sdílet váš aktuální projekt a pak podle potřeby sdílet ladicí relace, terminálové instance, webové aplikace místního hostitele, hlasové hovory a další věci.
 
-Jste připraveni začít?  Týmová spolupráce by měla být tak rychlá a přirozená, takže ji nebudete moct dělat těžší. Z tohoto důvodu je Visual Studio Live Share snadné začít, takže můžete hladce začít sdílet práci a nápady.
+Jste připraveni pokračovat?  Týmová spolupráce by měla být tak rychlá a přirozená, takže ji nebudete moct dělat těžší. Z tohoto důvodu je Visual Studio Live Share snadné začít, takže můžete hladce začít sdílet práci a nápady.
 
 > [!TIP]
 > Víte, že se můžete *připojit k vlastní relaci spolupráce*? Díky tomu si můžete Live Share vyzkoušet sami nebo můžete rozjet instanci Visual Studia nebo VS Code a vzdáleně se k ní připojit. Stejnou identitu můžete dokonce použít i v obou instancích. Vyzkoušejte to!
@@ -56,9 +56,9 @@ Instalace rozšíření je snadná. Stačí postupovat podle těchto kroků:
 <tr style="border:none;">
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2019.svg" width="128px" alt="Visual Studio 2019 logo" /></td>
     <td  style="border:none;">
-        <strong>Visual Studio 2019</strong><br />
-        1.Nainstalujte <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
-        2.Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
+        <strong>Visual Studio 2019 </strong><br />
+        1. Nainstalujte <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio 2019</a>.<br/>
+        2. Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).<br />
         3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí. <br />
     </td>
 </tr>
@@ -66,8 +66,8 @@ Instalace rozšíření je snadná. Stačí postupovat podle těchto kroků:
     <td width="128px" style="width: 128px; text-align: center; border:none;"><img src="../media/vs-ide-2017.svg" width="128px" alt="Visual Studio 2017 logo" /></td>
     <td  style="border:none;">
         <strong>Visual Studio 2017 (verze 15.6 nebo vyšší)</strong><br />
-        1.Nainstalujte nejnovější verzi sady <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 +) ve Windows (7, 8,1 nebo 10).<br/>
-        2.Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
+        1. Nainstalujte nejnovější verzi sady <a href="https://visualstudio.microsoft.com/vs/older-downloads/">Visual Studio 2017</a> (15.6 +) ve Windows (7, 8,1 nebo 10).<br/>
+        2. Nainstalujte <a href="../reference/platform-support.md">podporovanou úlohu</a>. (například ASP.NET, .NET Core, C++ a/nebo Node.js).<br />
         3. Z marketplace si stáhněte a nainstalujte rozšíření Visual Studio Live Share. <br />
         <a href="https://aka.ms/vsls-dl/vs"><img style="padding: 0; spacing: 0;" src="../media/download.png" alt="Download button" ></a><br />
     </td>
@@ -94,13 +94,13 @@ Po instalaci rozšíření Live Share, restartování a čekání na dokončení
 </tr>
 </table>
 
-V **vs Code**se prohlížeč spustí, když se zobrazí oznámení o spuštění, které vás vyzve k přihlášení. Dokončete proces přihlášení v prohlížeči a po dokončení jednoduše zavřete prohlížeč.
+V **vs Code** se prohlížeč spustí, když se zobrazí oznámení o spuštění, které vás vyzve k přihlášení. Dokončete proces přihlášení v prohlížeči a po dokončení jednoduše zavřete prohlížeč.
 
 ![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-sign-in-toast.png)
 
 > **Uživatelé systému Linux:** Pokud používáte starší verzi Live Share (v 0.3.295 nebo níže), může se zobrazit výzva k zadání kódu uživatele. Aktualizujte na nejnovější verzi rozšíření nebo klikněte na "máte potíže?" odkaz po přihlášení, aby se zobrazil kód [Podrobnosti najdete tady](../use/vscode.md#sign-in-using-a-user-code).
 
-V **aplikaci Visual Studio**Live Share automaticky používá váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). V důsledku toho se můžete jednoduše přihlásit stejným způsobem jako normálně. Pokud ale dáváte přednost jinému přihlášení než k vašemu účtu přizpůsobení sady Visual Studio, použijte ** &gt; možnosti nástroje &gt; Live Share &gt; uživatelský účet** a vyberte jiné přihlašovací údaje.
+V **aplikaci Visual Studio** Live Share automaticky používá váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio). V důsledku toho se můžete jednoduše přihlásit stejným způsobem jako normálně. Pokud ale dáváte přednost jinému přihlášení než k vašemu účtu přizpůsobení sady Visual Studio, použijte **&gt; možnosti nástroje &gt; Live Share &gt; uživatelský účet** a vyberte jiné přihlašovací údaje.
 
 Pokud stále dochází k potížím, přečtěte si téma [řešení potíží](../troubleshooting.md#sign-in) .
 
@@ -149,7 +149,7 @@ Po sdílení se dostanete oznámení, že se odkaz na pozvánku zkopíroval do s
 </tr>
 </table>
 
-V **vs Code**můžete také na kartě Live Share Viewlet spustit relaci jen pro čtení.
+V **vs Code** můžete také na kartě Live Share Viewlet spustit relaci jen pro čtení.
 
 ![Informační zpráva s výzvou k přihlášení pomocí webového prohlížeče](../media/vscode-read-only-viewlet.png)
 
@@ -202,7 +202,7 @@ Další informace najdete v těchto dalších článcích.
 - [Postupy: spolupráce pomocí Visual Studio Code](../use/vscode.md)
 - [Postupy: spolupráce pomocí sady Visual Studio](../use/vs.md)
 
-Referenční informace
+Reference
 
 - [Požadavky na připojení pro Live Share](../reference/connectivity.md)
 - [Funkce zabezpečení Live Share](../reference/security.md)

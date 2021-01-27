@@ -1,6 +1,6 @@
 ---
-title: Časté otázky – Visual Studio Live sdílenou složku | Dokumentace Microsoftu
-description: Nejčastější dotazy ohledně Visual Studio Live Share.
+title: NEJČASTĚJŠÍ DOTAZY | Microsoft Docs
+description: Nejčastější dotazy týkající se Visual Studio Live Share.
 ms.custom: ''
 ms.date: 05/05/2018
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 91ffc42c06e70839dbadbd2487cd02970ded3346
-ms.sourcegitcommit: bfa1020882095fcc7d31cd71cf1f2e601e3bea06
+ms.openlocfilehash: 3da327261766ea0aea7ed167059c864100d25da0
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "66224703"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870485"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -27,77 +27,77 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 # <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
 ## <a name="what-is-live-share"></a>Co je Live Share?
-Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje okamžitě (a bezpečně) sdílet vaše aktuální projekt a pak podle potřeby, sdílet ladicí relace, terminálu instancí, místního hostitele webové aplikace a další! Vývojáři, kteří připojit relací prostředí přijímat všechny jejich kontextu editoru z vašeho prostředí (například jazykových služeb, ladění), což zajistí, že mohou začít produktivně spolupráce okamžitě, aniž by bylo potřeba klonovat jakékoli úložiště nebo instalovat všechny sady SDK.
+Rozšíření Live Share vám umožňuje upravovat a ladit v reálném čase společně s ostatními bez ohledu na to, jaké programovací jazyky používáte nebo jaké typy aplikací vytváříte. Umožňuje okamžitě (a bezpečně) sdílet aktuální projekt a pak podle potřeby sdílet relace ladění, instance terminálu, webové aplikace a další věci. Vývojáři, kteří se připojí k vašim relacím, přijmou ze svého prostředí svůj kontext svého editoru (např. jazykové služby, ladění), které zajistí, že budou moct okamžitě začít spolupracovat přímo, aniž by museli klonovat žádné úložiště nebo instalovat sady SDK.
 
-## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Jaké jsou požadavky nástroje pro použití Live Share?
-[Základní možnosti](#what-are-the-core-capabilities-of-live-share) Live Share jsou plně podporované v těchto nástrojů:
+## <a name="what-are-the-tooling-requirements-for-using-live-share"></a>Jaké jsou požadavky nástrojů na použití Live Share?
+[Základní funkce](#what-are-the-core-capabilities-of-live-share) Live Share jsou plně podporované v následujících nástrojích:
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio 2017 (verzi 15.6 +)](https://visualstudio.microsoft.com/vs/older-downloads/)
+* [Visual Studio 2017 (15.6 +)](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
-Rychle iterovat jsme reagovat na zpětnou vazbu uživatelů. To vyžaduje, abychom mohli využít výhod funkcí v sadě Visual Studio a Visual Studio Code, které jsou pouze být k dispozici ve vydáních jejich příslušné verze preview/insider. Ukážeme, funkcí, které vyžadují novější verze sady Visual Studio nebo VS Code v dokumentaci. Například místní zpět/znovu podpora vyžaduje Visual Studio 2017 15.7 +.
+Rychle iterovat na zpětnou vazbu od uživatelů. To vyžaduje, abychom využili výhod funkcí v rámci sady Visual Studio a Visual Studio Code, které jsou k dispozici pouze v příslušných verzích Preview a Insider. Určíme, které funkce budou vyžadovat novější verze VS nebo VS Code v dokumentaci. Například místní Podpora funkce zpět/znovu vyžaduje Visual Studio 2017 15.7 +.
 
 ## <a name="what-are-the-core-capabilities-of-live-share"></a>Jaké jsou základní funkce Live Share?
-Live Share umožňuje sdílet váš kód s členy svého týmu přes zabezpečené připojení. S Live Share budete moci spolupracovat upravit více souborů v pracovním prostoru a další důležité je ladění aplikace s ostatními členy týmu. Při úpravách společně úprav jsou okamžitě vidět členy vašeho týmu. Během ladění společně sdílejí stejné relace ladění vaší aplikace. To znamená, že a ostatními členy týmu můžete řídit spuštění programu pomocí zarážek a kroků, ale nezávisle na sobě můžete kontrolovat proměnné, Watch, místní hodnoty a REPLs (např. příkazové podokno v sadě Visual Studio).
+Live Share umožňuje sdílet základ kódu se členy týmu prostřednictvím zabezpečeného připojení. Díky Live Share můžete v pracovním prostoru spolupracovat s více soubory a důležitějším laděním aplikace pomocí ostatními týmu. Během souběžného úprav se vaše úpravy okamžitě projeví v ostatními týmu. Během společného ladění sdílíte stejnou relaci ladění aplikace. To znamená, že vy a váš ostatními týmu můžete řídit provádění programu pomocí zarážek a kroků, ale můžete nezávisle kontrolovat proměnné, hodinky, místní a REPLs (například okamžité okno v aplikaci Visual Studio).
 
-Sdílené složky za provozu, jako má širokou škálu případů použití: zkoumání chybu společně zobrazující problém, který nebude reprodukovat na počítači někoho jiného řešení návrhu vydá, pár programování, provádění kódování rozhovor, mentorování ostatní členy týmu nebo provádění revize kódu ad-hoc.
+Live Share má širokou škálu případů použití, jako je například: zkoumání chyby společně s problémem, který se reprodukci na počítači jiné osoby, řešení problémů s návrhem, párování programování, provádění pohovorů při psaní kódu, poradenství dalších členů týmu nebo provádění revizí ad hoc kódu.
 
-## <a name="by-using-live-share-is-my-code-stored-on-a-microsoft-server"></a>Pomocí Live Share je můj kód uložené na serveru Microsoft?
-Ne, sdílený kód nachází pouze v počítači vývojáře, kteří iniciované sdílenou složku. Ji není uložená nebo při jejich nahrávání do cloudu žádným způsobem. Místo toho Live Share jednoduše vytvoří zabezpečené připojení mezi vámi a s ostatními členy týmu (což je šifrovaná začátku do konce) a nebude kontrolovat ani neshromažďují žádná data do kódu, který se sdílí.
+## <a name="by-using-live-share-is-my-code-stored-on-a-microsoft-server"></a>Pomocí Live Share je můj kód uložený na serveru Microsoftu?
+Ne, sdílený kód se nachází výhradně v počítači vývojáře, který zahájil sdílení. Neukládá se ani neukládá do cloudu jakýmkoli způsobem. Místo toho Live Share jednoduše navázat zabezpečené připojení mezi vámi a vaším ostatními týmu (zašifrovaný a komplexní) a nekontroluje ani neshromažďuje žádná data v kódu, který je sdílený.
 
-## <a name="does-this-remote-based-model-work-anywhere-is-it-peer-to-peer"></a>Tento model založený na vzdálené funguje kdekoli? Je to peer-to-peer?
-Živé sdílenou složku Jediným požadavkem je, že osoby, která sdílí a jejich programujete mají přístup k Internetu. Azure relay usnadňují zabezpečenou komunikaci mezi členy týmu během relace spolupráci. Váš pracovní prostor (tj. zdrojové soubory) nejsou uložená v cloudu. Je nutné žádné speciální připojení peer-to-peer, i když se jeden může použít ke snížení latence. Zobrazit [Změna režimu připojení](https://aka.ms/vsls-docs/connection-mode) v naší dokumentaci pro další podrobnosti.
+## <a name="does-this-remote-based-model-work-anywhere-is-it-peer-to-peer"></a>Funguje tento model vzdáleného modelu na libovolném místě? Je to peer-to-peer?
+Jediným požadavkem Live Share je, že osoba sdílející a jejich společník mají přístup k Internetu. Zabezpečená komunikace mezi členy týmu během relace spolupráce je usnadněna službou Azure Relay. Váš pracovní prostor (tj. zdrojové soubory) není uložený v cloudu. K omezení latence se nevyžaduje žádné zvláštní připojení peer-to-peer. Další podrobnosti najdete v tématu [Změna režimu připojení](https://aka.ms/vsls-docs/connection-mode) v naší dokumentaci.
 
-## <a name="what-is-shared-during-a-live-share-session"></a>Co je sdílet během relace Live Share?
-Živé sdílené složky nepřenese všechny vstupy klávesnici a myš. Komunikuje jenom data potřebná pro každou aktivitu spolupráce na počítače s ostatními členy týmu. Například při sdílení pracovního prostoru je sdílet vaše struktura složky. Když upravíte soubor spolupracovat, obsah tohoto souboru se sdílí. Při ladění spolupracovat, jsou sdíleny ladění akce (například krokování) a stavu (např. zásobník volání a místní hodnoty).
+## <a name="what-is-shared-during-a-live-share-session"></a>Co se sdílí během Live Share relace?
+Live Share nepřenáší všechny vstupy klávesnice a myši. Komunikuje jenom data potřebná pro každou aktivitu spolupráce s počítači s ostatními týmu. Když například sdílíte pracovní prostor, vaše struktura složek je sdílená. Při spolupráci s úpravou souboru se obsah tohoto souboru sdílí. Když spolupracujete na spolupráci, sdílí se akce ladění (například krokování) a stav (například zásobník volání a místní).
 
-## <a name="when-will-live-share-be-released"></a>Kdy Live Share vydáte?
-Sdílené složky za provozu je teď obecně dostupná! Je možné [začít pracovat s Live Share](https://aka.ms/vsls-start) ještě dnes.
+## <a name="when-will-live-share-be-released"></a>Kdy se Live Share uvolní?
+Live Share je teď všeobecně k dispozici! Můžete začít [s Live Share](https://aka.ms/vsls-start) ještě dnes.
 
-## <a name="how-much-will-it-cost"></a>Kolik vás to bude stát?
-Jsme usilujeme o podstatné úroveň free služby Visual Studio Live Share vývojáři mohou použít průběžně. Jsme bude se hodnocení Úvod placených úrovní pomocí pokročilých funkcí, jako jsme lépe pochopili požadavky komunity.
+## <a name="how-much-will-it-cost"></a>Kolik to bude stát?
+Jsme se zavázali k podstatné bezplatné úrovni Visual Studio Live Share, aby se vývojáři mohli průběžně používat. Vyhodnocujeme zavedení placených úrovní s pokročilými funkcemi, protože lépe rozumíte potřebám komunity.
 
-## <a name="how-is-my-code-shared-with-other-teammates"></a>Sdílení vlastního kódu s ostatní členové týmu
-Pokud používáte Live Share, děláte, kterou právě pracujete dostupné tak, aby ostatními členy týmu k němu přístup přes zabezpečenou cloudovou službu této příkazy Vzdálená úložiště z editoru kódu. Ostatními členy týmu můžete otevřít a upravit soubory bez nutnosti je ukládat v cloudu nebo trvale je uložit v počítači, vaše programujete.
+## <a name="how-is-my-code-shared-with-other-teammates"></a>Jak se sdílí můj kód s jinými ostatními týmuy?
+Při použití Live Share vytváříte kód, na kterém pracujete tak, aby k němu ostatními týmu mohl přistupovat přes zabezpečenou cloudovou službu, která z vašeho editoru provádí vzdálené příkazy. Vaše ostatními týmu může soubory otevřít a upravit, aniž by je museli ukládat do cloudu, nebo je trvale uložit na počítač s společník.
 
-Live Share umožňuje okamžitý přístup k funkcím, jako strom projektu, navigace v kódu a hledání. Umožňuje také členy vašeho týmu mít prospěch z vylepšení editoru, jako je například technologie IntelliSense.
+Live Share umožňuje okamžitý přístup k funkcím, jako jsou strom projektu, navigace v kódu a hledání. Umožňuje také vašemu ostatními týmuu těžit z vylepšení editoru, jako je například IntelliSense.
 
-## <a name="what-happens-if-a-user-goes-offline-or-stops-sharing"></a>Co se stane, když uživatel přejde do režimu offline nebo ukončí sdílení?
-Vzdálené modelu vyžaduje, vývojář sdílení prostřednictvím Live Share a jejich programujete musí být online, připojený k Internetu. Pokud vaše programujete se pokusí použít Live Share, když jste offline, nemohl připojit k relaci, dokud se znovu online. Kromě toho po zastavení spolupráce (třeba vám zavřete editor, přejít do režimu offline nebo zakázání sdílení), pak další akce nebo přístup k souborům členy vašeho týmu jsou okamžitě zakázat.
+## <a name="what-happens-if-a-user-goes-offline-or-stops-sharing"></a>Co se stane, když uživatel přejde do režimu offline nebo zastaví sdílení?
+Vzdálený model vyžaduje, aby bylo sdílení pro vývojáře prostřednictvím Live Share a jejich společník online, aby bylo možné je připojit. Pokud se vaše společník pokusí použít Live Share, když jste offline, nebude se moct připojit k relaci, dokud nebudete znovu online. Navíc po zastavení spolupráce (třeba zavřít editor, přejít do offline režimu nebo ukončit sdílení), jsou okamžitě zakázané další akce nebo přístup k souborům v ostatními týmu.
 
-## <a name="what-about-screen-sharing"></a>Co o sdílení obrazovky?
-Sdílené složky za provozu umožňuje sdílet kód vašeho projektu a jeho kontextu. Znamená to, že vaše programujete můžete snadno přejít do vašeho základu kódu a spolupracovat s vámi své zkušenosti s nástrojem. Editor nebo jiným aplikacím nejsou sdílené nebo zobrazitelné ve vaší programujete a není nutné změnit vašemu stylu práce nebo použít webovou aplikaci.
+## <a name="what-about-screen-sharing"></a>Co je sdílení obrazovky?
+Live Share umožňuje sdílet kód projektu a jeho kontext. To znamená, že váš společník může snadno přejít do základu kódu a pracovat s vámi pomocí jejich známého nástroje. Váš Editor nebo jiné aplikace nejsou sdíleny nebo zobrazitelny vaším společník a nemusíte měnit IT manažery ani používat webovou aplikaci.
 
-Živé sdílené složky nenahrazuje sdílení obrazovky, kde můžete chtít zobrazit položku nabídky a diskutovat visual aspekty vaší aplikace nebo vašem editoru. Místo toho máte možnost použít Live Share spolu s konverzace, hlasové, videa a sdílení obrazovky.
+Live Share nenahrazuje sdílení obrazovky, kde můžete chtít zobrazit položku nabídky nebo diskutovat o vizuálních aspektech vaší aplikace nebo editoru. Místo toho máte možnost použít Live Share společně s funkcí chat, Voice, video a sdílení obrazovky.
 
-## <a name="what-about-other-collaboration-tools"></a>A co jiných nástrojů pro spolupráci?
-Živé sdílenou složku jde použít s chatu, zasílání rychlých zpráv nebo technologie e-mailu. Jsme zjistili jsme, že v těchto nástrojích spustí mnoha interakcím spolupráci mezi vývojáři. Ale když diskuse o kódu, jsou často dostat k okamžiku, kde je to ale příliš obtížné popisují potíže s textem, fragmenty kódu nebo jednotlivé soubory – je potřeba další kontext.
+## <a name="what-about-other-collaboration-tools"></a>Co se týká dalších nástrojů pro spolupráci?
+Live Share lze použít s technologiemi chat, rychlých zpráv nebo e-mailů. Zjistili jsme, že v těchto nástrojích začíná spousta spolupráce mezi vývojáři. Nicméně pokud je diskuze o kódu, často se dostanete k bodu, kde je jednoduše příliš těžko vysvětlovat problém s textem, fragmenty kódu nebo s jedním soubory. je třeba zadat více kontextu.
 
-Sdílené složky za provozu je možné ke spoustě věcí, jako například: hledání nápovědy na problém, řeší chyby, zkontrolovat pár programování, provádění kódování dotazování nebo provádění ad-hoc před potvrzení změn kódu nebo žádost o přijetí změn.
+Live Share lze použít pro mnoho věcí, jako je například vyhledávání pomocníka při potížích, řešení chyby, spárování programování, vedení pohovoru s psaním kódu nebo provedení ad-hoc kontroly před potvrzením kódu nebo vyžádáním žádosti o přijetí změn.
 
-## <a name="what-about-other-web-editors"></a>Jak ostatní editory web?
-Pomocí editoru založeného na webu i členové týmu muset použít stejnou webovou aplikaci zobrazíte spolupráci výhody, které nemusí být jejich primárních, každodenní editoru. Mnohé editory založeného na webu se předpokládá, že jsou vytváření a nasazování do virtuálního počítače často hostované v cloudovém prostředí.
+## <a name="what-about-other-web-editors"></a>Co jsou další webové editory?
+Díky webovým editorům musí obě ostatními týmu používat stejnou webovou aplikaci k získání výhod pro spolupráci, které nemusí být jejich hlavním, každodenním editorem. Mnoho webových editorů předpokládá, že sestavíte a nasazujete do virtuálního počítače, který je často hostován v cloudovém prostředí.
 
-To může být žádoucí, aby mnoho scénářů, vývojáři často chtějí spolupracovat na aplikace, které se nehostují ve virtuálním počítači nebo v cloudu.  S Live Share vám a vaší programujete může využívat možnosti ekosystému nástrojů kromě stejné funkce, které jsou k dispozici v editoru založeného na webu.
+I když to může být žádoucí pro mnoho scénářů, vývojáři často chtějí spolupracovat na aplikacích, které nejsou hostované na virtuálním počítači nebo v cloudu.  Díky Live Share můžete vy a váš společník využívat možnosti ekosystému nástrojů kromě stejných možností, které jsou k dispozici v editorech založeném na webu.
 
-Živé sdílenou složku přejde o krok dál a umožňuje sdílet ladicí relaci.  Díky tomu je zvláště užitečná v uvedení ostatní, aby vám problémy, které mohlo dojít pouze v počítači bez změny jejich pracovního postupu vývoje nebo by bylo potřeba změnit návrh aplikace pomohla najít.
+Live Share ještě další krok a umožní vám sdílet relaci ladění.  To je užitečné hlavně při zařazování dalších, které vám pomůžou sledovat problémy, ke kterým dochází jenom na vašem počítači, aniž by došlo ke změně vývojového pracovního postupu nebo k tomu, aby se návrh aplikace změnil.
 
-## <a name="which-languages-and-platforms-will-be-supported"></a>Jaké jazyky a platformy bude podporována?
-Naším cílem je podporovat různé prostředí, jazyků a platforem, ujistěte se, že jsme povolili spolupráce, bez ohledu na typ aplikace, a proto produkt. Zobrazit [jazyka a libovolné platformy podporují](reference/platform-support.md) , kde najdete podrobnosti o tom, co funguje už dnes.
+## <a name="which-languages-and-platforms-will-be-supported"></a>Které jazyky a platformy budou podporovány?
+Naším cílem je podporovat nejrůznější jazyky a platformy, aby bylo zajištěno, že můžeme povolit bohatou spolupráci bez ohledu na to, jaký typ aplikace se vyvíjí. Podrobnosti o tom, co dnes funguje, najdete v článku [Podpora jazyků a platforem](reference/platform-support.md) .
 
-## <a name="how-many-developers-can-join-a-collaboration-session"></a>Jak celá řada vývojářů může připojit k relaci spolupráci?
-V tuto chvíli podporujeme 30 souběžných hostech. Kromě toho pro vývojáře, který sdílí ("hostování") projekt. 
+## <a name="how-many-developers-can-join-a-collaboration-session"></a>Kolik vývojářů se může připojit k relaci spolupráce?
+V současné době podporujeme 30 souběžných hostů, kromě vývojářů, kteří sdílejí ("hostování") jejich projektu. 
 
 ## <a name="what-is-the-roadmap"></a>Co je plán?
-Můžete zobrazit sadu známé problémy a položky plán [tady](https://aka.ms/vsls-issues). Pokud chcete pouze požadavky na funkce najdete v tématu, ne všechny problémy, přečtěte si téma [tady](https://aka.ms/vsls-feature-requests). Doporučujeme vám nahoru vote existující položky souboru žádostí o nové funkce a protokolování zpráv o chybách, aby bylo možné Pomozte nám tvar směr produktu v budoucnu.
+Můžete zobrazit sadu známých problémů [a položky plánu](https://aka.ms/vsls-issues). Pokud byste chtěli zobrazit jenom žádosti o funkce místo všech problémů, přečtěte si [tady](https://aka.ms/vsls-feature-requests). Doporučujeme vám, abyste si vyžádali existující položky, soubory nových funkcí a protokoly chyb, aby bylo možné pořídit směr pohybu produktu směrem k.
 
-## <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také
 
 - [Podpora jazyků a platforem](platform-support.md)
 - [Požadavky na připojení pro Live Share](reference/connectivity.md)
 - [Funkce zabezpečení Live Share](reference/security.md)
-- [Hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
-- [Všechny žádosti o funkce a omezení](https://aka.ms/vsls-feature-requests)
+- [Všechny hlavní chyby, žádosti o funkce a omezení](https://aka.ms/vsls-issues)
+- [Všechny požadavky a omezení funkcí](https://aka.ms/vsls-feature-requests)
 
 Máte potíže? Podívejte se na článek o [odstraňování potíží](troubleshooting.md) nebo nám [pošlete svůj názor](support.md).

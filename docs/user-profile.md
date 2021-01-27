@@ -1,5 +1,5 @@
 ---
-title: Profil uživatele – Visual Studio Live Share | Microsoft Docs
+title: Profil uživatele | Microsoft Docs
 description: Přehled toho, jak zobrazit a odebrat Visual Studio Live Share profil uživatele.
 ms.custom: ''
 ms.date: 05/222/2018
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f9f496b47db7efe260c1f09a2906c68c07762d5
-ms.sourcegitcommit: 6bf13781dc42a2bf51a19312ede37dff98ab33ea
+ms.openlocfilehash: c1c0363074c0737ae3aedb68952f3147e58cddb9
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80295949"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870804"
 ---
 <!--
 Copyright &copy; Microsoft Corporation
@@ -41,12 +41,12 @@ Pokud Visual Studio Live Share pro identitu, ke které jste se přihlásili, nen
 
 ## <a name="removing-your-profile"></a>Odebírá se Váš profil.
 
-Pokud chcete odebrat svůj uživatelský profil, můžete kliknout na tlačítko `Delete your account` na [stránce profil uživatele](#user-profile). V opačném případě bude Visual Studio Live Share automaticky odstranit profil 30 dní od posledního úspěšného přihlášení. V tomto kontextu se "úspěšné přihlášení" odkazuje na následující (v závislosti na použitém nástroji):
+Pokud chcete odebrat svůj uživatelský profil, můžete kliknout na `Delete your account` tlačítko na [stránce profil uživatele](#user-profile). V opačném případě bude Visual Studio Live Share automaticky odstranit profil 30 dní od posledního úspěšného přihlášení. V tomto kontextu se "úspěšné přihlášení" odkazuje na následující (v závislosti na použitém nástroji):
 
 | IDE/Editor | Váš profil uživatele se odstraní 30 dnů od posledního spuštění... |
 |-|-|
 | Visual Studio | Spusťte novou instanci rozhraní IDE. Aby bylo možné podporovat jednotné přihlašování, Visual Studio Live Share aktualizuje relaci ověřování pokaždé, když otevřete novou instanci aplikace Visual Studio. |
-| Visual Studio Code | Dokončete pracovní postup ověřování na základě prohlížeče (například kliknutím na tlačítko `Sign In` nebo spuštěním příkazu `Live Share: Sign in with browser`). Visual Studio Live Share si zapamatuje vaši relaci ověřování na klientovi, aby nedocházelo k tomu, že se přihlašujete pokaždé, když budete sdílet. Platnost této relace však vyprší po 30 dnech a nikdy se automaticky neaktualizuje, dokud se znovu nebudete přihlašovat přes prohlížeč. |
+| Visual Studio Code | Dokončete pracovní postup ověřování na základě prohlížeče (například kliknutím na `Sign In` tlačítko nebo spuštěním `Live Share: Sign in with browser` příkazu). Visual Studio Live Share si zapamatuje vaši relaci ověřování na klientovi, aby nedocházelo k tomu, že se přihlašujete pokaždé, když budete sdílet. Platnost této relace však vyprší po 30 dnech a nikdy se automaticky neaktualizuje, dokud se znovu nebudete přihlašovat přes prohlížeč. |
 
 ## <a name="see-also"></a>Viz také
 

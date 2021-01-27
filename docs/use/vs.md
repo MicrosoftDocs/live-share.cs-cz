@@ -1,5 +1,5 @@
 ---
-title: Spolupráce s využitím sady Visual Studio – Visual Studio Live Share | Microsoft Docs
+title: Spolupráce s využitím sady Visual Studio | Microsoft Docs
 description: Sada postupů spolupráce pro Visual Studio a Live Share.
 ms.custom: ''
 ms.date: 04/25/2018
@@ -11,12 +11,12 @@ ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2f7be9b3c81aeca63eb9965085b42b777cc4a6d7
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.openlocfilehash: 190721006ea0d5a29c7b325c1dd26ef4293eb988
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337241"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870997"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -37,17 +37,17 @@ Všimněte si, že všechny aktivity spolupráce popsané tady zahrnují jednoho
 
 ## <a name="installation"></a>Instalace
 
-Než začnete, budete muset nainstalovat **Visual studio 2019** nebo **visual Studio 2017 15,6 nebo vyšší** ve Windows 7, 8,1 nebo 10. *Ale Visual Studio 15.7 + se doporučuje, protože umožňuje místní podporu akcí zpět a znovu.*
+Než začnete, budete muset nainstalovat **Visual studio 2019** nebo  **visual Studio 2017 15,6 nebo vyšší** ve Windows 7, 8,1 nebo 10. *Ale Visual Studio 15.7 + se doporučuje, protože umožňuje místní podporu akcí zpět a znovu.*
 
 Je jednoduché, abyste mohli začít.
 
 Pro Visual Studio 2019
-1. Nainstalujte všechny edice sady [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
+1. Nainstalujte libovolnou edici sady [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).
 2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++, Python a/nebo Node.js).
 3. Visual Studio Live Share se standardně instaluje s těmito sadami funkcí.
 
 Visual Studio 2017
-1. Nainstalujte všechny edice sady [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6 +.
+1. Nainstalujte libovolnou edici sady [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/) 15.6 +.
 2. Nainstalujte [podporované sady funkcí](../reference/platform-support.md). (například ASP.NET, .NET Core, C++ a/nebo Node.js).
 3. [Stáhněte](https://aka.ms/vsls-dl/vs) a nainstalujte Visual Studio Live Share rozšíření z webu Marketplace.
 
@@ -64,13 +64,13 @@ Ve výchozím nastavení používá Visual Studio váš [účet přizpůsobení]
 ![Tlačítko pro přihlášení VS](../media/vs-sign-in-button.png)
 
 
-Pokud chcete použít jiné přihlášení, než je váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)sady Visual Studio, přejděte do ** &gt; možností nástroje možnosti &gt; Live Share &gt; uživatelský účet** pro přepnutí přihlašovacích údajů.
+Pokud chcete použít jiné přihlášení, než je váš [účet přizpůsobení](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)sady Visual Studio, přejděte do **&gt; možností nástroje možnosti &gt; Live Share &gt; uživatelský účet** pro přepnutí přihlašovacích údajů.
 
 ![Možnosti nástrojů VS Live Share](../media/vs-tools-options-new.png)
 
 Výběr **externího účtu** umožňuje vybrat účet, který není podporován funkcí přizpůsobení sady Visual Studio, jako je GitHub. Prohlížeč se automaticky zobrazí při prvním použití funkce Live Share, abyste mohli dokončit přihlášení.
 >[!Tip]
->Věděli jste, že pro zobrazení všech výchozích nastavení Live Share můžete přejít na ** &gt; možnosti nástroje &gt; Live Share &gt; Obecné** ? Přizpůsobte si prostředí pro spolupráci podle svých potřeb. Můžete také vyzkoušet všechny nové funkce Live Share tím, že v obecném nastavení Live Share vyberete **Rozšířené &gt; funkce &gt; Insider** .  
+>Věděli jste, že pro zobrazení všech výchozích nastavení Live Share můžete přejít na **&gt; možnosti nástroje &gt; Live Share &gt; Obecné** ? Přizpůsobte si prostředí pro spolupráci podle svých potřeb. Můžete také vyzkoušet všechny nové funkce Live Share tím, že v obecném nastavení Live Share vyberete **Rozšířené &gt; funkce &gt; Insider** .  
 
 Pokud narazíte na problémy, podívejte se na [řešení potíží](../troubleshooting.md#sign-in) , kde najdete další tipy.
 
@@ -89,7 +89,7 @@ Po stažení a instalaci Visual Studio Live Share postupujte podle těchto krok�
 
 3. **Volitelné Aktualizace skrytých nebo vyloučených souborů**
 
-    Ve výchozím nastavení Live Share **skrývá** všechny soubory nebo složky, na které se odkazuje v souborech. gitignore v projektu od hostů. **Skrytím** souboru zabráníte jeho zobrazení ve stromu souborů a zároveň se tím **vyloučí** , že se přestane přenášet i během operací, jako je ladění. Pokud chcete skrýt nebo vyloučit různé soubory, můžete do projektu pomocí těchto nastavení přidat soubor **. vsls. JSON** . Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+    Ve výchozím nastavení Live Share **skrývá** všechny soubory nebo složky, na které se odkazuje v souborech. gitignore v projektu od hostů. **Skrytím** souboru zabráníte jeho zobrazení ve stromu souborů a zároveň se tím **vyloučí** , že se přestane přenášet i během operací, jako je ladění. Pokud chcete skrýt nebo vyloučit jiné soubory, můžete do projektu pomocí těchto nastavení přidat **.vsls.js** pro soubor. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 4. **Spustit relaci spolupráce**
 
@@ -212,7 +212,7 @@ Můžete se také ručně připojit bez použití webového prohlížeče, kter�
 
 4. **Uložte!**
 
-    A je to! V tuto chvíli byste měli být připojeni k relaci spolupráce.
+    A to je vše! V tuto chvíli byste měli být připojeni k relaci spolupráce.
 
     Po přechodu na tlačítko "Live Share" se zobrazí zpráva "stav relace". Podívejte se na informace o [stavu relace](#session-states) níže, aby to vypadalo takto.
 
@@ -251,7 +251,7 @@ Ještě lepší a ostatní účastníci můžou přejít na libovolný soubor ve
 
 Výsledné úpravy jsou uložené v počítači hostitele při uložení, takže nemusíte po dokončení úprav provádět synchronizaci, vkládání ani posílání souborů. Úpravy jsou "jenom tam."
 
-> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím souboru. vsls. JSON. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení se některé soubory nezobrazuje. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím .vsls.jsv souboru. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení se některé soubory nezobrazuje. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 ### <a name="changing-participant-flag-behaviors"></a>Změna chování příznaku účastníka
 
@@ -263,7 +263,7 @@ Ve výchozím nastavení Visual Studio Live Share automaticky zobrazuje přízna
 | Možnost | Chování |
 |--------|----------|
 | OnHoverOnly | Příznak se zobrazí, pouze když najedete myší na kurzor. |
-| OnHoverOrActivity | Toto nastavení je výchozí. Příznak se zobrazí při najetí myší nebo v případě, že se kurzor upraví, zvýrazní nebo přesune. |
+| OnHoverOrActivity | Tato možnost je výchozí. Příznak se zobrazí při najetí myší nebo v případě, že se kurzor upraví, zvýrazní nebo přesune. |
 | Vždy | Příznak je vždy zobrazen.
 
 ## <a name="following"></a>Sledování
@@ -306,7 +306,7 @@ Potom můžou kliknout na sledovat hned z oznámení, když jsou připravení na
 
 Funkce pro spolupráci při ladění Visual Studio Live Share je účinný a jedinečný způsob, jak tento problém ladit. Kromě povolení prostředí pro spolupráci při řešení problémů, ale i dalších účastníků ve vaší relaci je schopnost prozkoumat problémy, které můžou být specifické pro prostředí, tím, že poskytuje sdílenou relaci ladění v počítači hostitele.
 
-> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím souboru. vsls. JSON. Měli byste taky mít na paměti, že konzola/REPL přístup znamená, že účastníci můžou na svém počítači spouštět příkazy, takže byste měli jenom ladit jenom ty, které důvěřujete. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení nemusí být možné sledovat ladicí program jako krok do určitých souborů s omezenými oprávněními. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím .vsls.jsv souboru. Měli byste taky mít na paměti, že konzola/REPL přístup znamená, že účastníci můžou na svém počítači spouštět příkazy, takže byste měli jenom ladit jenom ty, které důvěřujete. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení nemusí být možné sledovat ladicí program jako krok do určitých souborů s omezenými oprávněními. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 Jednoduché použití. Hostitel relace pro spolupráci jednoduše potřebuje spustit ladění prostřednictvím obvyklých způsobů v aplikaci Visual Studio.
 
@@ -376,7 +376,7 @@ Hosté pak budou mít přístup k serveru, který jste sdíleli na tomto portu z
 
 > **Tip zabezpečení:** Jako hostitel byste měli být velmi selektivní pomocí portů, které sdílíte s hosty, a přidružit je k portům aplikací (místo sdílení portu systému). Pro hosty se budou sdílené porty chovat stejně, jako by byly spuštěné na svém vlastním počítači na serveru nebo službě. To je velmi užitečné, ale pokud je nesprávný port sdílený, může být také riskantní.
 
-Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny na zadaných portech pro ostatní hosty. Naštěstí je snadné přidat ho jako **hostitele**relace pro spolupráci. Zde je uveden postup:
+Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny na zadaných portech pro ostatní hosty. Naštěstí je snadné přidat ho jako **hostitele** relace pro spolupráci. Jak na to:
 
 1. Klikněte na tlačítko sdílet/nastavit stav v pravém horním rohu a vyberte Spravovat sdílené místní servery.
 
@@ -386,7 +386,7 @@ Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny
 
     ![Správa sdílených místních serverů](../media/vs-manage-local-shared-servers.png)
 
-A je to! Server na portu, který jste zadali, se teď namapuje na localhost každého hostitele na stejném portu (Pokud se tento port už nepoužívá)!
+A to je vše! Server na portu, který jste zadali, se teď namapuje na localhost každého hostitele na stejném portu (Pokud se tento port už nepoužívá)!
 
 Pokud se port již používá v počítači hosta, je automaticky vybrán jiný. Naštěstí se jako host zobrazí seznam aktuálně sdílených portů (podle názvu, pokud je zadaný), kliknutím na tlačítko sdílet/vytvořit stav relace v pravém horním rohu a výběrem možnosti zobrazit sdílené místní servery.
 
@@ -411,7 +411,7 @@ V tomto okamžiku můžete z nabídky vybrat terminálu jen pro čtení nebo pro
 > [!NOTE]
 > Pokud je relace spolupráce v režimu jen pro čtení, může hostitel sdílet jenom terminály jen pro čtení.
 
-Po výběru typu sdíleného terminálu, který chcete spustit, se zobrazí nový sdílený terminál pro všechny účastníky se správnými oprávněními. I když Visual Studio Code má vestavěnou podporu terminálů, aplikace Visual Studio nemá žádné z nich. Proto se ve výchozím nastavení zobrazí nové okno obsahující terminál. Pokud se ale [rozšíření terminálu/Swagger/docs/v1./Swagger/docs/v1.](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal), Live Share místo toho vytvoří integrovaný terminál. Visual Studio vám poskytne odkaz na jeho instalaci při prvním spuštění nebo připojení ke sdílenému terminálu.
+Po výběru typu sdíleného terminálu, který chcete spustit, se zobrazí nový sdílený terminál pro všechny účastníky se správnými oprávněními.
 
 ![Oznámení o instalaci Terminálové zprávy](../media/vs-terminal-install.png)
 
@@ -423,10 +423,10 @@ Po spuštění nebo připojení relace spolupráce a přístup ke sdílenému ob
 
 Tady jsou stavy, které obvykle vidíte:
 
-| State | Tlačítko | Description |
+| State | Tlačítko | Popis |
 |-------|--------|-------------|
 | Inactive | ![VS – stav: neaktivní](../media/vs-status-share.png) | Žádná aktivní relace spolupráce a nic se nesdílí. |
-| Hostitel: probíhá sdílení. | ![VS stav: probíhá sdílení](../media/vs-status-sharing.png) | Spouští se relace spolupráce a v krátké době začne sdílení obsahu. |
+| Hostitel: sdílení In-Progress | ![VS stav: probíhá sdílení](../media/vs-status-sharing.png) | Spouští se relace spolupráce a v krátké době začne sdílení obsahu. |
 | Hostitel: sdílení | ![VS – stav: sdílení aktivní ](../media/vs-status-active.png) | Relace spolupráce je aktivní a obsah se sdílí. |
 | Hostitel: sdílení jen pro čtení | ![VS stav: sdílení jen pro čtení](../media/vs-status-sharing-read-only.png)| Sdílení relace pro spolupráci jen pro čtení. |
 | Host: připojení relace | ![Stav VS Code: spojování](../media/vs-status-joining.png) | Připojení k existující relaci spolupráce |

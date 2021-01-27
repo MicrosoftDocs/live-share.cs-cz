@@ -1,5 +1,5 @@
 ---
-title: Insider – Visual Studio Live Share | Microsoft Docs
+title: Insider | Microsoft Docs
 description: Popis kanálu "Insiders" v rámci Visual Studio Live Share.
 ms.custom: ''
 ms.date: 04/02/2019
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: b343fb129952003f9c9fcab7dcb9f5e3b28660a1
-ms.sourcegitcommit: 6b1c502ba1763527aa69bad2e0c919d60a47153d
+ms.openlocfilehash: a58bf30ad1c6f4c4cecedb1a07ca0482a67f5ec7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86300277"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870718"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -57,7 +57,7 @@ Následující funkce programu Insider byly vloženy na veřejné.
 Live Share teď můžou hostovat opakovaně použitelné relace! Opakovaně použitelné relace poskytují možnost znovu použít relaci Live Share pro různé scénáře. To znamená, že můžete naplánovat předem Live Share relaci pro vaše technické rozhovory, týdenní Mob relaci programování, použít stejnou relaci při podávání přítele a spoustu dalšího.
 
 Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
-1. Přejít na adresu `Command Palette` pomocí`Ctrl+Shift+P`
+1. Přejít na adresu `Command Palette` pomocí `Ctrl+Shift+P`
 1. Zadejte "živý SHA..." a klikněte na příkaz '**_Live Share: vytvořit opakovaně použitelný odkaz na relaci_**'.
 
 ![VSCode – reusablesessioncmd](../media/vscode-cmdpalette-createreusablelink.png)
@@ -73,7 +73,7 @@ Chcete-li vytvořit opakovaně použitelnou relaci, postupujte následovně:
  
 
 
-## <a name="become-an-insider"></a>Staňte se Insider <a name="BecomeanInsider"> </a>
+## <a name="become-an-insider"></a>Staňte se Insider <a name="BecomeanInsider"></a>
 
 Ve výchozím nastavení platí, že po instalaci rozšíření Visual Studio Live Share používáte `Stable` sadu funkcí, která zahrnuje všechny funkce připravené pro produkční prostředí (např. společné úpravy, sdílené ladění, terminály). Pokud byste ale chtěli získat dřívější přístup k funkci, na které pracujeme, můžete se přihlásit k `Insiders` sadě funkcí změnou následujícího nastavení v integrovaném vývojovém prostředí:
 

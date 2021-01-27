@@ -1,5 +1,5 @@
 ---
-title: Přehled – Visual Studio Live Share | Microsoft Docs
+title: Přehled | Microsoft Docs
 description: Nové funkce a verze Live Share
 ms.custom: ''
 ms.reviewer: ''
@@ -9,12 +9,12 @@ author: fubaduba
 ms.author: fubaduba
 ms.workload:
 - liveshare
-ms.openlocfilehash: 55425a7d57775a4e042e87b8dceb86532e1b966a
-ms.sourcegitcommit: 211b17e49e7343786bd6859b65444cedd5e24958
+ms.openlocfilehash: 70adacfbb8d5e3b4ca9a7b2652c7c455a977f2f7
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85796060"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870471"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -51,7 +51,7 @@ Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platfo
 
 > Osoba, kterou se snažíte kontaktovat, je momentálně nedostupná nebo používá verzi _Live Share_ , která tuto funkci nepodporuje. [Další informace] 
 
->Služba chat je aktuálně odpojena.Zkuste to prosím za chvíli znovu.
+>Služba chat je aktuálně odpojena. Zkuste to prosím za chvíli znovu.
 
 Hostitel relace Live Share buď používá sadu Visual Studio, nebo jiné platformy k hostování relace, která ještě nepodporují integrovaný chat Live Share. Můžou být taky nedostupné hned. Může se zobrazit také chybová zpráva 1. uvedená výše.
 

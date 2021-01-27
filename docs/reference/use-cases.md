@@ -1,5 +1,5 @@
 ---
-title: Běžné případy použití – Visual Studio Live Share | Microsoft Docs
+title: Běžné případy použití | Microsoft Docs
 description: Přehled případů použití, které vývojáři běžně využívají Visual Studio Live Share pro.
 ms.custom: ''
 ms.date: 05/21/2018
@@ -11,12 +11,12 @@ ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: f3005deae16cba2c16b59d9570b11cc7e35c6f84
-ms.sourcegitcommit: c484bdb0d54c23a47561b3cf492cf2a10b2b1599
+ms.openlocfilehash: deda1f483b4c4d9c7f9cf2928dde8c6cf5eea769
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88577005"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98870903"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -44,6 +44,7 @@ V tomto dokumentu se dozvíte o některých případech použití, které Visual
     - [Přednášky učebny](#classroom-lectures)
 - [Revize kódu](#code-reviews)
 - [Technické rozhovory](#technical-interviews)
+- [Vzdálená práce](#working-remotely)
 
 ## <a name="quick-assistance"></a>Rychlá pomoc
 
@@ -51,7 +52,7 @@ Když narazíte na problém (například při pokusu o vyřešení chyby, nastav
 
 Vzhledem k tomu, že Live Share umožňuje sdílet aktivní relaci ladění, aniž by to vyžadovalo "hostů" k instalaci některého z nezbytných sad SDK pro platformy (např. Node.js, jít, .NET Core) nebo rozšíření nástrojů, může vám to usnadnit řešení rychleji a zabránit tomu, aby se v situaci v mém počítači nereprodukciy. Live Share vám umožňuje sdílet stav ladění s ostatními, pro libovolný programovací jazyk nebo běhové prostředí (např. Kubernetes, reagovat na nativní aplikaci), a nezávisle na tom, co potřebujete s tím pomáhat, můžete také sdílet!
 
-### <a name="office-hours"></a>Hodiny kanceláře
+### <a name="office-hours"></a>Pracovní doba
 
 Mnohé firmy a vzdělávací instituce (například školy, Online školicí kurzy) poskytují podporu svým zákazníkům/zaměstnancům/studentům v předem stanovených časech a obvykle četnosti opakování (například každý pátek od 3-5./odp.). Tímto způsobem jsou "hodiny v kanceláři" jednoduše naplánovanou podobu "Rychlá pomoc", a to na rozdíl od toho, že je celá ad-hoc. Live Share usnadňuje rychlé získání nápovědy, protože odborník na poskytnutí nápovědy se může okamžitě připojit k relaci spolupráce a odpovědět na vaše otázky, aniž by museli nastavit počítač vůbec.
 
@@ -143,6 +144,10 @@ Live Share aktuálně nesdílí rozdílové správy zdrojového kódu, což je k
 Při prohlížení kandidátů na pozici pro vývojáře může být často užitečné jít mimo diskuze tabule a místo toho řešit problémy s kódováním z vlastního integrovaného vývojového prostředí (zejména v případě, že váš tým nebo organizace má "standardizované" nástroje pro nástroj, který byste si chtěli použít. To nejen přináší výhody práce způsobem, který je potenciálně přirozenější (většina vývojářů nekóduje kód na tabulích), ale také poskytuje okamžitou zpětnou vazbu nebo pomoc při práci (například chyby sestavení, IntelliSense). V mnoha případech je důležitější pochopit postup, který je kandidátný na kandidáta, a to na rozdíl od jejich schopností nepamatují přesná syntaxe nebo názvy rozhraní API. Tímto způsobem Live Share poskytuje prostředí, které je podobné jako relace programování v relaci, ale umožňuje, aby účastník byl ve svém vlastním prostředí (včetně nastavení operačního systému, jako je usnadnění přístupu), a pracoval stejně jako i pro místní nebo vzdálené rozhovory. Připojení relace z webu umožňuje kandidátovi používat vývojové prostředí týmu a základ kódu, aniž byste museli stahovat cokoli. 
 
 Kromě toho je vývoj v reálném světě více než pouhým psaním kódu. Vzhledem k tomu, že Live Share podporuje také sdílené ladění, úlohy a terminály, umožňuje spolupracovníkům sledovat kandidáty při diagnostice problému a poskytnout jim vhodné nástroje potřebné k jejich vyřešení (např. ladění, spuštění testů). Vzhledem k tomu, že je všechny kontexty vzdálené z počítače hostitele, můžou kandidáti rychle přejít do prostředí pro rozhovor, aniž by museli nastavit počítač (po instalaci Live Share). Týmy pak můžou udržovat úložiště sdílených vzájemně se používaných aplikací (nebo použít svůj skutečný základ kódu produktu), který by se mohl klonovat a sdílet s kandidáty, protože jednoduše jim pošle adresu URL relace před každým pohovorem.
+
+## <a name="working-remotely"></a>Vzdálená práce
+
+Pracujte z domova bez nutnosti udržet sada nástrojů počítač pro vývoj doma v synchronizaci s vaší prací. Rychle dokončete tento řádek kódu z domova, aniž byste museli nahrávat z práce, klonovat úložiště doma a najít přesný řádek, na kterém jste pracovali. Připojte se z jednoduchého přenosného počítače k vašemu těžkému pracovnímu počítači.
 
 ## <a name="see-also"></a>Viz také
 

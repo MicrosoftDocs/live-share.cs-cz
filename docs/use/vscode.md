@@ -12,11 +12,11 @@ manager: AmandaSilver
 ms.workload:
 - liveshare
 ms.openlocfilehash: 5db1e2f3afff93747685ade5ff46d0f814775563
-ms.sourcegitcommit: a48488302bc56abdedf7130ec22b4e21ac16a4ef
+ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84337234"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98871027"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -109,7 +109,7 @@ Zobrazí se oznámení s výzvou, abyste se přihlásili pomocí webového prohl
 
 #
 
-> **Rozšířený Tip:** `liveshare.account`Nastavení a `liveshare.accountProvider` umožňují vybrat, který účet se má použít pro automatické přihlášení v případě, že máte k dispozici přihlašovací údaje pro více účtů v mezipaměti.
+> **Rozšířený Tip:** `liveshare.account` Nastavení a `liveshare.accountProvider` umožňují vybrat, který účet se má použít pro automatické přihlášení v případě, že máte k dispozici přihlašovací údaje pro více účtů v mezipaměti.
 > Představte si například, že pracujete se 2 projekty, se kterými se chcete přihlásit pomocí různých identit. V nastavení pracovního prostoru VSCode můžete nastavit `liveshare.account` nastavení na jiné e-mailové adresy v každém adresáři projektu, abyste se ujistili, že se všechny automaticky přihlásí ke správnému účtu. `liveshare.accountProvider`Nastavení může být nastavené na buď `"microsoft"` nebo `"github"` v případě, že použijete stejnou e-mailovou adresu s více zprostředkovateli.
 
 Pokud se po dokončení procesu přihlášení v prohlížeči Visual Studio Code nemusíte přihlašovat, přečtěte si téma [přihlášení pomocí uživatelského kódu](#sign-in-using-a-user-code). V opačném případě se podívejte na [řešení potíží](../troubleshooting.md#sign-in) , kde najdete další tipy.
@@ -173,7 +173,7 @@ Po stažení a instalaci Visual Studio Live Share postupujte podle těchto krok�
 
 3. **Volitelné Aktualizace skrytých nebo vyloučených souborů**
 
-    Ve výchozím nastavení Live Share **skrývá** všechny soubory nebo složky, na které se odkazuje ve sdílených složkách z hostů. **Skrytím** souboru znemožníte jeho zobrazení ve stromu souborů hosta. **Vyloučení** souboru platí přísnější pravidlo, které zabrání Live Share jeho otevření pro hosta v situacích, jako je jít na definici, nebo pokud se při ladění nebo za "následováno" zadáte krok do souboru. Pokud chcete skrýt nebo vyloučit různé soubory, můžete do projektu pomocí těchto nastavení přidat soubor **. vsls. JSON** . Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+    Ve výchozím nastavení Live Share **skrývá** všechny soubory nebo složky, na které se odkazuje ve sdílených složkách z hostů. **Skrytím** souboru znemožníte jeho zobrazení ve stromu souborů hosta. **Vyloučení** souboru platí přísnější pravidlo, které zabrání Live Share jeho otevření pro hosta v situacích, jako je jít na definici, nebo pokud se při ladění nebo za "následováno" zadáte krok do souboru. Pokud chcete skrýt nebo vyloučit jiné soubory, můžete do projektu pomocí těchto nastavení přidat **.vsls.js** pro soubor. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 4. **Spustit relaci spolupráce**
 
@@ -210,7 +210,7 @@ Po stažení a instalaci Visual Studio Live Share postupujte podle těchto krok�
 
     Ve výchozím nastavení se hostů připojí k vaší relaci spolupráce automaticky a budete upozorněni, až budou připraveni s vámi pracovat. I když vám toto oznámení umožní odebrat je z relace, můžete také místo toho vyžadovat explicitní schválení pro kohokoli, co se připojuje.
 
-    Pokud chcete tuto funkci povolit, stačí do nastavení. JSON přidat následující:
+    Pokud chcete tuto funkci povolit, jednoduše přidejte následující, abyste settings.js:
 
          "liveshare.guestApprovalRequired": true
 
@@ -263,7 +263,7 @@ Nejjednodušší způsob, jak se připojit k relaci spolupráce, je jednoduše o
 
 3. **Spolupráce**
 
-    A je to! Za chvíli budete připojeni a můžete začít spolupracovat.
+    A to je vše! Za chvíli budete připojeni a můžete začít spolupracovat.
 
     Po přechodu na tlačítko "Live Share" se zobrazí zpráva "stav relace". Podívejte se na informace o [stavu relace](#session-states) níže, aby to vypadalo takto.
 
@@ -289,7 +289,7 @@ Můžete se také ručně připojit bez použití webového prohlížeče, kter�
 
 4. **Uložte!**
 
-    A je to! V tuto chvíli byste měli být připojeni k relaci spolupráce.
+    A to je vše! V tuto chvíli byste měli být připojeni k relaci spolupráce.
 
     Po přechodu na tlačítko "Live Share" se zobrazí zpráva "stav relace". Podívejte se na informace o [stavu relace](#session-states) níže, aby to vypadalo takto.
 
@@ -325,18 +325,18 @@ Ještě lepší a ostatní účastníci můžou přejít na libovolný soubor ve
 
 Výsledné úpravy jsou uložené v počítači hostitele při uložení, takže nemusíte po dokončení úprav provádět synchronizaci, vkládání ani posílání souborů. Úpravy jsou "jenom tam."
 
-> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím souboru. vsls. JSON. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení se některé soubory nezobrazuje. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím .vsls.jsv souboru. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení se některé soubory nezobrazuje. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 ### <a name="changing-participant-flag-behaviors"></a>Změna chování příznaku účastníka
 
 Ve výchozím nastavení Visual Studio Live Share automaticky zobrazuje příznak vedle kurzoru účastníka při najetí myší nebo při úpravách, zvýraznění nebo přesunutí kurzoru. V některých případech můžete chtít toto chování změnit.
 
-Jednoduše **upravte Settings. JSON** (> předvolby souboru > nastavení), přidejte jeden z následujících řádků a pak restartujte vs Code:
+Jednoduše **upravte settings.jszapnuto** (nastavení > předvoleb > nastavení), přidejte jeden z následujících řádků a pak restartujte vs Code:
 
 | Nastavení | Chování |
 |---------|----------|
 | ``"liveshare.nameTagVisibility":"Never"`` | Příznak se zobrazí, pouze když najedete myší na kurzor. |
-| ``"liveshare.nameTagVisibility":"Activity"`` | Toto nastavení je výchozí. Příznak se zobrazí při najetí myší nebo v případě, že se kurzor upraví, zvýrazní nebo přesune. |
+| ``"liveshare.nameTagVisibility":"Activity"`` | Tato možnost je výchozí. Příznak se zobrazí při najetí myší nebo v případě, že se kurzor upraví, zvýrazní nebo přesune. |
 | ``"liveshare.nameTagVisibility":"Always"`` | Příznak je vždy zobrazen. |
 
 ## <a name="following"></a>Sledování
@@ -344,7 +344,7 @@ Jednoduše **upravte Settings. JSON** (> předvolby souboru > nastavení), přid
 Někdy potřebujete objasnit problém nebo návrh, který se týká více souborů nebo míst v kódu. V těchto situacích může být užitečné dočasně sledovat kolegy při pohybu v rámci projektu. Z tohoto důvodu, když se připojíte k relaci spolupráce, budete automaticky sledovat hostitele. Když někomu přijdete, váš Editor zůstane synchronizovaný s aktuálně otevřeným souborem a pozicí posunutí.
 
 > [!NOTE]
-> Ve výchozím nastavení Live Share sdílí i otevřené soubory mimo sdílenou složku. Pokud chcete tuto funkci zakázat, aktualizujte `liveshare.shareExternalFiles` Live share na `false` v Settings. JSON.
+> Ve výchozím nastavení Live Share sdílí i otevřené soubory mimo sdílenou složku. Chcete-li tuto funkci zakázat, aktualizujte `liveshare.shareExternalFiles` Live share na `false` v settings.js.
 
 Pokud chcete začít sledovat účastníka (jako hostitele nebo hosta), klikněte na jméno v seznamu účastníci na kartě zobrazení nebo vlastní karta aplikace Live Share. Kruh vedle jejich jména se vyplní, aby označoval, že se vám dostanou.
 
@@ -403,13 +403,13 @@ Potom můžou kliknout na sledovat hned z oznámení, když jsou připravení na
 
 Funkce pro spolupráci při ladění Visual Studio Live Share je účinný a jedinečný způsob, jak tento problém ladit. Kromě povolení prostředí pro spolupráci při řešení problémů vám taky poskytuje a ostatním účastníkům v relaci možnost prozkoumat problémy, které můžou být specifické pro prostředí, a to tak, že v počítači hostitele zadají sdílenou relaci ladění.
 
-> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím souboru. vsls. JSON. Měli byste taky mít na paměti, že konzola/REPL přístup znamená, že účastníci můžou na svém počítači spouštět příkazy, takže byste měli jenom ladit jenom ty, které důvěřujete. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení nemusí být možné postupovat podle pokynů k souborům s omezeným přístupem k určitým souborům s omezenými oprávněními. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
+> **Tip zabezpečení:** Vzhledem k tomu, že všichni účastníci můžou nezávisle Procházet a upravovat soubory jako hostitel, možná budete chtít omezit, které soubory hostů mají mít přístup k vašemu projektu prostřednictvím .vsls.jsv souboru. Měli byste taky mít na paměti, že konzola/REPL přístup znamená, že účastníci můžou na svém počítači spouštět příkazy, takže byste měli jenom ladit jenom ty, které důvěřujete. Jako host je také důležité si uvědomit, že v důsledku těchto nastavení nemusí být možné postupovat podle pokynů k souborům s omezeným přístupem k určitým souborům s omezenými oprávněními. Podrobnosti najdete v tématu [řízení přístupu k souborům a viditelnost](../reference/security.md#controlling-file-access-and-visibility) .
 
 Použití je jednoduché.
 
 1. Ujistěte se, že hostitel i všichni hosté mají nainstalované příslušné ladicí rozšíření. (Technicky to není vždy nutné, ale je to obvykle dobrý nápad.)
 
-2. Jako hostitel, pokud ještě není nastavený pro projekt, byste měli [nakonfigurovat soubor Launch. JSON](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) pro ladění aplikace z vs Code stejným způsobem jako normálně. Nevyžaduje se žádné speciální nastavení.
+2. Jako hostitel, pokud ještě není nastavený pro projekt, byste měli [nakonfigurovat launch.js](https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations) pro ladění aplikace z vs Code stejným způsobem. Nevyžaduje se žádné speciální nastavení.
 
 3. V dalším kroku může hostitel spustit ladění pomocí tlačítka na kartě ladit jako normální.
 
@@ -438,7 +438,7 @@ Každý spolupracovníka může prozkoumat různé proměnné, přejít na jiné
 
 Ve výchozím nastavení se jako host automaticky připojí k ladicím relacím, když jsou sdíleny hostitelem. V některých případech ale může dojít k narušení tohoto chování. Naštěstí je můžete změnit následujícím způsobem:
 
-Jednoduše **upravte Settings. JSON** (> předvolby souboru > nastavení), přidejte jeden z následujících řádků a pak restartujte vs Code:
+Jednoduše **upravte settings.jszapnuto** (nastavení > předvoleb > nastavení), přidejte jeden z následujících řádků a pak restartujte vs Code:
 
 | Nastavení | Chování |
 |---------|----------|
@@ -470,7 +470,7 @@ Hosté pak budou mít přístup k serveru, který jste sdíleli na tomto portu z
 
 > **Tip zabezpečení:** Jako hostitel byste měli být velmi selektivní pomocí portů, které sdílíte s hosty, a přidružit je k portům aplikací (místo sdílení portu systému). Pro hosty se budou sdílené porty chovat stejně, jako by byly spuštěné na svém vlastním počítači na serveru nebo službě. To je velmi užitečné, ale pokud je nesprávný port sdílený, může být také riskantní.
 
-Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny na zadaných portech pro ostatní hosty. Naštěstí je snadné přidat ho jako **hostitele**relace pro spolupráci. Zde je uveden postup:
+Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny na zadaných portech pro ostatní hosty. Naštěstí je snadné přidat ho jako **hostitele** relace pro spolupráci. Jak na to:
 
 1. Otevřete Live Share vlastní kartu na řádku VS Code aktivity nebo v zobrazení Průzkumník Live Share a vyberte sdílet server... položku nebo klikněte na ikonu.
 
@@ -480,7 +480,7 @@ Pro účely zabezpečení jsou k dispozici pouze servery, které jsou spuštěny
 
     ![Snímek obrazovky s výzvou k zadání čísla portu](../media/vscode-enter-port.png)<br />
 
-A je to! Server na portu, který jste zadali, se teď namapuje na localhost každého hostitele na stejném portu (Pokud se tento port už nepoužívá)!
+A to je vše! Server na portu, který jste zadali, se teď namapuje na localhost každého hostitele na stejném portu (Pokud se tento port už nepoužívá)!
 
 Pokud se port již používá v počítači hosta, je automaticky vybrán jiný. Naštěstí se jako host zobrazí seznam aktuálně sdílených portů (podle názvu, pokud je zadaný), na kartě zobrazení Live Share nebo vlastní karty na panelu VS Code aktivity a v seznamu sdílené servery. Výběr položky otevře tento server v prohlížeči. Můžete také kliknout pravým tlačítkem a vybrat možnost zkopírovat odkaz na server do schránky.
 
@@ -525,10 +525,10 @@ Po spuštění nebo připojení relace spolupráce a přístup ke sdílenému ob
 
 Tady jsou stavy, které obvykle vidíte:
 
-| State | Stavový řádek | Description |
+| State | Stavový řádek | Popis |
 |-------|--------------------|-------------|
 | Inactive | ![Stav VS Code: neaktivní](../media/vscode-status-share.png) | Žádná aktivní relace spolupráce a nic se nesdílí. |
-| Hostitel: probíhá sdílení. | ![Stav VS Code: probíhá sdílená složka.](../media/vscode-status-sharing.png)| Spouští se relace spolupráce a v krátké době začne sdílení obsahu. |
+| Hostitel: sdílení In-Progress | ![Stav VS Code: probíhá sdílená složka.](../media/vscode-status-sharing.png)| Spouští se relace spolupráce a v krátké době začne sdílení obsahu. |
 | Hostitel: sdílení | ![Stav VS Code: sdílení aktivní ](../media/vscode-status-active.png)| Relace spolupráce je aktivní a obsah se sdílí. |
 | Hostitel: sdílení jen pro čtení | ![Stav VS Code: sdílí se jen pro čtení.](../media/vscode-status-sharing-read-only.png)| Sdílení relace pro spolupráci jen pro čtení. |
 | Host: připojení relace | ![Stav VS Code: spojování](../media/vscode-status-joining.png)| Připojení k existující relaci spolupráce |
