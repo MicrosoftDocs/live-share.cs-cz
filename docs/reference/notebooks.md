@@ -10,12 +10,12 @@ ms.author: joncart
 manager: simoncal
 ms.workload:
 - liveshare
-ms.openlocfilehash: 40e30c77ebf3a1c339e1694c413eb8e744d576b9
-ms.sourcegitcommit: 9deed590c0876b732c8eb150a9a23498a8243efc
+ms.openlocfilehash: 2c934e9d2b9f366b7e3c99e59c0a0a06d9ea5cd2
+ms.sourcegitcommit: 48c7e4f4f28ef6087a45b268557cc411f96d4c8b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/27/2021
-ms.locfileid: "98887582"
+ms.locfileid: "98901828"
 ---
 # <a name="-notebooks"></a>📓 Poznámkových bloků
 
@@ -46,7 +46,7 @@ Jakmile a vaši účastníci mají správné požadavky, můžete začít použ�
 
 ## <a name="known-issues"></a>Známé problémy
 
-Následující seznam představuje sadu známých problémů s Live Share a poznámkami experinece spolu s jejich příslušnými alternativními řešeními. 
+Následující seznam představuje sadu známých problémů s aktuálním prostředím Live Share poznámkového bloku spolu s příslušnými alternativními řešeními: 
 
 | Problém | Alternativní řešení | 
 |-|-|
