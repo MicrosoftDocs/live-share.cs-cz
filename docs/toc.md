@@ -38,10 +38,9 @@
 ## [Možnosti připojení](reference/connectivity.md)
 ## [Podpora jazyků](reference/platform-support.md)
 ## [Podpora rozšíření](reference/extensions.md)
-
-
 ## [Podrobnosti o instalaci systému Linux](reference/linux.md)
 ## [Účastníci programu Insider](reference/insiders.md)
+## [Poznámkové bloky](reference/notebooks.md)
 ## [Zpráva k vydání verze](https://aka.ms/vsls-releases)
 # Prostředky
 ## [Odstraňování potíží](troubleshooting.md)
